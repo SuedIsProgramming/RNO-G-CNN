@@ -27,3 +27,5 @@ for iE, event in enumerate(events):
 
         data = np.array(data) # Converts data from list to nparray.
         e_dict[f"Event{iE+1}"] = data # Populates dictionary with event:3dArray pair.
+
+# Now must figure out how to save these events. Perhaps its better to save each individual event.
