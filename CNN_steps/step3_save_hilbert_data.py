@@ -1,5 +1,5 @@
 import NuRadioReco.modules.io.eventReader
-from scipy.signal import *
+from scipy.signal import abs,hilbert # pylint: disable=W0622
 import numpy as np
 import pickle
 
