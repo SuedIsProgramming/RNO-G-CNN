@@ -1,5 +1,7 @@
 import NuRadioReco.modules.io.eventReader
+from scipy.signal import *
 import numpy as np
+import pickle
 
 event_reader = NuRadioReco.modules.io.eventReader.eventReader()
 
@@ -19,13 +21,14 @@ e_dict = {} # Will contain, 3d (channel,time,voltage) associated to each event.
 for iE, event in enumerate(events):
     primary = event.get_primary() # Not sure what this is for D:
     for iStation, station in enumerate(event.get_stations()): # For now, only one station.
-        data = [] # Will contain channel num and voltage vs  time trace.
+        data = [] # Will contain channel num and voltage vs time trace.
         for ch in station.iter_channels():
-            volts = ch.get_trace()
+            volts_hilb = abs(hilbert(ch.get_trace())) # Will save hilbert envelope.
             times = ch.get_times()
-            data.append(np.array([times,volts])) # Appends voltage vs time trace to each channel.
+            data.append(np.array([times,volts_hilb])) # Appends voltage vs time trace to each channel.
 
         data = np.array(data) # Converts data from list to nparray.
         e_dict[f"Event{iE+1}"] = data # Populates dictionary with event:3dArray pair.
 
-# Now must figure out how to save these events. Perhaps its better to save each individual event.
+with open('saved_dictionary.pkl', 'wb') as f: # Save dictionary to file for processing.
+    pickle.dump(e_dict, f)
