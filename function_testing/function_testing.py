@@ -22,7 +22,7 @@ def shift_relative_time(event, plot=False):
     
     # Plot before the shift, if requested
     if plot:
-        fig, ax = plt.subplots(1, 2, figsize=(10, 5))
+        _, ax = plt.subplots(1, 2, figsize=(10, 5))
         ax[0].plot(event[0][0], event[0][1])
         ax[0].set_title('Before Shift')
         ax[0].set_xlabel('Time')
