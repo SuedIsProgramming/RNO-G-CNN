@@ -124,7 +124,7 @@ def bin_hilbert(channel, nbins, method='max', plot=False):
     hilb_arr = np.abs(hilbert(voltage_arr))
     
     bin_width = len(voltage_arr) // nbins
-    bin_time = time_arr[bin_width]-time_arr[0]
+    bin_dt = time_arr[bin_width]-time_arr[0]
     binned_time = time_arr[:nbins * bin_width:bin_width]
 
     if method == 'max':
@@ -138,16 +138,14 @@ def bin_hilbert(channel, nbins, method='max', plot=False):
         plt.figure(figsize=(12, 6))
         plt.plot(time_arr, hilb_arr, label='Original Hilbert Envelope', alpha=0.7)
         plt.plot(binned_time, binned_hilb, 'o-', label=f'Binned Hilbert Envelope ({method})', color='red')
-        plt.xlabel(f'Time (ns), one bin = {bin_time} ns')
+        plt.xlabel(f'Time (ns), one bin = {bin_dt} ns')
         plt.ylabel('Hilbert Envelope (V)')
         plt.title('Original vs Binned Hilbert Envelope')
         plt.legend()
         plt.grid(True)
         plt.savefig('Original vs Binned Hilbert Envelope.png')
 
-    return binned_time, binned_hilb, bin_time
-
-bin_hilbert(event_dict['Event3'][3],40,plot='True')
+    return binned_time, binned_hilb, bin_dt
 
 def plot_image(event, nbins):
     """
@@ -164,9 +162,9 @@ def plot_image(event, nbins):
     time_bins = []
     
     for channel in event:
-        _, voltage_bin, bin_time = bin_hilbert(channel, nbins, plot=False)
+        _, voltage_bin, bin_dt = bin_hilbert(channel, nbins, plot=False)
         voltage_matrix.append(voltage_bin)
-        time_bins.append(bin_time)
+        time_bins.append(bin_dt)
 
     # Convert the list of voltage bins to an array
     voltage_matrix = np.array(voltage_matrix)

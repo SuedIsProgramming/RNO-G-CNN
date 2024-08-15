@@ -30,5 +30,7 @@ for iE, event in enumerate(events):
         data = np.array(data) # Converts data from list to nparray.
         e_dict[f"Event{iE+1}"] = data # Populates dictionary with event:3dArray pair.
 
-with open('saved_dictionary.pkl', 'wb') as f: # Save dictionary to file for processing.
+with open('raw_traces/saved_dictionary.pkl', 'wb') as f: # Save dictionary to file for processing.
     pickle.dump(e_dict, f)
+
+# I would like to make sure the events are being saved to the same dictionary!
