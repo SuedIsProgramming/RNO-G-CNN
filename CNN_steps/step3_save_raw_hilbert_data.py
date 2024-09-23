@@ -6,8 +6,8 @@ import os
 
 event_reader = NuRadioReco.modules.io.eventReader.eventReader()
 
-file = 'output.nur'
-event_reader.begin(file)
+out_file = 'output.nur'
+event_reader.begin(out_file)
 events = event_reader.run()
 
 def save_events(file_path='data/event_data.pkl',events_in=None):
@@ -41,12 +41,11 @@ def save_events(file_path='data/event_data.pkl',events_in=None):
         with open(file_path, 'wb') as file:
             pickle.dump(events_in, file)
 
-""" Unnecesary unless we want the total number of iterations.
-def count_iterable(i): # iterable function counts and returns number of iterables.
-    return sum(1 for e in i)
+# Unnecesary unless we want the total number of iterations.
+# def count_iterable(i): # iterable function counts and returns number of iterables.
+#     return sum(1 for e in i)
 
-numevents = count_iterable(event_reader.run()) # Return num. of events
-"""
+# numevents = count_iterable(event_reader.run()) # Return num. of events
 
 e_dict = {} # Will contain, 3d (channel,time,voltage) associated to each event.
 
@@ -65,4 +64,5 @@ for iE, event in enumerate(events):
 
 save_events('/data/i3home/ssued/RNO-G-CNN/function_testing/data/event_dict.pkl',e_dict)
 
-# I would like to make sure the events are being saved to the same dictionary!
+# Want to get data saved in following format:
+# {batch_label, channels, width, height} would only have 1 channel
