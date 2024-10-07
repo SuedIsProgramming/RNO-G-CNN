@@ -20,7 +20,7 @@ def save_events(file_path='data/event_data.pkl',events_in=None):
     events_in (dict) python dictionary from which to append the events or to save.
     """
     # Check if the file exists
-    if os.path.exists(file_path):
+    if os.path.exists(file_path):   
         # Load and return the dictionary
         with open(file_path, 'rb') as file:
             event_dict = pickle.load(file)
