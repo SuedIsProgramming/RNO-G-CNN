@@ -58,7 +58,7 @@ for iE, event in enumerate(events):
         
         e_data = [] # Will contain channel num and voltage vs time trace.
         for i,ch in enumerate(simStation.iter_channels()):
-            print(f'Number of simulation channels: {count_iterable(simStation.iter_channels())}')
+            #print(f'Number of simulation channels: {count_iterable(simStation.iter_channels())}')
             print(f'channel num: {i}')
             volts_hilb = abs(hilbert(ch.get_trace())) # Will save hilbert envelope.
             times = ch.get_times()
