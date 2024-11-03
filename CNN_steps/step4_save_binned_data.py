@@ -36,11 +36,20 @@ def save_events(file_path='/data/i3home/ssued/RNOGCnn/function_testing/data/even
         with open(file_path, 'wb') as file:
             pickle.dump(events_in, file)
 
-def bin_matrix(event,bins = 25, plotting = False, hilb = False):
+def bin_matrix(event,bins = 25, mthd = 'max' ,plotting = False, hilb = False):
+    """
+    Bins a single event into a [4,nbins] matrix, where the rows represent the channels and the columns are the binned voltages
+    which depend on the binning method. For now, implementation was made only for 4 channels.
 
-    avg_int_pow = event['average_integrated_power']
-    binned_dict = {'average_integrated_power' : avg_int_pow}
+    Paremeters:
+    event (dict) event dictionary containing {'mean_integrated_power','data'}
+    bins (int) Number of bins to output
+    plotting (bool) If True, prints out a colormap of the binned matrix
+    hilb (bool) If True, applies hilbert envelope to the signal
 
+    Returns:
+    dict = {'data','bintime'} dictionary
+    """
     row1 = bin_v(event['data'][0],bins, hilbert = hilb)[1]
     row2 = bin_v(event['data'][1],bins, hilbert = hilb)[1]
     row3 = bin_v(event['data'][2],bins, hilbert = hilb)[1]
@@ -49,7 +58,7 @@ def bin_matrix(event,bins = 25, plotting = False, hilb = False):
     bintime_ns = bintime*(10**6)
     matrix = np.array([row1,row2,row3,row4])
 
-    binned_dict = {'data' : matrix}
+    binned_dict = {'data' : matrix, 'bin_time' : bintime_ns}
 
     if plotting:
         plt.figure(figsize=(10, 6))
@@ -71,6 +80,7 @@ def bin_v(channel, nbins, hilbert = False, method='max', plot=False):
 
     A big issue is that if the different channels effectively HAVE different time domains, then the different channels will contain
     different bin sizes. We could make all bins the same size, but then graphs will have more or less bins, or we could keep it like this.
+    So far, channels in the same event seem to have the same time domain.
     Parameters:
     channel (np.array): Channel array containing two numpy arrays of time (pos [0]) and voltage (pos [1]).
     method (str): Modifies bin values according to the method. 
@@ -117,15 +127,15 @@ def bin_v(channel, nbins, hilbert = False, method='max', plot=False):
 
     return binned_time, binned, bin_dt
 
-nbins = 25
+nbins = 25 # Number of bins to save with
 
-with open('/data/i3home/ssued/RNOGCnn/function_testing/data/event_dict.pkl', 'rb') as file:
+with open('/data/i3home/ssued/RNOGCnn/function_testing/data/event_dict.pkl', 'rb') as file: # Open raw trace dictionary
     event_dict = pickle.load(file)
 
-binned_dict = {}
-for iEvent , event in enumerate(event_dict):
-    print(event)
-    binned_event = bin_matrix(event,bins=nbins)
-    binned_dict[iEvent] = binned_event
+binned_dict = {} # Create empty binned event dictionary
+for iEvent , event in enumerate(event_dict.values()):
+    mean_int_power = event['mean_integrated_power'] # Obtain mean_int_power from original
+    binned_event = bin_matrix(event,bins=nbins) # Uses bin_matrix function to bin events into a [4,nbin] matrix
+    binned_dict[iEvent] = {'mean_integrated_power' : mean_int_power, 'bin_time' : binned_event['bin_time'], 'data' : binned_event['data']}
 
 save_events(file_path='/data/i3home/ssued/RNOGCnn/function_testing/data/binned_event_dict.pkl',events_in=binned_dict)

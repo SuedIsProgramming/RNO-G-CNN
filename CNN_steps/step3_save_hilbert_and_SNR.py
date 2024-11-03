@@ -13,8 +13,6 @@ out_file = '/data/i3home/ssued/RNOGCnn/CNN_steps/output.nur' # Added absolute pa
 event_reader.begin(out_file)
 events = event_reader.run()
 
-#TODO Have to modify because of new dictionary
-
 def save_events(file_path='/data/i3home/ssued/RNOGCnn/function_testing/data/event_dict.pkl',events_in=None):
     """
     Save events in a dictionary. If a dictionary already exists, it will append the events to the end of the dictionary.
