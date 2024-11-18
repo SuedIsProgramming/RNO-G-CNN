@@ -5,6 +5,8 @@ import numpy as np
 import pickle
 import os
 
+# Deprecated! Will avoid just saving raw data
+
 def save_events(file_path='/data/i3home/ssued/RNOGCnn/function_testing/data/event_dict.pkl',events_in=None):
     """
     Save events in a dictionary. If a dictionary already exists, it will append the events to the end of the dictionary.
