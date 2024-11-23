@@ -8,3 +8,4 @@ Updates:
 
 Had a huge problem with accidentally trying to upload large file to Github. Had to delete a few commits, but it worked out in the end. I will now be focusing on developing the CNN.
 
+Testing commits
