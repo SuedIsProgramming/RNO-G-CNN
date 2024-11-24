@@ -6,3 +6,6 @@
 *.yaml
 *.json
 data/
+jobs/
+old/
+jobs_test/

@@ -1,3 +1,5 @@
+#!/data/i3home/ssued/bin/python
+
 import NuRadioReco.modules.io.eventReader
 from scipy.signal import hilbert # pylint: disable=W0622
 import NuRadioReco.framework.parameters as parameters
@@ -9,7 +11,7 @@ param = NuRadioReco.framework.parameters.channelParameters # Parameter enumerato
 
 event_reader = NuRadioReco.modules.io.eventReader.eventReader()
 
-out_file = '/data/i3home/ssued/RNOGCnn/CNN_steps/output.nur' # Added absolute path, may have to change later
+out_file = '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/data/output.nur' # Added absolute path, may have to change later
 event_reader.begin(out_file)
 events = event_reader.run()
 
