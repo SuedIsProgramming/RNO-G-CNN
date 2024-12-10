@@ -15,36 +15,46 @@ out_file = '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/data/output.nur' # Added a
 event_reader.begin(out_file)
 events = event_reader.run()
 
-def save_events(file_path='/data/i3home/ssued/RNOGCnn/function_testing/data/event_dict.pkl',events_in=None):
+def save_events(directory='/data/i3home/ssued/RNOGCnn/function_testing/data/', events_in = None):
     """
-    Save events in a dictionary. If a dictionary already exists, it will append the events to the end of the dictionary.
-    Otherwise, it will create the pickled dictionary in the file_path.
+    Save a file in the directory with a numerical suffix based on existing files.
+    If no files exist, it saves as 'trace_0.pkl'. Otherwise, it finds the highest numerical suffix,
+    increments it, and saves the file.
 
     Parameters:
-    file_path (String) location of dictionary, or location where to create it.
-    events_in (dict) python dictionary from which to append the events or to save.
+    directory (str): Directory to save the file.
+    event_in (str): Event content to save in the file.
     """
-    # Check if the file exists
-    if os.path.exists(file_path):   
-        # Load and return the dictionary
-        with open(file_path, 'rb') as file:
-            event_dict = pickle.load(file)
+    base_name = "trace"
+    ext = ".pkl"
+    max_suffix = -1
 
-        start_i = max(event_dict.keys())
+    # Ensure the directory exists
+    if not os.path.exists(directory):
+        os.makedirs(directory)
 
-        # Function to shift keys by a given number
-        def shift_keys(d, shift_amount):
-            return {k + shift_amount: v for k, v in d.items()}
-        
-        shifted_events_in = shift_keys(events_in,start_i+1)
-        new_event_dict = {**event_dict, **shifted_events_in}
+    # Iterate through the files in the directory to find the highest numerical suffix
+    for file_name in os.listdir(directory):
+        if file_name.startswith(base_name) and file_name.endswith(ext):
+            try:
+                # Extract the number after the base_name and before the extension
+                suffix = int(file_name[len(base_name) + 1: -len(ext)])
+                max_suffix = max(max_suffix, suffix)
+            except ValueError:
+                # Ignore files that don't follow the naming pattern
+                pass
 
-        with open(file_path, 'wb') as file:
-            pickle.dump(new_event_dict, file)
-    else: # If file does not exist:
-        # Save the event dictionary to file 
-        with open(file_path, 'wb') as file:
-            pickle.dump(events_in, file)
+    # Determine the new file name
+    new_suffix = max_suffix + 1
+    new_file_name = f"{base_name}_{new_suffix}{ext}"
+    new_file_path = os.path.join(directory, new_file_name)
+
+    # Save the text content to the new file
+    with open(new_file_path, 'wb') as file:
+        pickle.dump(events_in, file)
+
+    print(f"File saved as: {new_file_path}")
+
 
 def bin_v(channel, nbins, hilbert = False, method='max', plot=False):
     """
@@ -128,5 +138,3 @@ for iEvent, event in enumerate(events): # For each event
         event_dict[iEvent] = {'mean_SNR' : SNR_mean, 'bin_time' : bin_time, 'data' : v_matrix} # Populate event dictionary
 
 save_events(events_in=event_dict) # Save the events
-
-print('Done! Data saved in: /data/i3home/ssued/RNOGCnn/function_testing/data/event_dict.pkl')
