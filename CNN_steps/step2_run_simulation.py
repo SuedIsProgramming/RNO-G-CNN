@@ -9,6 +9,9 @@ import NuRadioReco.modules.channelBandPassFilter
 from NuRadioReco.utilities import units
 from NuRadioMC.simulation import simulation
 
+import os
+os.chdir('/data/i3home/ssued/RNOGCnn/CNN_steps/data') # Changes working directory so that all steps occur in the "data" file.
+
 # Setup logging
 from NuRadioReco.utilities.logging import setup_logger
 logger = setup_logger(name="")

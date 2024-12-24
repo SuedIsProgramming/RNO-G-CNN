@@ -4,6 +4,9 @@ from __future__ import absolute_import, division, print_function
 from NuRadioReco.utilities import units
 from NuRadioMC.EvtGen.generator import generate_eventlist_cylinder
 
+import os
+os.chdir('/data/i3home/ssued/RNOGCnn/CNN_steps/data') # Changes working directory so that all steps occur in the "data" file.
+
 # Setup logging
 from NuRadioReco.utilities.logging import setup_logger
 logger = setup_logger(name="")

@@ -1,0 +1,9 @@
+executable = /data/i3home/ssued/RNOGCnn/CNN_steps/step3_save_bin_hilbert.py
+
+log = job.log
+output = job.out
+error = job.err
+request_cpus = 1
+request_memory = 1GB
+
+queue
