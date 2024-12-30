@@ -9,6 +9,47 @@ def find(name, path='/data/i3home/ssued/RNOGCnn'):
         if name in files:
             return os.path.join(root, name)
 
+def conjoin_events(input_path,file_path='/data/i3home/ssued/RNOGCnn/function_testing/data/eventbatch.pkl'):
+    """
+    Save events in a dictionary. If a dictionary already exists, it will append the events to the end of the dictionary.
+    Otherwise, it will create the pickled dictionary in the file_path. Once the file has been merged, it will be deleted.
+
+    Parameters:
+    file_path (String) location of dictionary, or location where to create it.
+    input_path (String) location of python dictionary from which to append the events or to save.
+    """
+
+    with open(input_path, 'rb') as file:
+        events_in = pickle.load(file)
+
+    # Check if the file exists
+    if os.path.exists(file_path): 
+        print('Consolidating from:', input_path) 
+        # Load and return the dictionary
+        with open(file_path, 'rb') as file:
+            event_dict = pickle.load(file)
+
+        start_i = max(event_dict.keys())
+        #print('Putting in this dictionary:', events_in.keys())
+        #print('Into this dictionary:', event_dict.keys())
+
+        # Function to shift keys by a given number
+        def shift_keys(d, shift_amount):
+            return {k + shift_amount: v for k, v in d.items()}
+        
+        shifted_events_in = shift_keys(events_in,start_i+1)
+        new_event_dict = {**event_dict, **shifted_events_in}
+
+        with open(file_path, 'wb') as file:
+            pickle.dump(new_event_dict, file)
+    else: # If file does not exist:
+        print('File exists')
+        # Save the event dictionary to file 
+        with open(file_path, 'wb') as file:
+            pickle.dump(events_in, file)
+
+    os.remove(input_path) # Delete the file after merging
+
 def save_events(directory='/data/i3home/ssued/RNOGCnn/function_testing/data/', events_in = None):
     """
     Save a file in the directory with a numerical suffix based on existing files.

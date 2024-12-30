@@ -1,0 +1,9 @@
+JOB step1 step1.sub
+JOB step2 step2.sub
+VARS step2 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur"
+JOB step3 step3.sub
+
+PARENT step1 CHILD step2
+PARENT step2 CHILD step3
+
+JOB step4 step4.sub

@@ -10,13 +10,13 @@ import sys
 sys.path.append('/data/i3home/ssued/RNOGCnn') # Necessary to import utils from RNOGCnn directory
 import utils
 
-os.chdir('/data/i3home/ssued/RNOGCnn/CNN_steps/data') # Changes working directory so that all steps occur in the "data" file.
+os.chdir('/data/i3home/ssued/RNOGCnn/CNN_steps/eventdata') # Changes working directory so that all steps occur in the "data" file.
 
 param = NuRadioReco.framework.parameters.channelParameters # Parameter enumerator
 
 event_reader = NuRadioReco.modules.io.eventReader.eventReader()
 
-out_file = '/data/i3home/ssued/RNOGCnn/CNN_steps/data/output.nur' # Added absolute path, may have to change later
+out_file = '/data/i3home/ssued/RNOGCnn/CNN_steps/symdata/output.nur' # Added absolute path, may have to change later
 event_reader.begin(out_file)
 events = event_reader.run()
 
