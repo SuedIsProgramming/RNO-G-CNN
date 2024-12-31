@@ -17,6 +17,11 @@ ext = ".pkl"
 
 for file_name in os.listdir(os.getcwd()):
     if file_name.startswith(base_name) and file_name.endswith(ext):
-        utils.conjoin_events(input_path=file_name)
+        try:
+            utils.conjoin_events(input_path=file_name, file_path='/data/i3home/ssued/RNOGCnn/CNN_steps/eventdata/eventbatch.pkl')
+        except EOFError:
+            print(f"Error: {file_name} is empty or corrupted.")
+        except Exception as e:
+            print(f"An error occurred while processing {file_name}: {e}")
 
 print('Done conjoining events.')

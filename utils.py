@@ -9,7 +9,7 @@ def find(name, path='/data/i3home/ssued/RNOGCnn'):
         if name in files:
             return os.path.join(root, name)
 
-def conjoin_events(input_path,file_path='/data/i3home/ssued/RNOGCnn/function_testing/data/eventbatch.pkl'):
+def conjoin_events(input_path, file_path='/data/i3home/ssued/RNOGCnn/function_testing/data/eventbatch.pkl'):
     """
     Save events in a dictionary. If a dictionary already exists, it will append the events to the end of the dictionary.
     Otherwise, it will create the pickled dictionary in the file_path. Once the file has been merged, it will be deleted.
@@ -21,34 +21,39 @@ def conjoin_events(input_path,file_path='/data/i3home/ssued/RNOGCnn/function_tes
 
     with open(input_path, 'rb') as file:
         events_in = pickle.load(file)
+        print(f"Loaded events from {input_path}, number of events: {len(events_in)}")
 
     # Check if the file exists
     if os.path.exists(file_path): 
         print('Consolidating from:', input_path) 
         # Load and return the dictionary
-        with open(file_path, 'rb') as file:
-            event_dict = pickle.load(file)
+        try:
+            with open(file_path, 'rb') as file:
+                event_dict = pickle.load(file)
+                #print(f"Loaded existing event dictionary from {file_path}, number of events: {len(event_dict)}")
+        except EOFError:
+            print(f"Error: {file_path} is empty or corrupted.")
+            event_dict = {}
 
-        start_i = max(event_dict.keys())
-        #print('Putting in this dictionary:', events_in.keys())
-        #print('Into this dictionary:', event_dict.keys())
+        start_i = max(event_dict.keys(), default=-1)
+        #print(f"Starting index for new events: {start_i + 1}")
 
-        # Function to shift keys by a given number
-        def shift_keys(d, shift_amount):
-            return {k + shift_amount: v for k, v in d.items()}
-        
-        shifted_events_in = shift_keys(events_in,start_i+1)
-        new_event_dict = {**event_dict, **shifted_events_in}
+        # Directly update the existing dictionary with shifted keys
+        for k, v in events_in.items():
+            event_dict[start_i + k + 1] = v
 
         with open(file_path, 'wb') as file:
-            pickle.dump(new_event_dict, file)
+            pickle.dump(event_dict, file)
+            #print(f"Updated event dictionary saved to {file_path}, total number of events: {len(event_dict)}")
     else: # If file does not exist:
-        print('File exists')
+        #print('Creating new event dictionary')
         # Save the event dictionary to file 
         with open(file_path, 'wb') as file:
             pickle.dump(events_in, file)
+            #print(f"New event dictionary saved to {file_path}, number of events: {len(events_in)}")
 
     os.remove(input_path) # Delete the file after merging
+    #print(f"Deleted input file: {input_path}")
 
 def save_events(directory='/data/i3home/ssued/RNOGCnn/function_testing/data/', events_in = None):
     """

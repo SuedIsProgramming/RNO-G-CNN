@@ -1,110 +1,19 @@
-Event: 0
-> Station: 0
->> Channel: 0
->> Channel: 1
->> Channel: 2
->> Channel: 3
-Event: 1
-> Station: 0
->> Channel: 0
->> Channel: 1
->> Channel: 2
->> Channel: 3
-Event: 2
-> Station: 0
->> Channel: 0
->> Channel: 1
->> Channel: 2
->> Channel: 3
-Event: 3
-> Station: 0
->> Channel: 0
->> Channel: 1
->> Channel: 2
->> Channel: 3
-Event: 4
-> Station: 0
->> Channel: 0
->> Channel: 1
->> Channel: 2
->> Channel: 3
-Event: 5
-> Station: 0
->> Channel: 0
->> Channel: 1
->> Channel: 2
->> Channel: 3
-Event: 6
-> Station: 0
->> Channel: 0
->> Channel: 1
->> Channel: 2
->> Channel: 3
-Event: 7
-> Station: 0
->> Channel: 0
->> Channel: 1
->> Channel: 2
->> Channel: 3
-Event: 8
-> Station: 0
->> Channel: 0
->> Channel: 1
->> Channel: 2
->> Channel: 3
-File saved as: /data/i3home/ssued/RNOGCnn/CNN_steps/eventdata/eventbatch_0.pkl
-Event: 0
-> Station: 0
->> Channel: 0
->> Channel: 1
->> Channel: 2
->> Channel: 3
-Event: 1
-> Station: 0
->> Channel: 0
->> Channel: 1
->> Channel: 2
->> Channel: 3
-Event: 2
-> Station: 0
->> Channel: 0
->> Channel: 1
->> Channel: 2
->> Channel: 3
-Event: 3
-> Station: 0
->> Channel: 0
->> Channel: 1
->> Channel: 2
->> Channel: 3
-Event: 4
-> Station: 0
->> Channel: 0
->> Channel: 1
->> Channel: 2
->> Channel: 3
-Event: 5
-> Station: 0
->> Channel: 0
->> Channel: 1
->> Channel: 2
->> Channel: 3
-Event: 6
-> Station: 0
->> Channel: 0
->> Channel: 1
->> Channel: 2
->> Channel: 3
-Event: 7
-> Station: 0
->> Channel: 0
->> Channel: 1
->> Channel: 2
->> Channel: 3
-Event: 8
-> Station: 0
->> Channel: 0
->> Channel: 1
->> Channel: 2
->> Channel: 3
-File saved as: /data/i3home/ssued/RNOGCnn/CNN_steps/eventdata/eventbatch_1.pkl
+Loaded events from eventbatch_0.pkl, number of events: 10
+Consolidating from: eventbatch_0.pkl
+Loaded existing event dictionary from /data/i3home/ssued/RNOGCnn/CNN_steps/eventdata/eventbatch.pkl, number of events: 91
+Starting index for new events: 91
+Updated event dictionary saved to /data/i3home/ssued/RNOGCnn/CNN_steps/eventdata/eventbatch.pkl, total number of events: 101
+Deleted input file: eventbatch_0.pkl
+Loaded events from eventbatch_1.pkl, number of events: 10
+Consolidating from: eventbatch_1.pkl
+Loaded existing event dictionary from /data/i3home/ssued/RNOGCnn/CNN_steps/eventdata/eventbatch.pkl, number of events: 101
+Starting index for new events: 101
+Updated event dictionary saved to /data/i3home/ssued/RNOGCnn/CNN_steps/eventdata/eventbatch.pkl, total number of events: 111
+Deleted input file: eventbatch_1.pkl
+Loaded events from eventbatch_2.pkl, number of events: 11
+Consolidating from: eventbatch_2.pkl
+Loaded existing event dictionary from /data/i3home/ssued/RNOGCnn/CNN_steps/eventdata/eventbatch.pkl, number of events: 111
+Starting index for new events: 111
+Updated event dictionary saved to /data/i3home/ssued/RNOGCnn/CNN_steps/eventdata/eventbatch.pkl, total number of events: 122
+Deleted input file: eventbatch_2.pkl
+Done conjoining events.
