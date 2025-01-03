@@ -1,19 +1,4 @@
-Loaded events from eventbatch_0.pkl, number of events: 10
+Loaded events from eventbatch_0.pkl, number of events: 3
 Consolidating from: eventbatch_0.pkl
-Loaded existing event dictionary from /data/i3home/ssued/RNOGCnn/CNN_steps/eventdata/eventbatch.pkl, number of events: 91
-Starting index for new events: 91
-Updated event dictionary saved to /data/i3home/ssued/RNOGCnn/CNN_steps/eventdata/eventbatch.pkl, total number of events: 101
-Deleted input file: eventbatch_0.pkl
-Loaded events from eventbatch_1.pkl, number of events: 10
-Consolidating from: eventbatch_1.pkl
-Loaded existing event dictionary from /data/i3home/ssued/RNOGCnn/CNN_steps/eventdata/eventbatch.pkl, number of events: 101
-Starting index for new events: 101
-Updated event dictionary saved to /data/i3home/ssued/RNOGCnn/CNN_steps/eventdata/eventbatch.pkl, total number of events: 111
-Deleted input file: eventbatch_1.pkl
-Loaded events from eventbatch_2.pkl, number of events: 11
-Consolidating from: eventbatch_2.pkl
-Loaded existing event dictionary from /data/i3home/ssued/RNOGCnn/CNN_steps/eventdata/eventbatch.pkl, number of events: 111
-Starting index for new events: 111
-Updated event dictionary saved to /data/i3home/ssued/RNOGCnn/CNN_steps/eventdata/eventbatch.pkl, total number of events: 122
-Deleted input file: eventbatch_2.pkl
 Done conjoining events.
+Step 4 Mem usage 133.39453125 MB

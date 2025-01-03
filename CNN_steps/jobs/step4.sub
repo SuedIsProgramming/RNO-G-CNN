@@ -1,9 +1,9 @@
 executable = /data/i3home/ssued/RNOGCnn/CNN_steps/step4_conjoin_events.py
 
-log = job.log
-output = job.out
-error = job.err
+#log = job.log
+#output = job.$(Cluster).out
+#error = job.$(Cluster).err
 request_cpus = 1
-request_memory = 1GB
+request_memory = 400MB
 
 queue

@@ -15,8 +15,8 @@ os.chdir('/data/i3home/ssued/RNOGCnn/CNN_steps/eventdata') # Changes working dir
 base_name = "eventbatch_"
 ext = ".pkl"
 
-for file_name in os.listdir(os.getcwd()):
-    if file_name.startswith(base_name) and file_name.endswith(ext):
+for file_name in os.listdir(os.getcwd()): # Looks at all files in the directory
+    if file_name.startswith(base_name) and file_name.endswith(ext): # If the file starts and ends with the given strings, run conjoin function on them.
         try:
             utils.conjoin_events(input_path=file_name, file_path='/data/i3home/ssued/RNOGCnn/CNN_steps/eventdata/eventbatch.pkl')
         except EOFError:
@@ -25,3 +25,9 @@ for file_name in os.listdir(os.getcwd()):
             print(f"An error occurred while processing {file_name}: {e}")
 
 print('Done conjoining events.')
+
+# Debugging memory usage
+import resource
+usage=resource.getrusage(resource.RUSAGE_SELF)
+memory_in_mb = usage[2]/1024.
+print(f"Step 4 Mem usage {memory_in_mb} MB")

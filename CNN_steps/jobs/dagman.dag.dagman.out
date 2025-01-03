@@ -5850,3 +5850,2604 @@
 12/31/24 02:36:51 Wrote metrics file dagman.dag.metrics.
 12/31/24 02:36:51 Metrics not sent because of PEGASUS_METRICS or CONDOR_DEVELOPERS setting.
 12/31/24 02:36:51 **** condor_scheduniv_exec.10416456.0 (condor_DAGMAN) pid 21551 EXITING WITH STATUS 0
+01/02/25 17:25:51 ******************************************************
+01/02/25 17:25:51 ** condor_scheduniv_exec.10416467.0 (CONDOR_DAGMAN) STARTING UP
+01/02/25 17:25:51 ** /usr/bin/condor_dagman
+01/02/25 17:25:51 ** SubsystemInfo: name=DAGMAN type=DAGMAN(10) class=DAEMON(1)
+01/02/25 17:25:51 ** Configuration: subsystem:DAGMAN local:<NONE> class:DAEMON
+01/02/25 17:25:51 ** $CondorVersion: 8.6.8 Apr 06 2018 BuildID: Debian-8.6.8~dfsg.1-2 Debian-8.6.8~dfsg.1-2 $
+01/02/25 17:25:51 ** $CondorPlatform: X86_64-Ubuntu_ $
+01/02/25 17:25:51 ** PID = 20693
+01/02/25 17:25:51 ** Log last touched 12/31 02:36:51
+01/02/25 17:25:51 ******************************************************
+01/02/25 17:25:51 Using config source: /etc/condor/condor_config
+01/02/25 17:25:51 Using local config sources: 
+01/02/25 17:25:51    /etc/condor/condor_config.local
+01/02/25 17:25:51 config Macros = 69, Sorted = 69, StringBytes = 2034, TablesBytes = 2532
+01/02/25 17:25:51 CLASSAD_CACHING is ENABLED
+01/02/25 17:25:51 Daemon Log is logging: D_ALWAYS D_ERROR
+01/02/25 17:25:51 DaemonCore: No command port requested.
+01/02/25 17:25:51 DAGMAN_USE_STRICT setting: 1
+01/02/25 17:25:51 DAGMAN_VERBOSITY setting: 3
+01/02/25 17:25:51 DAGMAN_DEBUG_CACHE_SIZE setting: 5242880
+01/02/25 17:25:51 DAGMAN_DEBUG_CACHE_ENABLE setting: False
+01/02/25 17:25:51 DAGMAN_SUBMIT_DELAY setting: 0
+01/02/25 17:25:51 DAGMAN_MAX_SUBMIT_ATTEMPTS setting: 6
+01/02/25 17:25:51 DAGMAN_STARTUP_CYCLE_DETECT setting: False
+01/02/25 17:25:51 DAGMAN_MAX_SUBMITS_PER_INTERVAL setting: 5
+01/02/25 17:25:51 DAGMAN_USER_LOG_SCAN_INTERVAL setting: 5
+01/02/25 17:25:51 DAGMAN_DEFAULT_PRIORITY setting: 0
+01/02/25 17:25:51 DAGMAN_SUPPRESS_NOTIFICATION setting: True
+01/02/25 17:25:51 allow_events (DAGMAN_ALLOW_EVENTS) setting: 114
+01/02/25 17:25:51 DAGMAN_RETRY_SUBMIT_FIRST setting: True
+01/02/25 17:25:51 DAGMAN_RETRY_NODE_FIRST setting: False
+01/02/25 17:25:51 DAGMAN_MAX_JOBS_IDLE setting: 1000
+01/02/25 17:25:51 DAGMAN_MAX_JOBS_SUBMITTED setting: 0
+01/02/25 17:25:51 DAGMAN_MAX_PRE_SCRIPTS setting: 20
+01/02/25 17:25:51 DAGMAN_MAX_POST_SCRIPTS setting: 20
+01/02/25 17:25:51 DAGMAN_MUNGE_NODE_NAMES setting: True
+01/02/25 17:25:51 DAGMAN_PROHIBIT_MULTI_JOBS setting: False
+01/02/25 17:25:51 DAGMAN_SUBMIT_DEPTH_FIRST setting: False
+01/02/25 17:25:51 DAGMAN_ALWAYS_RUN_POST setting: False
+01/02/25 17:25:51 DAGMAN_ABORT_DUPLICATES setting: True
+01/02/25 17:25:51 DAGMAN_ABORT_ON_SCARY_SUBMIT setting: True
+01/02/25 17:25:51 DAGMAN_PENDING_REPORT_INTERVAL setting: 600
+01/02/25 17:25:51 DAGMAN_AUTO_RESCUE setting: True
+01/02/25 17:25:51 DAGMAN_MAX_RESCUE_NUM setting: 100
+01/02/25 17:25:51 DAGMAN_WRITE_PARTIAL_RESCUE setting: True
+01/02/25 17:25:51 DAGMAN_DEFAULT_NODE_LOG setting: @(DAG_DIR)/@(DAG_FILE).nodes.log
+01/02/25 17:25:51 DAGMAN_GENERATE_SUBDAG_SUBMITS setting: True
+01/02/25 17:25:51 DAGMAN_MAX_JOB_HOLDS setting: 100
+01/02/25 17:25:51 DAGMAN_HOLD_CLAIM_TIME setting: 20
+01/02/25 17:25:51 ALL_DEBUG setting: 
+01/02/25 17:25:51 DAGMAN_DEBUG setting: 
+01/02/25 17:25:51 DAGMAN_SUPPRESS_JOB_LOGS setting: False
+01/02/25 17:25:51 DAGMAN_REMOVE_NODE_JOBS setting: True
+01/02/25 17:25:51 argv[0] == "condor_scheduniv_exec.10416467.0"
+01/02/25 17:25:51 argv[1] == "-Lockfile"
+01/02/25 17:25:51 argv[2] == "dagman.dag.lock"
+01/02/25 17:25:51 argv[3] == "-AutoRescue"
+01/02/25 17:25:51 argv[4] == "1"
+01/02/25 17:25:51 argv[5] == "-DoRescueFrom"
+01/02/25 17:25:51 argv[6] == "0"
+01/02/25 17:25:51 argv[7] == "-Dag"
+01/02/25 17:25:51 argv[8] == "dagman.dag"
+01/02/25 17:25:51 argv[9] == "-Suppress_notification"
+01/02/25 17:25:51 argv[10] == "-CsdVersion"
+01/02/25 17:25:51 argv[11] == "$CondorVersion: 8.6.8 Apr 06 2018 BuildID: Debian-8.6.8~dfsg.1-2 Debian-8.6.8~dfsg.1-2 $"
+01/02/25 17:25:51 argv[12] == "-Force"
+01/02/25 17:25:51 argv[13] == "-Dagman"
+01/02/25 17:25:51 argv[14] == "/usr/bin/condor_dagman"
+01/02/25 17:25:51 Workflow batch-name: <dagman.dag+10416467>
+01/02/25 17:25:51 Workflow accounting_group: <>
+01/02/25 17:25:51 Workflow accounting_group_user: <>
+01/02/25 17:25:51 Warning: failed to get attribute DAGNodeName
+01/02/25 17:25:51 DAGMAN_LOG_ON_NFS_IS_ERROR setting: False
+01/02/25 17:25:51 Default node log file is: </data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log>
+01/02/25 17:25:51 DAG Lockfile will be written to dagman.dag.lock
+01/02/25 17:25:51 DAG Input file is dagman.dag
+01/02/25 17:25:51 Parsing 1 dagfiles
+01/02/25 17:25:51 Parsing dagman.dag ...
+01/02/25 17:25:51 Dag contains 4 total jobs
+01/02/25 17:25:51 Sleeping for 3 seconds to ensure ProcessId uniqueness
+01/02/25 17:25:54 Bootstrapping...
+01/02/25 17:25:54 Number of pre-completed nodes: 0
+01/02/25 17:25:54 MultiLogFiles: truncating log file /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 17:25:54 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 17:25:54 Of 4 nodes total:
+01/02/25 17:25:54  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 17:25:54   ===     ===      ===     ===     ===        ===      ===
+01/02/25 17:25:54     0       0        0       0       1          3        0
+01/02/25 17:25:54 0 job proc(s) currently held
+01/02/25 17:25:54 Registering condor_event_timer...
+01/02/25 17:25:55 Submitting HTCondor Node step1_0 job(s)...
+01/02/25 17:25:55 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 17:25:55 Masking the events recorded in the DAGMAN workflow log
+01/02/25 17:25:55 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/02/25 17:25:55 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step1_0 -a +DAGManJobId' '=' '10416467 -a DAGManJobId' '=' '10416467 -batch-name dagman.dag+10416467 -a submit_event_notes' '=' 'DAG' 'Node:' 'step1_0 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"" step1.sub
+01/02/25 17:25:55 From submit: Submitting job(s).
+01/02/25 17:25:55 From submit: 1 job(s) submitted to cluster 10416468.
+01/02/25 17:25:55 	assigned HTCondor ID (10416468.0.0)
+01/02/25 17:25:55 Just submitted 1 job this cycle...
+01/02/25 17:25:55 Currently monitoring 1 HTCondor log file(s)
+01/02/25 17:25:55 Reassigning the id of job step1_0 from (10416468.0.0) to (10416468.0.0)
+01/02/25 17:25:55 Event: ULOG_SUBMIT for HTCondor Node step1_0 (10416468.0.0) {01/02/25 17:25:55}
+01/02/25 17:25:55 Number of idle job procs: 1
+01/02/25 17:25:55 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 17:25:55 Of 4 nodes total:
+01/02/25 17:25:55  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 17:25:55   ===     ===      ===     ===     ===        ===      ===
+01/02/25 17:25:55     0       0        1       0       0          3        0
+01/02/25 17:25:55 0 job proc(s) currently held
+01/02/25 17:26:15 Currently monitoring 1 HTCondor log file(s)
+01/02/25 17:26:15 Event: ULOG_EXECUTE for HTCondor Node step1_0 (10416468.0.0) {01/02/25 17:26:11}
+01/02/25 17:26:15 Number of idle job procs: 0
+01/02/25 17:26:15 Event: ULOG_JOB_TERMINATED for HTCondor Node step1_0 (10416468.0.0) {01/02/25 17:26:13}
+01/02/25 17:26:15 Number of idle job procs: 0
+01/02/25 17:26:15 Node step1_0 job proc (10416468.0.0) completed successfully.
+01/02/25 17:26:15 Node step1_0 job completed
+01/02/25 17:26:15 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 17:26:15 Of 4 nodes total:
+01/02/25 17:26:15  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 17:26:15   ===     ===      ===     ===     ===        ===      ===
+01/02/25 17:26:15     1       0        0       0       1          2        0
+01/02/25 17:26:15 0 job proc(s) currently held
+01/02/25 17:26:20 Submitting HTCondor Node step2_0 job(s)...
+01/02/25 17:26:20 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 17:26:20 Masking the events recorded in the DAGMAN workflow log
+01/02/25 17:26:20 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/02/25 17:26:20 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step2_0 -a +DAGManJobId' '=' '10416467 -a DAGManJobId' '=' '10416467 -batch-name dagman.dag+10416467 -a submit_event_notes' '=' 'DAG' 'Node:' 'step2_0 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a inputfilename' '=' '1e19_n1e3.hdf5 -a detectordescription' '=' 'station.json -a config' '=' 'config.yaml -a outputfilename' '=' 'output.hdf5 -a outputfilenameNuRadioReco' '=' 'output.nur -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"step1_0" step2.sub
+01/02/25 17:26:20 From submit: Submitting job(s).
+01/02/25 17:26:20 From submit: 1 job(s) submitted to cluster 10416469.
+01/02/25 17:26:20 	assigned HTCondor ID (10416469.0.0)
+01/02/25 17:26:20 Just submitted 1 job this cycle...
+01/02/25 17:26:20 Currently monitoring 1 HTCondor log file(s)
+01/02/25 17:26:20 Reassigning the id of job step2_0 from (10416469.0.0) to (10416469.0.0)
+01/02/25 17:26:20 Event: ULOG_SUBMIT for HTCondor Node step2_0 (10416469.0.0) {01/02/25 17:26:20}
+01/02/25 17:26:20 Number of idle job procs: 1
+01/02/25 17:26:20 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 17:26:20 Of 4 nodes total:
+01/02/25 17:26:20  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 17:26:20   ===     ===      ===     ===     ===        ===      ===
+01/02/25 17:26:20     1       0        1       0       0          2        0
+01/02/25 17:26:20 0 job proc(s) currently held
+01/02/25 17:26:25 Currently monitoring 1 HTCondor log file(s)
+01/02/25 17:26:25 Event: ULOG_EXECUTE for HTCondor Node step2_0 (10416469.0.0) {01/02/25 17:26:20}
+01/02/25 17:26:25 Number of idle job procs: 0
+01/02/25 17:26:35 Currently monitoring 1 HTCondor log file(s)
+01/02/25 17:26:35 Event: ULOG_JOB_TERMINATED for HTCondor Node step2_0 (10416469.0.0) {01/02/25 17:26:31}
+01/02/25 17:26:35 Number of idle job procs: 0
+01/02/25 17:26:35 Node step2_0 job proc (10416469.0.0) completed successfully.
+01/02/25 17:26:35 Node step2_0 job completed
+01/02/25 17:26:35 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 17:26:35 Of 4 nodes total:
+01/02/25 17:26:35  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 17:26:35   ===     ===      ===     ===     ===        ===      ===
+01/02/25 17:26:35     2       0        0       0       1          1        0
+01/02/25 17:26:35 0 job proc(s) currently held
+01/02/25 17:26:40 Submitting HTCondor Node step3_0 job(s)...
+01/02/25 17:26:40 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 17:26:40 Masking the events recorded in the DAGMAN workflow log
+01/02/25 17:26:40 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/02/25 17:26:40 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step3_0 -a +DAGManJobId' '=' '10416467 -a DAGManJobId' '=' '10416467 -batch-name dagman.dag+10416467 -a submit_event_notes' '=' 'DAG' 'Node:' 'step3_0 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"step2_0" step3.sub
+01/02/25 17:26:40 From submit: Submitting job(s).
+01/02/25 17:26:40 From submit: 1 job(s) submitted to cluster 10416470.
+01/02/25 17:26:40 	assigned HTCondor ID (10416470.0.0)
+01/02/25 17:26:40 Just submitted 1 job this cycle...
+01/02/25 17:26:40 Currently monitoring 1 HTCondor log file(s)
+01/02/25 17:26:40 Reassigning the id of job step3_0 from (10416470.0.0) to (10416470.0.0)
+01/02/25 17:26:40 Event: ULOG_SUBMIT for HTCondor Node step3_0 (10416470.0.0) {01/02/25 17:26:40}
+01/02/25 17:26:40 Number of idle job procs: 1
+01/02/25 17:26:40 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 17:26:40 Of 4 nodes total:
+01/02/25 17:26:40  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 17:26:40   ===     ===      ===     ===     ===        ===      ===
+01/02/25 17:26:40     2       0        1       0       0          1        0
+01/02/25 17:26:40 0 job proc(s) currently held
+01/02/25 17:26:45 Currently monitoring 1 HTCondor log file(s)
+01/02/25 17:26:45 Event: ULOG_EXECUTE for HTCondor Node step3_0 (10416470.0.0) {01/02/25 17:26:40}
+01/02/25 17:26:45 Number of idle job procs: 0
+01/02/25 17:26:45 Event: ULOG_JOB_TERMINATED for HTCondor Node step3_0 (10416470.0.0) {01/02/25 17:26:42}
+01/02/25 17:26:45 Number of idle job procs: 0
+01/02/25 17:26:45 Node step3_0 job proc (10416470.0.0) completed successfully.
+01/02/25 17:26:45 Node step3_0 job completed
+01/02/25 17:26:45 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 17:26:45 Of 4 nodes total:
+01/02/25 17:26:45  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 17:26:45   ===     ===      ===     ===     ===        ===      ===
+01/02/25 17:26:45     3       0        0       0       1          0        0
+01/02/25 17:26:45 0 job proc(s) currently held
+01/02/25 17:26:50 Submitting HTCondor Node step4 job(s)...
+01/02/25 17:26:50 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 17:26:50 Masking the events recorded in the DAGMAN workflow log
+01/02/25 17:26:50 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/02/25 17:26:50 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step4 -a +DAGManJobId' '=' '10416467 -a DAGManJobId' '=' '10416467 -batch-name dagman.dag+10416467 -a submit_event_notes' '=' 'DAG' 'Node:' 'step4 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"step3_0" step4.sub
+01/02/25 17:26:50 From submit: Submitting job(s).
+01/02/25 17:26:50 From submit: 1 job(s) submitted to cluster 10416471.
+01/02/25 17:26:50 	assigned HTCondor ID (10416471.0.0)
+01/02/25 17:26:50 Just submitted 1 job this cycle...
+01/02/25 17:26:50 Currently monitoring 1 HTCondor log file(s)
+01/02/25 17:26:50 Reassigning the id of job step4 from (10416471.0.0) to (10416471.0.0)
+01/02/25 17:26:50 Event: ULOG_SUBMIT for HTCondor Node step4 (10416471.0.0) {01/02/25 17:26:50}
+01/02/25 17:26:50 Number of idle job procs: 1
+01/02/25 17:26:50 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 17:26:50 Of 4 nodes total:
+01/02/25 17:26:50  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 17:26:50   ===     ===      ===     ===     ===        ===      ===
+01/02/25 17:26:50     3       0        1       0       0          0        0
+01/02/25 17:26:50 0 job proc(s) currently held
+01/02/25 17:26:55 Currently monitoring 1 HTCondor log file(s)
+01/02/25 17:26:55 Event: ULOG_EXECUTE for HTCondor Node step4 (10416471.0.0) {01/02/25 17:26:50}
+01/02/25 17:26:55 Number of idle job procs: 0
+01/02/25 17:26:55 Event: ULOG_JOB_TERMINATED for HTCondor Node step4 (10416471.0.0) {01/02/25 17:26:52}
+01/02/25 17:26:55 Number of idle job procs: 0
+01/02/25 17:26:55 Node step4 job proc (10416471.0.0) completed successfully.
+01/02/25 17:26:55 Node step4 job completed
+01/02/25 17:26:55 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 17:26:55 Of 4 nodes total:
+01/02/25 17:26:55  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 17:26:55   ===     ===      ===     ===     ===        ===      ===
+01/02/25 17:26:55     4       0        0       0       0          0        0
+01/02/25 17:26:55 0 job proc(s) currently held
+01/02/25 17:26:55 All jobs Completed!
+01/02/25 17:26:55 Note: 0 total job deferrals because of -MaxJobs limit (0)
+01/02/25 17:26:55 Note: 0 total job deferrals because of -MaxIdle limit (1000)
+01/02/25 17:26:55 Note: 0 total job deferrals because of node category throttles
+01/02/25 17:26:55 Note: 0 total PRE script deferrals because of -MaxPre limit (20) or DEFER
+01/02/25 17:26:55 Note: 0 total POST script deferrals because of -MaxPost limit (20) or DEFER
+01/02/25 17:26:55 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 17:26:55 Of 4 nodes total:
+01/02/25 17:26:55  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 17:26:55   ===     ===      ===     ===     ===        ===      ===
+01/02/25 17:26:55     4       0        0       0       0          0        0
+01/02/25 17:26:55 0 job proc(s) currently held
+01/02/25 17:26:55 Wrote metrics file dagman.dag.metrics.
+01/02/25 17:26:55 Metrics not sent because of PEGASUS_METRICS or CONDOR_DEVELOPERS setting.
+01/02/25 17:26:55 **** condor_scheduniv_exec.10416467.0 (condor_DAGMAN) pid 20693 EXITING WITH STATUS 0
+01/02/25 17:43:43 ******************************************************
+01/02/25 17:43:43 ** condor_scheduniv_exec.10416472.0 (CONDOR_DAGMAN) STARTING UP
+01/02/25 17:43:43 ** /usr/bin/condor_dagman
+01/02/25 17:43:43 ** SubsystemInfo: name=DAGMAN type=DAGMAN(10) class=DAEMON(1)
+01/02/25 17:43:43 ** Configuration: subsystem:DAGMAN local:<NONE> class:DAEMON
+01/02/25 17:43:43 ** $CondorVersion: 8.6.8 Apr 06 2018 BuildID: Debian-8.6.8~dfsg.1-2 Debian-8.6.8~dfsg.1-2 $
+01/02/25 17:43:43 ** $CondorPlatform: X86_64-Ubuntu_ $
+01/02/25 17:43:43 ** PID = 25438
+01/02/25 17:43:43 ** Log last touched 1/2 17:26:55
+01/02/25 17:43:43 ******************************************************
+01/02/25 17:43:43 Using config source: /etc/condor/condor_config
+01/02/25 17:43:43 Using local config sources: 
+01/02/25 17:43:43    /etc/condor/condor_config.local
+01/02/25 17:43:43 config Macros = 69, Sorted = 69, StringBytes = 2034, TablesBytes = 2532
+01/02/25 17:43:43 CLASSAD_CACHING is ENABLED
+01/02/25 17:43:43 Daemon Log is logging: D_ALWAYS D_ERROR
+01/02/25 17:43:43 DaemonCore: No command port requested.
+01/02/25 17:43:43 DAGMAN_USE_STRICT setting: 1
+01/02/25 17:43:43 DAGMAN_VERBOSITY setting: 3
+01/02/25 17:43:43 DAGMAN_DEBUG_CACHE_SIZE setting: 5242880
+01/02/25 17:43:43 DAGMAN_DEBUG_CACHE_ENABLE setting: False
+01/02/25 17:43:43 DAGMAN_SUBMIT_DELAY setting: 0
+01/02/25 17:43:43 DAGMAN_MAX_SUBMIT_ATTEMPTS setting: 6
+01/02/25 17:43:43 DAGMAN_STARTUP_CYCLE_DETECT setting: False
+01/02/25 17:43:43 DAGMAN_MAX_SUBMITS_PER_INTERVAL setting: 5
+01/02/25 17:43:43 DAGMAN_USER_LOG_SCAN_INTERVAL setting: 5
+01/02/25 17:43:43 DAGMAN_DEFAULT_PRIORITY setting: 0
+01/02/25 17:43:43 DAGMAN_SUPPRESS_NOTIFICATION setting: True
+01/02/25 17:43:43 allow_events (DAGMAN_ALLOW_EVENTS) setting: 114
+01/02/25 17:43:43 DAGMAN_RETRY_SUBMIT_FIRST setting: True
+01/02/25 17:43:43 DAGMAN_RETRY_NODE_FIRST setting: False
+01/02/25 17:43:43 DAGMAN_MAX_JOBS_IDLE setting: 1000
+01/02/25 17:43:43 DAGMAN_MAX_JOBS_SUBMITTED setting: 0
+01/02/25 17:43:43 DAGMAN_MAX_PRE_SCRIPTS setting: 20
+01/02/25 17:43:43 DAGMAN_MAX_POST_SCRIPTS setting: 20
+01/02/25 17:43:43 DAGMAN_MUNGE_NODE_NAMES setting: True
+01/02/25 17:43:43 DAGMAN_PROHIBIT_MULTI_JOBS setting: False
+01/02/25 17:43:43 DAGMAN_SUBMIT_DEPTH_FIRST setting: False
+01/02/25 17:43:43 DAGMAN_ALWAYS_RUN_POST setting: False
+01/02/25 17:43:43 DAGMAN_ABORT_DUPLICATES setting: True
+01/02/25 17:43:43 DAGMAN_ABORT_ON_SCARY_SUBMIT setting: True
+01/02/25 17:43:43 DAGMAN_PENDING_REPORT_INTERVAL setting: 600
+01/02/25 17:43:43 DAGMAN_AUTO_RESCUE setting: True
+01/02/25 17:43:43 DAGMAN_MAX_RESCUE_NUM setting: 100
+01/02/25 17:43:43 DAGMAN_WRITE_PARTIAL_RESCUE setting: True
+01/02/25 17:43:43 DAGMAN_DEFAULT_NODE_LOG setting: @(DAG_DIR)/@(DAG_FILE).nodes.log
+01/02/25 17:43:43 DAGMAN_GENERATE_SUBDAG_SUBMITS setting: True
+01/02/25 17:43:43 DAGMAN_MAX_JOB_HOLDS setting: 100
+01/02/25 17:43:43 DAGMAN_HOLD_CLAIM_TIME setting: 20
+01/02/25 17:43:43 ALL_DEBUG setting: 
+01/02/25 17:43:43 DAGMAN_DEBUG setting: 
+01/02/25 17:43:43 DAGMAN_SUPPRESS_JOB_LOGS setting: False
+01/02/25 17:43:43 DAGMAN_REMOVE_NODE_JOBS setting: True
+01/02/25 17:43:43 argv[0] == "condor_scheduniv_exec.10416472.0"
+01/02/25 17:43:43 argv[1] == "-Lockfile"
+01/02/25 17:43:43 argv[2] == "dagman.dag.lock"
+01/02/25 17:43:43 argv[3] == "-AutoRescue"
+01/02/25 17:43:43 argv[4] == "1"
+01/02/25 17:43:43 argv[5] == "-DoRescueFrom"
+01/02/25 17:43:43 argv[6] == "0"
+01/02/25 17:43:43 argv[7] == "-Dag"
+01/02/25 17:43:43 argv[8] == "dagman.dag"
+01/02/25 17:43:43 argv[9] == "-Suppress_notification"
+01/02/25 17:43:43 argv[10] == "-CsdVersion"
+01/02/25 17:43:43 argv[11] == "$CondorVersion: 8.6.8 Apr 06 2018 BuildID: Debian-8.6.8~dfsg.1-2 Debian-8.6.8~dfsg.1-2 $"
+01/02/25 17:43:43 argv[12] == "-Force"
+01/02/25 17:43:43 argv[13] == "-Dagman"
+01/02/25 17:43:43 argv[14] == "/usr/bin/condor_dagman"
+01/02/25 17:43:43 Workflow batch-name: <dagman.dag+10416472>
+01/02/25 17:43:43 Workflow accounting_group: <>
+01/02/25 17:43:43 Workflow accounting_group_user: <>
+01/02/25 17:43:43 Warning: failed to get attribute DAGNodeName
+01/02/25 17:43:43 DAGMAN_LOG_ON_NFS_IS_ERROR setting: False
+01/02/25 17:43:43 Default node log file is: </data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log>
+01/02/25 17:43:43 DAG Lockfile will be written to dagman.dag.lock
+01/02/25 17:43:43 DAG Input file is dagman.dag
+01/02/25 17:43:43 Parsing 1 dagfiles
+01/02/25 17:43:43 Parsing dagman.dag ...
+01/02/25 17:43:43 dagman.dag (line 11): ERROR: expected JOB, DATA, SUBDAG, FINAL, SCRIPT, PARENT, RETRY, ABORT-DAG-ON, DOT, VARS, PRIORITY, CATEGORY, MAXJOBS, CONFIG, SET_JOB_ATTR, SPLICE, FINAL, NODE_STATUS_FILE, REJECT, JOBSTATE_LOG, PRE_SKIP, DONE, CONNECT, PIN_IN, PIN_OUT, or INCLUDE token (found condor_dagman)
+01/02/25 17:43:43 Removing any/all submitted HTCondor jobs...
+01/02/25 17:43:43 Running: /usr/bin/condor_rm -const DAGManJobId' '=?=' '10416472
+01/02/25 17:43:43 Disabling log line cache.
+01/02/25 17:43:43 Failed to parse dagman.dag
+01/02/25 17:43:43 **** condor_scheduniv_exec.10416472.0 (condor_DAGMAN) pid 25438 EXITING WITH STATUS 1
+01/02/25 17:49:58 ******************************************************
+01/02/25 17:49:58 ** condor_scheduniv_exec.10416473.0 (CONDOR_DAGMAN) STARTING UP
+01/02/25 17:49:58 ** /usr/bin/condor_dagman
+01/02/25 17:49:58 ** SubsystemInfo: name=DAGMAN type=DAGMAN(10) class=DAEMON(1)
+01/02/25 17:49:58 ** Configuration: subsystem:DAGMAN local:<NONE> class:DAEMON
+01/02/25 17:49:58 ** $CondorVersion: 8.6.8 Apr 06 2018 BuildID: Debian-8.6.8~dfsg.1-2 Debian-8.6.8~dfsg.1-2 $
+01/02/25 17:49:58 ** $CondorPlatform: X86_64-Ubuntu_ $
+01/02/25 17:49:58 ** PID = 26075
+01/02/25 17:49:58 ** Log last touched 1/2 17:43:43
+01/02/25 17:49:58 ******************************************************
+01/02/25 17:49:58 Using config source: /etc/condor/condor_config
+01/02/25 17:49:58 Using local config sources: 
+01/02/25 17:49:58    /etc/condor/condor_config.local
+01/02/25 17:49:58 config Macros = 69, Sorted = 69, StringBytes = 2034, TablesBytes = 2532
+01/02/25 17:49:58 CLASSAD_CACHING is ENABLED
+01/02/25 17:49:58 Daemon Log is logging: D_ALWAYS D_ERROR
+01/02/25 17:49:58 DaemonCore: No command port requested.
+01/02/25 17:49:58 DAGMAN_USE_STRICT setting: 1
+01/02/25 17:49:58 DAGMAN_VERBOSITY setting: 3
+01/02/25 17:49:58 DAGMAN_DEBUG_CACHE_SIZE setting: 5242880
+01/02/25 17:49:58 DAGMAN_DEBUG_CACHE_ENABLE setting: False
+01/02/25 17:49:58 DAGMAN_SUBMIT_DELAY setting: 0
+01/02/25 17:49:58 DAGMAN_MAX_SUBMIT_ATTEMPTS setting: 6
+01/02/25 17:49:58 DAGMAN_STARTUP_CYCLE_DETECT setting: False
+01/02/25 17:49:58 DAGMAN_MAX_SUBMITS_PER_INTERVAL setting: 5
+01/02/25 17:49:58 DAGMAN_USER_LOG_SCAN_INTERVAL setting: 5
+01/02/25 17:49:58 DAGMAN_DEFAULT_PRIORITY setting: 0
+01/02/25 17:49:58 DAGMAN_SUPPRESS_NOTIFICATION setting: True
+01/02/25 17:49:58 allow_events (DAGMAN_ALLOW_EVENTS) setting: 114
+01/02/25 17:49:58 DAGMAN_RETRY_SUBMIT_FIRST setting: True
+01/02/25 17:49:58 DAGMAN_RETRY_NODE_FIRST setting: False
+01/02/25 17:49:58 DAGMAN_MAX_JOBS_IDLE setting: 1000
+01/02/25 17:49:58 DAGMAN_MAX_JOBS_SUBMITTED setting: 0
+01/02/25 17:49:58 DAGMAN_MAX_PRE_SCRIPTS setting: 20
+01/02/25 17:49:58 DAGMAN_MAX_POST_SCRIPTS setting: 20
+01/02/25 17:49:58 DAGMAN_MUNGE_NODE_NAMES setting: True
+01/02/25 17:49:58 DAGMAN_PROHIBIT_MULTI_JOBS setting: False
+01/02/25 17:49:58 DAGMAN_SUBMIT_DEPTH_FIRST setting: False
+01/02/25 17:49:58 DAGMAN_ALWAYS_RUN_POST setting: False
+01/02/25 17:49:58 DAGMAN_ABORT_DUPLICATES setting: True
+01/02/25 17:49:58 DAGMAN_ABORT_ON_SCARY_SUBMIT setting: True
+01/02/25 17:49:58 DAGMAN_PENDING_REPORT_INTERVAL setting: 600
+01/02/25 17:49:58 DAGMAN_AUTO_RESCUE setting: True
+01/02/25 17:49:58 DAGMAN_MAX_RESCUE_NUM setting: 100
+01/02/25 17:49:58 DAGMAN_WRITE_PARTIAL_RESCUE setting: True
+01/02/25 17:49:58 DAGMAN_DEFAULT_NODE_LOG setting: @(DAG_DIR)/@(DAG_FILE).nodes.log
+01/02/25 17:49:58 DAGMAN_GENERATE_SUBDAG_SUBMITS setting: True
+01/02/25 17:49:58 DAGMAN_MAX_JOB_HOLDS setting: 100
+01/02/25 17:49:58 DAGMAN_HOLD_CLAIM_TIME setting: 20
+01/02/25 17:49:58 ALL_DEBUG setting: 
+01/02/25 17:49:58 DAGMAN_DEBUG setting: 
+01/02/25 17:49:58 DAGMAN_SUPPRESS_JOB_LOGS setting: False
+01/02/25 17:49:58 DAGMAN_REMOVE_NODE_JOBS setting: True
+01/02/25 17:49:58 argv[0] == "condor_scheduniv_exec.10416473.0"
+01/02/25 17:49:58 argv[1] == "-Lockfile"
+01/02/25 17:49:58 argv[2] == "dagman.dag.lock"
+01/02/25 17:49:58 argv[3] == "-AutoRescue"
+01/02/25 17:49:58 argv[4] == "1"
+01/02/25 17:49:58 argv[5] == "-DoRescueFrom"
+01/02/25 17:49:58 argv[6] == "0"
+01/02/25 17:49:58 argv[7] == "-Dag"
+01/02/25 17:49:58 argv[8] == "dagman.dag"
+01/02/25 17:49:58 argv[9] == "-Suppress_notification"
+01/02/25 17:49:58 argv[10] == "-CsdVersion"
+01/02/25 17:49:58 argv[11] == "$CondorVersion: 8.6.8 Apr 06 2018 BuildID: Debian-8.6.8~dfsg.1-2 Debian-8.6.8~dfsg.1-2 $"
+01/02/25 17:49:58 argv[12] == "-Force"
+01/02/25 17:49:58 argv[13] == "-Dagman"
+01/02/25 17:49:58 argv[14] == "/usr/bin/condor_dagman"
+01/02/25 17:49:58 Workflow batch-name: <dagman.dag+10416473>
+01/02/25 17:49:58 Workflow accounting_group: <>
+01/02/25 17:49:58 Workflow accounting_group_user: <>
+01/02/25 17:49:58 Warning: failed to get attribute DAGNodeName
+01/02/25 17:49:58 DAGMAN_LOG_ON_NFS_IS_ERROR setting: False
+01/02/25 17:49:58 Default node log file is: </data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log>
+01/02/25 17:49:58 DAG Lockfile will be written to dagman.dag.lock
+01/02/25 17:49:58 DAG Input file is dagman.dag
+01/02/25 17:49:58 Parsing 1 dagfiles
+01/02/25 17:49:58 Parsing dagman.dag ...
+01/02/25 17:49:58 Dag contains 4 total jobs
+01/02/25 17:49:58 Sleeping for 3 seconds to ensure ProcessId uniqueness
+01/02/25 17:50:01 Bootstrapping...
+01/02/25 17:50:01 Number of pre-completed nodes: 0
+01/02/25 17:50:01 MultiLogFiles: truncating log file /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 17:50:01 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 17:50:01 Of 4 nodes total:
+01/02/25 17:50:01  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 17:50:01   ===     ===      ===     ===     ===        ===      ===
+01/02/25 17:50:01     0       0        0       0       1          3        0
+01/02/25 17:50:01 0 job proc(s) currently held
+01/02/25 17:50:01 Registering condor_event_timer...
+01/02/25 17:50:02 Submitting HTCondor Node step1_0 job(s)...
+01/02/25 17:50:02 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 17:50:02 Masking the events recorded in the DAGMAN workflow log
+01/02/25 17:50:02 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/02/25 17:50:02 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step1_0 -a +DAGManJobId' '=' '10416473 -a DAGManJobId' '=' '10416473 -batch-name dagman.dag+10416473 -a submit_event_notes' '=' 'DAG' 'Node:' 'step1_0 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"" step1.sub
+01/02/25 17:50:02 From submit: Submitting job(s).
+01/02/25 17:50:02 From submit: 1 job(s) submitted to cluster 10416474.
+01/02/25 17:50:02 	assigned HTCondor ID (10416474.0.0)
+01/02/25 17:50:02 Just submitted 1 job this cycle...
+01/02/25 17:50:02 Currently monitoring 1 HTCondor log file(s)
+01/02/25 17:50:02 Reassigning the id of job step1_0 from (10416474.0.0) to (10416474.0.0)
+01/02/25 17:50:02 Event: ULOG_SUBMIT for HTCondor Node step1_0 (10416474.0.0) {01/02/25 17:50:02}
+01/02/25 17:50:02 Number of idle job procs: 1
+01/02/25 17:50:02 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 17:50:02 Of 4 nodes total:
+01/02/25 17:50:02  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 17:50:02   ===     ===      ===     ===     ===        ===      ===
+01/02/25 17:50:02     0       0        1       0       0          3        0
+01/02/25 17:50:02 0 job proc(s) currently held
+01/02/25 17:50:07 Currently monitoring 1 HTCondor log file(s)
+01/02/25 17:50:07 Event: ULOG_EXECUTE for HTCondor Node step1_0 (10416474.0.0) {01/02/25 17:50:03}
+01/02/25 17:50:07 Number of idle job procs: 0
+01/02/25 17:50:07 Event: ULOG_JOB_TERMINATED for HTCondor Node step1_0 (10416474.0.0) {01/02/25 17:50:05}
+01/02/25 17:50:07 Number of idle job procs: 0
+01/02/25 17:50:07 Node step1_0 job proc (10416474.0.0) completed successfully.
+01/02/25 17:50:07 Node step1_0 job completed
+01/02/25 17:50:07 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 17:50:07 Of 4 nodes total:
+01/02/25 17:50:07  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 17:50:07   ===     ===      ===     ===     ===        ===      ===
+01/02/25 17:50:07     1       0        0       0       1          2        0
+01/02/25 17:50:07 0 job proc(s) currently held
+01/02/25 17:50:12 Submitting HTCondor Node step2_0 job(s)...
+01/02/25 17:50:12 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 17:50:12 Masking the events recorded in the DAGMAN workflow log
+01/02/25 17:50:12 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/02/25 17:50:12 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step2_0 -a +DAGManJobId' '=' '10416473 -a DAGManJobId' '=' '10416473 -batch-name dagman.dag+10416473 -a submit_event_notes' '=' 'DAG' 'Node:' 'step2_0 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a inputfilename' '=' '1e19_n1e3.hdf5 -a detectordescription' '=' 'station.json -a config' '=' 'config.yaml -a outputfilename' '=' 'output.hdf5 -a outputfilenameNuRadioReco' '=' 'output.nur -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"step1_0" step2.sub
+01/02/25 17:50:12 From submit: Submitting job(s).
+01/02/25 17:50:12 From submit: 1 job(s) submitted to cluster 10416475.
+01/02/25 17:50:12 	assigned HTCondor ID (10416475.0.0)
+01/02/25 17:50:12 Just submitted 1 job this cycle...
+01/02/25 17:50:12 Currently monitoring 1 HTCondor log file(s)
+01/02/25 17:50:12 Reassigning the id of job step2_0 from (10416475.0.0) to (10416475.0.0)
+01/02/25 17:50:12 Event: ULOG_SUBMIT for HTCondor Node step2_0 (10416475.0.0) {01/02/25 17:50:12}
+01/02/25 17:50:12 Number of idle job procs: 1
+01/02/25 17:50:12 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 17:50:12 Of 4 nodes total:
+01/02/25 17:50:12  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 17:50:12   ===     ===      ===     ===     ===        ===      ===
+01/02/25 17:50:12     1       0        1       0       0          2        0
+01/02/25 17:50:12 0 job proc(s) currently held
+01/02/25 17:50:17 Currently monitoring 1 HTCondor log file(s)
+01/02/25 17:50:17 Event: ULOG_EXECUTE for HTCondor Node step2_0 (10416475.0.0) {01/02/25 17:50:12}
+01/02/25 17:50:17 Number of idle job procs: 0
+01/02/25 17:50:32 Currently monitoring 1 HTCondor log file(s)
+01/02/25 17:50:32 Event: ULOG_JOB_TERMINATED for HTCondor Node step2_0 (10416475.0.0) {01/02/25 17:50:32}
+01/02/25 17:50:32 Number of idle job procs: 0
+01/02/25 17:50:32 Node step2_0 job proc (10416475.0.0) completed successfully.
+01/02/25 17:50:32 Node step2_0 job completed
+01/02/25 17:50:32 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 17:50:32 Of 4 nodes total:
+01/02/25 17:50:32  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 17:50:32   ===     ===      ===     ===     ===        ===      ===
+01/02/25 17:50:32     2       0        0       0       1          1        0
+01/02/25 17:50:32 0 job proc(s) currently held
+01/02/25 17:50:37 Submitting HTCondor Node step3_0 job(s)...
+01/02/25 17:50:37 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 17:50:37 Masking the events recorded in the DAGMAN workflow log
+01/02/25 17:50:37 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/02/25 17:50:37 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step3_0 -a +DAGManJobId' '=' '10416473 -a DAGManJobId' '=' '10416473 -batch-name dagman.dag+10416473 -a submit_event_notes' '=' 'DAG' 'Node:' 'step3_0 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"step2_0" step3.sub
+01/02/25 17:50:37 From submit: Submitting job(s).
+01/02/25 17:50:37 From submit: 1 job(s) submitted to cluster 10416476.
+01/02/25 17:50:37 	assigned HTCondor ID (10416476.0.0)
+01/02/25 17:50:37 Just submitted 1 job this cycle...
+01/02/25 17:50:37 Currently monitoring 1 HTCondor log file(s)
+01/02/25 17:50:37 Reassigning the id of job step3_0 from (10416476.0.0) to (10416476.0.0)
+01/02/25 17:50:37 Event: ULOG_SUBMIT for HTCondor Node step3_0 (10416476.0.0) {01/02/25 17:50:37}
+01/02/25 17:50:37 Number of idle job procs: 1
+01/02/25 17:50:37 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 17:50:37 Of 4 nodes total:
+01/02/25 17:50:37  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 17:50:37   ===     ===      ===     ===     ===        ===      ===
+01/02/25 17:50:37     2       0        1       0       0          1        0
+01/02/25 17:50:37 0 job proc(s) currently held
+01/02/25 17:50:42 Currently monitoring 1 HTCondor log file(s)
+01/02/25 17:50:42 Event: ULOG_EXECUTE for HTCondor Node step3_0 (10416476.0.0) {01/02/25 17:50:37}
+01/02/25 17:50:42 Number of idle job procs: 0
+01/02/25 17:50:42 Event: ULOG_JOB_TERMINATED for HTCondor Node step3_0 (10416476.0.0) {01/02/25 17:50:39}
+01/02/25 17:50:42 Number of idle job procs: 0
+01/02/25 17:50:42 Node step3_0 job proc (10416476.0.0) completed successfully.
+01/02/25 17:50:42 Node step3_0 job completed
+01/02/25 17:50:42 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 17:50:42 Of 4 nodes total:
+01/02/25 17:50:42  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 17:50:42   ===     ===      ===     ===     ===        ===      ===
+01/02/25 17:50:42     3       0        0       0       1          0        0
+01/02/25 17:50:42 0 job proc(s) currently held
+01/02/25 17:50:47 Submitting HTCondor Node step4 job(s)...
+01/02/25 17:50:47 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 17:50:47 Masking the events recorded in the DAGMAN workflow log
+01/02/25 17:50:47 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/02/25 17:50:47 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step4 -a +DAGManJobId' '=' '10416473 -a DAGManJobId' '=' '10416473 -batch-name dagman.dag+10416473 -a submit_event_notes' '=' 'DAG' 'Node:' 'step4 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"step3_0" step4.sub
+01/02/25 17:50:47 From submit: Submitting job(s).
+01/02/25 17:50:47 From submit: 1 job(s) submitted to cluster 10416477.
+01/02/25 17:50:47 	assigned HTCondor ID (10416477.0.0)
+01/02/25 17:50:47 Just submitted 1 job this cycle...
+01/02/25 17:50:47 Currently monitoring 1 HTCondor log file(s)
+01/02/25 17:50:47 Reassigning the id of job step4 from (10416477.0.0) to (10416477.0.0)
+01/02/25 17:50:47 Event: ULOG_SUBMIT for HTCondor Node step4 (10416477.0.0) {01/02/25 17:50:47}
+01/02/25 17:50:47 Number of idle job procs: 1
+01/02/25 17:50:47 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 17:50:47 Of 4 nodes total:
+01/02/25 17:50:47  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 17:50:47   ===     ===      ===     ===     ===        ===      ===
+01/02/25 17:50:47     3       0        1       0       0          0        0
+01/02/25 17:50:47 0 job proc(s) currently held
+01/02/25 17:50:52 Currently monitoring 1 HTCondor log file(s)
+01/02/25 17:50:52 Event: ULOG_EXECUTE for HTCondor Node step4 (10416477.0.0) {01/02/25 17:50:47}
+01/02/25 17:50:52 Number of idle job procs: 0
+01/02/25 17:50:52 Event: ULOG_JOB_TERMINATED for HTCondor Node step4 (10416477.0.0) {01/02/25 17:50:49}
+01/02/25 17:50:52 Number of idle job procs: 0
+01/02/25 17:50:52 Node step4 job proc (10416477.0.0) completed successfully.
+01/02/25 17:50:52 Node step4 job completed
+01/02/25 17:50:52 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 17:50:52 Of 4 nodes total:
+01/02/25 17:50:52  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 17:50:52   ===     ===      ===     ===     ===        ===      ===
+01/02/25 17:50:52     4       0        0       0       0          0        0
+01/02/25 17:50:52 0 job proc(s) currently held
+01/02/25 17:50:52 All jobs Completed!
+01/02/25 17:50:52 Note: 0 total job deferrals because of -MaxJobs limit (0)
+01/02/25 17:50:52 Note: 0 total job deferrals because of -MaxIdle limit (1000)
+01/02/25 17:50:52 Note: 0 total job deferrals because of node category throttles
+01/02/25 17:50:52 Note: 0 total PRE script deferrals because of -MaxPre limit (20) or DEFER
+01/02/25 17:50:52 Note: 0 total POST script deferrals because of -MaxPost limit (20) or DEFER
+01/02/25 17:50:52 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 17:50:52 Of 4 nodes total:
+01/02/25 17:50:52  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 17:50:52   ===     ===      ===     ===     ===        ===      ===
+01/02/25 17:50:52     4       0        0       0       0          0        0
+01/02/25 17:50:52 0 job proc(s) currently held
+01/02/25 17:50:52 Wrote metrics file dagman.dag.metrics.
+01/02/25 17:50:52 Metrics not sent because of PEGASUS_METRICS or CONDOR_DEVELOPERS setting.
+01/02/25 17:50:52 **** condor_scheduniv_exec.10416473.0 (condor_DAGMAN) pid 26075 EXITING WITH STATUS 0
+01/02/25 17:54:13 ******************************************************
+01/02/25 17:54:13 ** condor_scheduniv_exec.10416478.0 (CONDOR_DAGMAN) STARTING UP
+01/02/25 17:54:13 ** /usr/bin/condor_dagman
+01/02/25 17:54:13 ** SubsystemInfo: name=DAGMAN type=DAGMAN(10) class=DAEMON(1)
+01/02/25 17:54:13 ** Configuration: subsystem:DAGMAN local:<NONE> class:DAEMON
+01/02/25 17:54:13 ** $CondorVersion: 8.6.8 Apr 06 2018 BuildID: Debian-8.6.8~dfsg.1-2 Debian-8.6.8~dfsg.1-2 $
+01/02/25 17:54:13 ** $CondorPlatform: X86_64-Ubuntu_ $
+01/02/25 17:54:13 ** PID = 31539
+01/02/25 17:54:13 ** Log last touched 1/2 17:50:52
+01/02/25 17:54:13 ******************************************************
+01/02/25 17:54:13 Using config source: /etc/condor/condor_config
+01/02/25 17:54:13 Using local config sources: 
+01/02/25 17:54:13    /etc/condor/condor_config.local
+01/02/25 17:54:13 config Macros = 69, Sorted = 69, StringBytes = 2034, TablesBytes = 2532
+01/02/25 17:54:13 CLASSAD_CACHING is ENABLED
+01/02/25 17:54:13 Daemon Log is logging: D_ALWAYS D_ERROR
+01/02/25 17:54:13 DaemonCore: No command port requested.
+01/02/25 17:54:13 DAGMAN_USE_STRICT setting: 1
+01/02/25 17:54:13 DAGMAN_VERBOSITY setting: 3
+01/02/25 17:54:13 DAGMAN_DEBUG_CACHE_SIZE setting: 5242880
+01/02/25 17:54:13 DAGMAN_DEBUG_CACHE_ENABLE setting: False
+01/02/25 17:54:13 DAGMAN_SUBMIT_DELAY setting: 0
+01/02/25 17:54:13 DAGMAN_MAX_SUBMIT_ATTEMPTS setting: 6
+01/02/25 17:54:13 DAGMAN_STARTUP_CYCLE_DETECT setting: False
+01/02/25 17:54:13 DAGMAN_MAX_SUBMITS_PER_INTERVAL setting: 5
+01/02/25 17:54:13 DAGMAN_USER_LOG_SCAN_INTERVAL setting: 5
+01/02/25 17:54:13 DAGMAN_DEFAULT_PRIORITY setting: 0
+01/02/25 17:54:13 DAGMAN_SUPPRESS_NOTIFICATION setting: True
+01/02/25 17:54:13 allow_events (DAGMAN_ALLOW_EVENTS) setting: 114
+01/02/25 17:54:13 DAGMAN_RETRY_SUBMIT_FIRST setting: True
+01/02/25 17:54:13 DAGMAN_RETRY_NODE_FIRST setting: False
+01/02/25 17:54:13 DAGMAN_MAX_JOBS_IDLE setting: 1000
+01/02/25 17:54:13 DAGMAN_MAX_JOBS_SUBMITTED setting: 0
+01/02/25 17:54:13 DAGMAN_MAX_PRE_SCRIPTS setting: 20
+01/02/25 17:54:13 DAGMAN_MAX_POST_SCRIPTS setting: 20
+01/02/25 17:54:13 DAGMAN_MUNGE_NODE_NAMES setting: True
+01/02/25 17:54:13 DAGMAN_PROHIBIT_MULTI_JOBS setting: False
+01/02/25 17:54:13 DAGMAN_SUBMIT_DEPTH_FIRST setting: False
+01/02/25 17:54:13 DAGMAN_ALWAYS_RUN_POST setting: False
+01/02/25 17:54:13 DAGMAN_ABORT_DUPLICATES setting: True
+01/02/25 17:54:13 DAGMAN_ABORT_ON_SCARY_SUBMIT setting: True
+01/02/25 17:54:13 DAGMAN_PENDING_REPORT_INTERVAL setting: 600
+01/02/25 17:54:13 DAGMAN_AUTO_RESCUE setting: True
+01/02/25 17:54:13 DAGMAN_MAX_RESCUE_NUM setting: 100
+01/02/25 17:54:13 DAGMAN_WRITE_PARTIAL_RESCUE setting: True
+01/02/25 17:54:13 DAGMAN_DEFAULT_NODE_LOG setting: @(DAG_DIR)/@(DAG_FILE).nodes.log
+01/02/25 17:54:13 DAGMAN_GENERATE_SUBDAG_SUBMITS setting: True
+01/02/25 17:54:13 DAGMAN_MAX_JOB_HOLDS setting: 100
+01/02/25 17:54:13 DAGMAN_HOLD_CLAIM_TIME setting: 20
+01/02/25 17:54:13 ALL_DEBUG setting: 
+01/02/25 17:54:13 DAGMAN_DEBUG setting: 
+01/02/25 17:54:13 DAGMAN_SUPPRESS_JOB_LOGS setting: False
+01/02/25 17:54:13 DAGMAN_REMOVE_NODE_JOBS setting: True
+01/02/25 17:54:13 argv[0] == "condor_scheduniv_exec.10416478.0"
+01/02/25 17:54:13 argv[1] == "-Lockfile"
+01/02/25 17:54:13 argv[2] == "dagman.dag.lock"
+01/02/25 17:54:13 argv[3] == "-AutoRescue"
+01/02/25 17:54:13 argv[4] == "1"
+01/02/25 17:54:13 argv[5] == "-DoRescueFrom"
+01/02/25 17:54:13 argv[6] == "0"
+01/02/25 17:54:13 argv[7] == "-Dag"
+01/02/25 17:54:13 argv[8] == "dagman.dag"
+01/02/25 17:54:13 argv[9] == "-Suppress_notification"
+01/02/25 17:54:13 argv[10] == "-CsdVersion"
+01/02/25 17:54:13 argv[11] == "$CondorVersion: 8.6.8 Apr 06 2018 BuildID: Debian-8.6.8~dfsg.1-2 Debian-8.6.8~dfsg.1-2 $"
+01/02/25 17:54:13 argv[12] == "-Force"
+01/02/25 17:54:13 argv[13] == "-Dagman"
+01/02/25 17:54:13 argv[14] == "/usr/bin/condor_dagman"
+01/02/25 17:54:13 Workflow batch-name: <dagman.dag+10416478>
+01/02/25 17:54:13 Workflow accounting_group: <>
+01/02/25 17:54:13 Workflow accounting_group_user: <>
+01/02/25 17:54:13 Warning: failed to get attribute DAGNodeName
+01/02/25 17:54:13 DAGMAN_LOG_ON_NFS_IS_ERROR setting: False
+01/02/25 17:54:13 Default node log file is: </data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log>
+01/02/25 17:54:13 DAG Lockfile will be written to dagman.dag.lock
+01/02/25 17:54:13 DAG Input file is dagman.dag
+01/02/25 17:54:13 Parsing 1 dagfiles
+01/02/25 17:54:13 Parsing dagman.dag ...
+01/02/25 17:54:13 Dag contains 4 total jobs
+01/02/25 17:54:13 Sleeping for 3 seconds to ensure ProcessId uniqueness
+01/02/25 17:54:16 Bootstrapping...
+01/02/25 17:54:16 Number of pre-completed nodes: 0
+01/02/25 17:54:16 MultiLogFiles: truncating log file /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 17:54:16 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 17:54:16 Of 4 nodes total:
+01/02/25 17:54:16  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 17:54:16   ===     ===      ===     ===     ===        ===      ===
+01/02/25 17:54:16     0       0        0       0       1          3        0
+01/02/25 17:54:16 0 job proc(s) currently held
+01/02/25 17:54:16 Registering condor_event_timer...
+01/02/25 17:54:17 Submitting HTCondor Node step1_0 job(s)...
+01/02/25 17:54:17 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 17:54:17 Masking the events recorded in the DAGMAN workflow log
+01/02/25 17:54:17 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/02/25 17:54:17 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step1_0 -a +DAGManJobId' '=' '10416478 -a DAGManJobId' '=' '10416478 -batch-name dagman.dag+10416478 -a submit_event_notes' '=' 'DAG' 'Node:' 'step1_0 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"" step1.sub
+01/02/25 17:54:17 From submit: Submitting job(s).
+01/02/25 17:54:17 From submit: 1 job(s) submitted to cluster 10416479.
+01/02/25 17:54:17 	assigned HTCondor ID (10416479.0.0)
+01/02/25 17:54:17 Just submitted 1 job this cycle...
+01/02/25 17:54:17 Currently monitoring 1 HTCondor log file(s)
+01/02/25 17:54:17 Reassigning the id of job step1_0 from (10416479.0.0) to (10416479.0.0)
+01/02/25 17:54:17 Event: ULOG_SUBMIT for HTCondor Node step1_0 (10416479.0.0) {01/02/25 17:54:17}
+01/02/25 17:54:17 Number of idle job procs: 1
+01/02/25 17:54:17 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 17:54:17 Of 4 nodes total:
+01/02/25 17:54:17  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 17:54:17   ===     ===      ===     ===     ===        ===      ===
+01/02/25 17:54:17     0       0        1       0       0          3        0
+01/02/25 17:54:17 0 job proc(s) currently held
+01/02/25 17:54:27 Currently monitoring 1 HTCondor log file(s)
+01/02/25 17:54:27 Event: ULOG_EXECUTE for HTCondor Node step1_0 (10416479.0.0) {01/02/25 17:54:23}
+01/02/25 17:54:27 Number of idle job procs: 0
+01/02/25 17:54:27 Event: ULOG_JOB_TERMINATED for HTCondor Node step1_0 (10416479.0.0) {01/02/25 17:54:26}
+01/02/25 17:54:27 Number of idle job procs: 0
+01/02/25 17:54:27 Node step1_0 job proc (10416479.0.0) completed successfully.
+01/02/25 17:54:27 Node step1_0 job completed
+01/02/25 17:54:27 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 17:54:27 Of 4 nodes total:
+01/02/25 17:54:27  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 17:54:27   ===     ===      ===     ===     ===        ===      ===
+01/02/25 17:54:27     1       0        0       0       1          2        0
+01/02/25 17:54:27 0 job proc(s) currently held
+01/02/25 17:54:32 Submitting HTCondor Node step2_0 job(s)...
+01/02/25 17:54:32 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 17:54:32 Masking the events recorded in the DAGMAN workflow log
+01/02/25 17:54:32 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/02/25 17:54:32 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step2_0 -a +DAGManJobId' '=' '10416478 -a DAGManJobId' '=' '10416478 -batch-name dagman.dag+10416478 -a submit_event_notes' '=' 'DAG' 'Node:' 'step2_0 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a inputfilename' '=' '1e19_n1e3.hdf5 -a detectordescription' '=' 'station.json -a config' '=' 'config.yaml -a outputfilename' '=' 'output.hdf5 -a outputfilenameNuRadioReco' '=' 'output.nur -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"step1_0" step2.sub
+01/02/25 17:54:32 From submit: Submitting job(s).
+01/02/25 17:54:32 From submit: 1 job(s) submitted to cluster 10416480.
+01/02/25 17:54:32 	assigned HTCondor ID (10416480.0.0)
+01/02/25 17:54:32 Just submitted 1 job this cycle...
+01/02/25 17:54:32 Currently monitoring 1 HTCondor log file(s)
+01/02/25 17:54:32 Reassigning the id of job step2_0 from (10416480.0.0) to (10416480.0.0)
+01/02/25 17:54:32 Event: ULOG_SUBMIT for HTCondor Node step2_0 (10416480.0.0) {01/02/25 17:54:32}
+01/02/25 17:54:32 Number of idle job procs: 1
+01/02/25 17:54:32 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 17:54:32 Of 4 nodes total:
+01/02/25 17:54:32  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 17:54:32   ===     ===      ===     ===     ===        ===      ===
+01/02/25 17:54:32     1       0        1       0       0          2        0
+01/02/25 17:54:32 0 job proc(s) currently held
+01/02/25 17:54:37 Currently monitoring 1 HTCondor log file(s)
+01/02/25 17:54:37 Event: ULOG_EXECUTE for HTCondor Node step2_0 (10416480.0.0) {01/02/25 17:54:32}
+01/02/25 17:54:37 Number of idle job procs: 0
+01/02/25 17:54:47 Currently monitoring 1 HTCondor log file(s)
+01/02/25 17:54:47 Event: ULOG_JOB_TERMINATED for HTCondor Node step2_0 (10416480.0.0) {01/02/25 17:54:45}
+01/02/25 17:54:47 Number of idle job procs: 0
+01/02/25 17:54:47 Node step2_0 job proc (10416480.0.0) completed successfully.
+01/02/25 17:54:47 Node step2_0 job completed
+01/02/25 17:54:47 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 17:54:47 Of 4 nodes total:
+01/02/25 17:54:47  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 17:54:47   ===     ===      ===     ===     ===        ===      ===
+01/02/25 17:54:47     2       0        0       0       1          1        0
+01/02/25 17:54:47 0 job proc(s) currently held
+01/02/25 17:54:52 Submitting HTCondor Node step3_0 job(s)...
+01/02/25 17:54:52 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 17:54:52 Masking the events recorded in the DAGMAN workflow log
+01/02/25 17:54:52 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/02/25 17:54:52 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step3_0 -a +DAGManJobId' '=' '10416478 -a DAGManJobId' '=' '10416478 -batch-name dagman.dag+10416478 -a submit_event_notes' '=' 'DAG' 'Node:' 'step3_0 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"step2_0" step3.sub
+01/02/25 17:54:52 From submit: Submitting job(s).
+01/02/25 17:54:52 From submit: 1 job(s) submitted to cluster 10416481.
+01/02/25 17:54:52 	assigned HTCondor ID (10416481.0.0)
+01/02/25 17:54:52 Just submitted 1 job this cycle...
+01/02/25 17:54:52 Currently monitoring 1 HTCondor log file(s)
+01/02/25 17:54:52 Reassigning the id of job step3_0 from (10416481.0.0) to (10416481.0.0)
+01/02/25 17:54:52 Event: ULOG_SUBMIT for HTCondor Node step3_0 (10416481.0.0) {01/02/25 17:54:52}
+01/02/25 17:54:52 Number of idle job procs: 1
+01/02/25 17:54:52 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 17:54:52 Of 4 nodes total:
+01/02/25 17:54:52  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 17:54:52   ===     ===      ===     ===     ===        ===      ===
+01/02/25 17:54:52     2       0        1       0       0          1        0
+01/02/25 17:54:52 0 job proc(s) currently held
+01/02/25 17:54:57 Currently monitoring 1 HTCondor log file(s)
+01/02/25 17:54:57 Event: ULOG_EXECUTE for HTCondor Node step3_0 (10416481.0.0) {01/02/25 17:54:52}
+01/02/25 17:54:57 Number of idle job procs: 0
+01/02/25 17:54:57 Event: ULOG_JOB_TERMINATED for HTCondor Node step3_0 (10416481.0.0) {01/02/25 17:54:55}
+01/02/25 17:54:57 Number of idle job procs: 0
+01/02/25 17:54:57 Node step3_0 job proc (10416481.0.0) completed successfully.
+01/02/25 17:54:57 Node step3_0 job completed
+01/02/25 17:54:57 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 17:54:57 Of 4 nodes total:
+01/02/25 17:54:57  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 17:54:57   ===     ===      ===     ===     ===        ===      ===
+01/02/25 17:54:57     3       0        0       0       1          0        0
+01/02/25 17:54:57 0 job proc(s) currently held
+01/02/25 17:55:02 Submitting HTCondor Node step4 job(s)...
+01/02/25 17:55:02 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 17:55:02 Masking the events recorded in the DAGMAN workflow log
+01/02/25 17:55:02 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/02/25 17:55:02 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step4 -a +DAGManJobId' '=' '10416478 -a DAGManJobId' '=' '10416478 -batch-name dagman.dag+10416478 -a submit_event_notes' '=' 'DAG' 'Node:' 'step4 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"step3_0" step4.sub
+01/02/25 17:55:02 From submit: Submitting job(s).
+01/02/25 17:55:02 From submit: 1 job(s) submitted to cluster 10416482.
+01/02/25 17:55:02 	assigned HTCondor ID (10416482.0.0)
+01/02/25 17:55:02 Just submitted 1 job this cycle...
+01/02/25 17:55:02 Currently monitoring 1 HTCondor log file(s)
+01/02/25 17:55:02 Reassigning the id of job step4 from (10416482.0.0) to (10416482.0.0)
+01/02/25 17:55:02 Event: ULOG_SUBMIT for HTCondor Node step4 (10416482.0.0) {01/02/25 17:55:02}
+01/02/25 17:55:02 Number of idle job procs: 1
+01/02/25 17:55:02 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 17:55:02 Of 4 nodes total:
+01/02/25 17:55:02  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 17:55:02   ===     ===      ===     ===     ===        ===      ===
+01/02/25 17:55:02     3       0        1       0       0          0        0
+01/02/25 17:55:02 0 job proc(s) currently held
+01/02/25 17:55:07 Currently monitoring 1 HTCondor log file(s)
+01/02/25 17:55:07 Event: ULOG_EXECUTE for HTCondor Node step4 (10416482.0.0) {01/02/25 17:55:02}
+01/02/25 17:55:07 Number of idle job procs: 0
+01/02/25 17:55:07 Event: ULOG_JOB_TERMINATED for HTCondor Node step4 (10416482.0.0) {01/02/25 17:55:04}
+01/02/25 17:55:07 Number of idle job procs: 0
+01/02/25 17:55:07 Node step4 job proc (10416482.0.0) completed successfully.
+01/02/25 17:55:07 Node step4 job completed
+01/02/25 17:55:07 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 17:55:07 Of 4 nodes total:
+01/02/25 17:55:07  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 17:55:07   ===     ===      ===     ===     ===        ===      ===
+01/02/25 17:55:07     4       0        0       0       0          0        0
+01/02/25 17:55:07 0 job proc(s) currently held
+01/02/25 17:55:07 All jobs Completed!
+01/02/25 17:55:07 Note: 0 total job deferrals because of -MaxJobs limit (0)
+01/02/25 17:55:07 Note: 0 total job deferrals because of -MaxIdle limit (1000)
+01/02/25 17:55:07 Note: 0 total job deferrals because of node category throttles
+01/02/25 17:55:07 Note: 0 total PRE script deferrals because of -MaxPre limit (20) or DEFER
+01/02/25 17:55:07 Note: 0 total POST script deferrals because of -MaxPost limit (20) or DEFER
+01/02/25 17:55:07 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 17:55:07 Of 4 nodes total:
+01/02/25 17:55:07  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 17:55:07   ===     ===      ===     ===     ===        ===      ===
+01/02/25 17:55:07     4       0        0       0       0          0        0
+01/02/25 17:55:07 0 job proc(s) currently held
+01/02/25 17:55:07 Wrote metrics file dagman.dag.metrics.
+01/02/25 17:55:07 Metrics not sent because of PEGASUS_METRICS or CONDOR_DEVELOPERS setting.
+01/02/25 17:55:07 **** condor_scheduniv_exec.10416478.0 (condor_DAGMAN) pid 31539 EXITING WITH STATUS 0
+01/02/25 18:08:45 ******************************************************
+01/02/25 18:08:45 ** condor_scheduniv_exec.10416483.0 (CONDOR_DAGMAN) STARTING UP
+01/02/25 18:08:45 ** /usr/bin/condor_dagman
+01/02/25 18:08:45 ** SubsystemInfo: name=DAGMAN type=DAGMAN(10) class=DAEMON(1)
+01/02/25 18:08:45 ** Configuration: subsystem:DAGMAN local:<NONE> class:DAEMON
+01/02/25 18:08:45 ** $CondorVersion: 8.6.8 Apr 06 2018 BuildID: Debian-8.6.8~dfsg.1-2 Debian-8.6.8~dfsg.1-2 $
+01/02/25 18:08:45 ** $CondorPlatform: X86_64-Ubuntu_ $
+01/02/25 18:08:45 ** PID = 29208
+01/02/25 18:08:45 ** Log last touched 1/2 17:55:07
+01/02/25 18:08:45 ******************************************************
+01/02/25 18:08:45 Using config source: /etc/condor/condor_config
+01/02/25 18:08:45 Using local config sources: 
+01/02/25 18:08:45    /etc/condor/condor_config.local
+01/02/25 18:08:45 config Macros = 69, Sorted = 69, StringBytes = 2034, TablesBytes = 2532
+01/02/25 18:08:45 CLASSAD_CACHING is ENABLED
+01/02/25 18:08:45 Daemon Log is logging: D_ALWAYS D_ERROR
+01/02/25 18:08:45 DaemonCore: No command port requested.
+01/02/25 18:08:45 DAGMAN_USE_STRICT setting: 1
+01/02/25 18:08:45 DAGMAN_VERBOSITY setting: 3
+01/02/25 18:08:45 DAGMAN_DEBUG_CACHE_SIZE setting: 5242880
+01/02/25 18:08:45 DAGMAN_DEBUG_CACHE_ENABLE setting: False
+01/02/25 18:08:45 DAGMAN_SUBMIT_DELAY setting: 0
+01/02/25 18:08:45 DAGMAN_MAX_SUBMIT_ATTEMPTS setting: 6
+01/02/25 18:08:45 DAGMAN_STARTUP_CYCLE_DETECT setting: False
+01/02/25 18:08:45 DAGMAN_MAX_SUBMITS_PER_INTERVAL setting: 5
+01/02/25 18:08:45 DAGMAN_USER_LOG_SCAN_INTERVAL setting: 5
+01/02/25 18:08:45 DAGMAN_DEFAULT_PRIORITY setting: 0
+01/02/25 18:08:45 DAGMAN_SUPPRESS_NOTIFICATION setting: True
+01/02/25 18:08:45 allow_events (DAGMAN_ALLOW_EVENTS) setting: 114
+01/02/25 18:08:45 DAGMAN_RETRY_SUBMIT_FIRST setting: True
+01/02/25 18:08:45 DAGMAN_RETRY_NODE_FIRST setting: False
+01/02/25 18:08:45 DAGMAN_MAX_JOBS_IDLE setting: 1000
+01/02/25 18:08:45 DAGMAN_MAX_JOBS_SUBMITTED setting: 0
+01/02/25 18:08:45 DAGMAN_MAX_PRE_SCRIPTS setting: 20
+01/02/25 18:08:45 DAGMAN_MAX_POST_SCRIPTS setting: 20
+01/02/25 18:08:45 DAGMAN_MUNGE_NODE_NAMES setting: True
+01/02/25 18:08:45 DAGMAN_PROHIBIT_MULTI_JOBS setting: False
+01/02/25 18:08:45 DAGMAN_SUBMIT_DEPTH_FIRST setting: False
+01/02/25 18:08:45 DAGMAN_ALWAYS_RUN_POST setting: False
+01/02/25 18:08:45 DAGMAN_ABORT_DUPLICATES setting: True
+01/02/25 18:08:45 DAGMAN_ABORT_ON_SCARY_SUBMIT setting: True
+01/02/25 18:08:45 DAGMAN_PENDING_REPORT_INTERVAL setting: 600
+01/02/25 18:08:45 DAGMAN_AUTO_RESCUE setting: True
+01/02/25 18:08:45 DAGMAN_MAX_RESCUE_NUM setting: 100
+01/02/25 18:08:45 DAGMAN_WRITE_PARTIAL_RESCUE setting: True
+01/02/25 18:08:45 DAGMAN_DEFAULT_NODE_LOG setting: @(DAG_DIR)/@(DAG_FILE).nodes.log
+01/02/25 18:08:45 DAGMAN_GENERATE_SUBDAG_SUBMITS setting: True
+01/02/25 18:08:45 DAGMAN_MAX_JOB_HOLDS setting: 100
+01/02/25 18:08:45 DAGMAN_HOLD_CLAIM_TIME setting: 20
+01/02/25 18:08:45 ALL_DEBUG setting: 
+01/02/25 18:08:45 DAGMAN_DEBUG setting: 
+01/02/25 18:08:45 DAGMAN_SUPPRESS_JOB_LOGS setting: False
+01/02/25 18:08:45 DAGMAN_REMOVE_NODE_JOBS setting: True
+01/02/25 18:08:45 argv[0] == "condor_scheduniv_exec.10416483.0"
+01/02/25 18:08:45 argv[1] == "-Lockfile"
+01/02/25 18:08:45 argv[2] == "dagman.dag.lock"
+01/02/25 18:08:45 argv[3] == "-AutoRescue"
+01/02/25 18:08:45 argv[4] == "1"
+01/02/25 18:08:45 argv[5] == "-DoRescueFrom"
+01/02/25 18:08:45 argv[6] == "0"
+01/02/25 18:08:45 argv[7] == "-Dag"
+01/02/25 18:08:45 argv[8] == "dagman.dag"
+01/02/25 18:08:45 argv[9] == "-Suppress_notification"
+01/02/25 18:08:45 argv[10] == "-CsdVersion"
+01/02/25 18:08:45 argv[11] == "$CondorVersion: 8.6.8 Apr 06 2018 BuildID: Debian-8.6.8~dfsg.1-2 Debian-8.6.8~dfsg.1-2 $"
+01/02/25 18:08:45 argv[12] == "-Force"
+01/02/25 18:08:45 argv[13] == "-Dagman"
+01/02/25 18:08:45 argv[14] == "/usr/bin/condor_dagman"
+01/02/25 18:08:45 Workflow batch-name: <dagman.dag+10416483>
+01/02/25 18:08:45 Workflow accounting_group: <>
+01/02/25 18:08:45 Workflow accounting_group_user: <>
+01/02/25 18:08:45 Warning: failed to get attribute DAGNodeName
+01/02/25 18:08:45 DAGMAN_LOG_ON_NFS_IS_ERROR setting: False
+01/02/25 18:08:45 Default node log file is: </data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log>
+01/02/25 18:08:45 DAG Lockfile will be written to dagman.dag.lock
+01/02/25 18:08:45 DAG Input file is dagman.dag
+01/02/25 18:08:45 Parsing 1 dagfiles
+01/02/25 18:08:45 Parsing dagman.dag ...
+01/02/25 18:08:45 Dag contains 4 total jobs
+01/02/25 18:08:45 Sleeping for 3 seconds to ensure ProcessId uniqueness
+01/02/25 18:08:48 Bootstrapping...
+01/02/25 18:08:48 Number of pre-completed nodes: 0
+01/02/25 18:08:48 MultiLogFiles: truncating log file /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 18:08:48 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:08:48 Of 4 nodes total:
+01/02/25 18:08:48  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:08:48   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:08:48     0       0        0       0       1          3        0
+01/02/25 18:08:48 0 job proc(s) currently held
+01/02/25 18:08:48 Registering condor_event_timer...
+01/02/25 18:08:49 Submitting HTCondor Node step1_0 job(s)...
+01/02/25 18:08:49 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 18:08:49 Masking the events recorded in the DAGMAN workflow log
+01/02/25 18:08:49 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/02/25 18:08:49 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step1_0 -a +DAGManJobId' '=' '10416483 -a DAGManJobId' '=' '10416483 -batch-name dagman.dag+10416483 -a submit_event_notes' '=' 'DAG' 'Node:' 'step1_0 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"" step1.sub
+01/02/25 18:08:49 From submit: Submitting job(s).
+01/02/25 18:08:49 From submit: 1 job(s) submitted to cluster 10416484.
+01/02/25 18:08:49 	assigned HTCondor ID (10416484.0.0)
+01/02/25 18:08:49 Just submitted 1 job this cycle...
+01/02/25 18:08:49 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:08:49 Reassigning the id of job step1_0 from (10416484.0.0) to (10416484.0.0)
+01/02/25 18:08:49 Event: ULOG_SUBMIT for HTCondor Node step1_0 (10416484.0.0) {01/02/25 18:08:49}
+01/02/25 18:08:49 Number of idle job procs: 1
+01/02/25 18:08:49 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:08:49 Of 4 nodes total:
+01/02/25 18:08:49  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:08:49   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:08:49     0       0        1       0       0          3        0
+01/02/25 18:08:49 0 job proc(s) currently held
+01/02/25 18:09:10 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:09:10 Event: ULOG_EXECUTE for HTCondor Node step1_0 (10416484.0.0) {01/02/25 18:09:05}
+01/02/25 18:09:10 Number of idle job procs: 0
+01/02/25 18:09:10 Event: ULOG_JOB_TERMINATED for HTCondor Node step1_0 (10416484.0.0) {01/02/25 18:09:07}
+01/02/25 18:09:10 Number of idle job procs: 0
+01/02/25 18:09:10 Node step1_0 job proc (10416484.0.0) completed successfully.
+01/02/25 18:09:10 Node step1_0 job completed
+01/02/25 18:09:10 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:09:10 Of 4 nodes total:
+01/02/25 18:09:10  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:09:10   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:09:10     1       0        0       0       1          2        0
+01/02/25 18:09:10 0 job proc(s) currently held
+01/02/25 18:09:15 Submitting HTCondor Node step2_0 job(s)...
+01/02/25 18:09:15 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 18:09:15 Masking the events recorded in the DAGMAN workflow log
+01/02/25 18:09:15 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/02/25 18:09:15 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step2_0 -a +DAGManJobId' '=' '10416483 -a DAGManJobId' '=' '10416483 -batch-name dagman.dag+10416483 -a submit_event_notes' '=' 'DAG' 'Node:' 'step2_0 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a inputfilename' '=' '1e19_n1e3.hdf5 -a detectordescription' '=' 'station.json -a config' '=' 'config.yaml -a outputfilename' '=' 'output.hdf5 -a outputfilenameNuRadioReco' '=' 'output.nur -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"step1_0" step2.sub
+01/02/25 18:09:15 From submit: Submitting job(s).
+01/02/25 18:09:15 From submit: 1 job(s) submitted to cluster 10416485.
+01/02/25 18:09:15 	assigned HTCondor ID (10416485.0.0)
+01/02/25 18:09:15 Just submitted 1 job this cycle...
+01/02/25 18:09:15 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:09:15 Reassigning the id of job step2_0 from (10416485.0.0) to (10416485.0.0)
+01/02/25 18:09:15 Event: ULOG_SUBMIT for HTCondor Node step2_0 (10416485.0.0) {01/02/25 18:09:15}
+01/02/25 18:09:15 Number of idle job procs: 1
+01/02/25 18:09:15 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:09:15 Of 4 nodes total:
+01/02/25 18:09:15  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:09:15   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:09:15     1       0        1       0       0          2        0
+01/02/25 18:09:15 0 job proc(s) currently held
+01/02/25 18:09:20 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:09:20 Event: ULOG_EXECUTE for HTCondor Node step2_0 (10416485.0.0) {01/02/25 18:09:15}
+01/02/25 18:09:20 Number of idle job procs: 0
+01/02/25 18:09:35 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:09:35 Event: ULOG_JOB_TERMINATED for HTCondor Node step2_0 (10416485.0.0) {01/02/25 18:09:31}
+01/02/25 18:09:35 Number of idle job procs: 0
+01/02/25 18:09:35 Node step2_0 job proc (10416485.0.0) completed successfully.
+01/02/25 18:09:35 Node step2_0 job completed
+01/02/25 18:09:35 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:09:35 Of 4 nodes total:
+01/02/25 18:09:35  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:09:35   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:09:35     2       0        0       0       1          1        0
+01/02/25 18:09:35 0 job proc(s) currently held
+01/02/25 18:09:40 Submitting HTCondor Node step3_0 job(s)...
+01/02/25 18:09:40 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 18:09:40 Masking the events recorded in the DAGMAN workflow log
+01/02/25 18:09:40 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/02/25 18:09:40 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step3_0 -a +DAGManJobId' '=' '10416483 -a DAGManJobId' '=' '10416483 -batch-name dagman.dag+10416483 -a submit_event_notes' '=' 'DAG' 'Node:' 'step3_0 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"step2_0" step3.sub
+01/02/25 18:09:40 From submit: Submitting job(s).
+01/02/25 18:09:40 From submit: 1 job(s) submitted to cluster 10416486.
+01/02/25 18:09:40 	assigned HTCondor ID (10416486.0.0)
+01/02/25 18:09:40 Just submitted 1 job this cycle...
+01/02/25 18:09:40 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:09:40 Reassigning the id of job step3_0 from (10416486.0.0) to (10416486.0.0)
+01/02/25 18:09:40 Event: ULOG_SUBMIT for HTCondor Node step3_0 (10416486.0.0) {01/02/25 18:09:40}
+01/02/25 18:09:40 Number of idle job procs: 1
+01/02/25 18:09:40 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:09:40 Of 4 nodes total:
+01/02/25 18:09:40  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:09:40   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:09:40     2       0        1       0       0          1        0
+01/02/25 18:09:40 0 job proc(s) currently held
+01/02/25 18:09:45 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:09:45 Event: ULOG_EXECUTE for HTCondor Node step3_0 (10416486.0.0) {01/02/25 18:09:40}
+01/02/25 18:09:45 Number of idle job procs: 0
+01/02/25 18:09:45 Event: ULOG_JOB_TERMINATED for HTCondor Node step3_0 (10416486.0.0) {01/02/25 18:09:42}
+01/02/25 18:09:45 Number of idle job procs: 0
+01/02/25 18:09:45 Node step3_0 job proc (10416486.0.0) completed successfully.
+01/02/25 18:09:45 Node step3_0 job completed
+01/02/25 18:09:45 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:09:45 Of 4 nodes total:
+01/02/25 18:09:45  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:09:45   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:09:45     3       0        0       0       1          0        0
+01/02/25 18:09:45 0 job proc(s) currently held
+01/02/25 18:09:50 Submitting HTCondor Node step4 job(s)...
+01/02/25 18:09:50 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 18:09:50 Masking the events recorded in the DAGMAN workflow log
+01/02/25 18:09:50 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/02/25 18:09:50 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step4 -a +DAGManJobId' '=' '10416483 -a DAGManJobId' '=' '10416483 -batch-name dagman.dag+10416483 -a submit_event_notes' '=' 'DAG' 'Node:' 'step4 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"step3_0" step4.sub
+01/02/25 18:09:50 From submit: Submitting job(s).
+01/02/25 18:09:50 From submit: 1 job(s) submitted to cluster 10416487.
+01/02/25 18:09:50 	assigned HTCondor ID (10416487.0.0)
+01/02/25 18:09:50 Just submitted 1 job this cycle...
+01/02/25 18:09:50 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:09:50 Reassigning the id of job step4 from (10416487.0.0) to (10416487.0.0)
+01/02/25 18:09:50 Event: ULOG_SUBMIT for HTCondor Node step4 (10416487.0.0) {01/02/25 18:09:50}
+01/02/25 18:09:50 Number of idle job procs: 1
+01/02/25 18:09:50 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:09:50 Of 4 nodes total:
+01/02/25 18:09:50  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:09:50   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:09:50     3       0        1       0       0          0        0
+01/02/25 18:09:50 0 job proc(s) currently held
+01/02/25 18:09:55 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:09:55 Event: ULOG_EXECUTE for HTCondor Node step4 (10416487.0.0) {01/02/25 18:09:50}
+01/02/25 18:09:55 Number of idle job procs: 0
+01/02/25 18:09:55 Event: ULOG_JOB_TERMINATED for HTCondor Node step4 (10416487.0.0) {01/02/25 18:09:52}
+01/02/25 18:09:55 Number of idle job procs: 0
+01/02/25 18:09:55 Node step4 job proc (10416487.0.0) completed successfully.
+01/02/25 18:09:55 Node step4 job completed
+01/02/25 18:09:55 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:09:55 Of 4 nodes total:
+01/02/25 18:09:55  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:09:55   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:09:55     4       0        0       0       0          0        0
+01/02/25 18:09:55 0 job proc(s) currently held
+01/02/25 18:09:55 All jobs Completed!
+01/02/25 18:09:55 Note: 0 total job deferrals because of -MaxJobs limit (0)
+01/02/25 18:09:55 Note: 0 total job deferrals because of -MaxIdle limit (1000)
+01/02/25 18:09:55 Note: 0 total job deferrals because of node category throttles
+01/02/25 18:09:55 Note: 0 total PRE script deferrals because of -MaxPre limit (20) or DEFER
+01/02/25 18:09:55 Note: 0 total POST script deferrals because of -MaxPost limit (20) or DEFER
+01/02/25 18:09:55 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:09:55 Of 4 nodes total:
+01/02/25 18:09:55  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:09:55   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:09:55     4       0        0       0       0          0        0
+01/02/25 18:09:55 0 job proc(s) currently held
+01/02/25 18:09:55 Wrote metrics file dagman.dag.metrics.
+01/02/25 18:09:55 Metrics not sent because of PEGASUS_METRICS or CONDOR_DEVELOPERS setting.
+01/02/25 18:09:55 **** condor_scheduniv_exec.10416483.0 (condor_DAGMAN) pid 29208 EXITING WITH STATUS 0
+01/02/25 18:20:14 ******************************************************
+01/02/25 18:20:14 ** condor_scheduniv_exec.10416488.0 (CONDOR_DAGMAN) STARTING UP
+01/02/25 18:20:14 ** /usr/bin/condor_dagman
+01/02/25 18:20:14 ** SubsystemInfo: name=DAGMAN type=DAGMAN(10) class=DAEMON(1)
+01/02/25 18:20:14 ** Configuration: subsystem:DAGMAN local:<NONE> class:DAEMON
+01/02/25 18:20:14 ** $CondorVersion: 8.6.8 Apr 06 2018 BuildID: Debian-8.6.8~dfsg.1-2 Debian-8.6.8~dfsg.1-2 $
+01/02/25 18:20:14 ** $CondorPlatform: X86_64-Ubuntu_ $
+01/02/25 18:20:14 ** PID = 30114
+01/02/25 18:20:14 ** Log last touched 1/2 18:09:55
+01/02/25 18:20:14 ******************************************************
+01/02/25 18:20:14 Using config source: /etc/condor/condor_config
+01/02/25 18:20:14 Using local config sources: 
+01/02/25 18:20:14    /etc/condor/condor_config.local
+01/02/25 18:20:14 config Macros = 69, Sorted = 69, StringBytes = 2034, TablesBytes = 2532
+01/02/25 18:20:14 CLASSAD_CACHING is ENABLED
+01/02/25 18:20:14 Daemon Log is logging: D_ALWAYS D_ERROR
+01/02/25 18:20:14 DaemonCore: No command port requested.
+01/02/25 18:20:14 DAGMAN_USE_STRICT setting: 1
+01/02/25 18:20:14 DAGMAN_VERBOSITY setting: 3
+01/02/25 18:20:14 DAGMAN_DEBUG_CACHE_SIZE setting: 5242880
+01/02/25 18:20:14 DAGMAN_DEBUG_CACHE_ENABLE setting: False
+01/02/25 18:20:14 DAGMAN_SUBMIT_DELAY setting: 0
+01/02/25 18:20:14 DAGMAN_MAX_SUBMIT_ATTEMPTS setting: 6
+01/02/25 18:20:14 DAGMAN_STARTUP_CYCLE_DETECT setting: False
+01/02/25 18:20:14 DAGMAN_MAX_SUBMITS_PER_INTERVAL setting: 5
+01/02/25 18:20:14 DAGMAN_USER_LOG_SCAN_INTERVAL setting: 5
+01/02/25 18:20:14 DAGMAN_DEFAULT_PRIORITY setting: 0
+01/02/25 18:20:14 DAGMAN_SUPPRESS_NOTIFICATION setting: True
+01/02/25 18:20:14 allow_events (DAGMAN_ALLOW_EVENTS) setting: 114
+01/02/25 18:20:14 DAGMAN_RETRY_SUBMIT_FIRST setting: True
+01/02/25 18:20:14 DAGMAN_RETRY_NODE_FIRST setting: False
+01/02/25 18:20:14 DAGMAN_MAX_JOBS_IDLE setting: 1000
+01/02/25 18:20:14 DAGMAN_MAX_JOBS_SUBMITTED setting: 0
+01/02/25 18:20:14 DAGMAN_MAX_PRE_SCRIPTS setting: 20
+01/02/25 18:20:14 DAGMAN_MAX_POST_SCRIPTS setting: 20
+01/02/25 18:20:14 DAGMAN_MUNGE_NODE_NAMES setting: True
+01/02/25 18:20:14 DAGMAN_PROHIBIT_MULTI_JOBS setting: False
+01/02/25 18:20:14 DAGMAN_SUBMIT_DEPTH_FIRST setting: False
+01/02/25 18:20:14 DAGMAN_ALWAYS_RUN_POST setting: False
+01/02/25 18:20:14 DAGMAN_ABORT_DUPLICATES setting: True
+01/02/25 18:20:14 DAGMAN_ABORT_ON_SCARY_SUBMIT setting: True
+01/02/25 18:20:14 DAGMAN_PENDING_REPORT_INTERVAL setting: 600
+01/02/25 18:20:14 DAGMAN_AUTO_RESCUE setting: True
+01/02/25 18:20:14 DAGMAN_MAX_RESCUE_NUM setting: 100
+01/02/25 18:20:14 DAGMAN_WRITE_PARTIAL_RESCUE setting: True
+01/02/25 18:20:14 DAGMAN_DEFAULT_NODE_LOG setting: @(DAG_DIR)/@(DAG_FILE).nodes.log
+01/02/25 18:20:14 DAGMAN_GENERATE_SUBDAG_SUBMITS setting: True
+01/02/25 18:20:14 DAGMAN_MAX_JOB_HOLDS setting: 100
+01/02/25 18:20:14 DAGMAN_HOLD_CLAIM_TIME setting: 20
+01/02/25 18:20:14 ALL_DEBUG setting: 
+01/02/25 18:20:14 DAGMAN_DEBUG setting: 
+01/02/25 18:20:14 DAGMAN_SUPPRESS_JOB_LOGS setting: False
+01/02/25 18:20:14 DAGMAN_REMOVE_NODE_JOBS setting: True
+01/02/25 18:20:14 argv[0] == "condor_scheduniv_exec.10416488.0"
+01/02/25 18:20:14 argv[1] == "-Lockfile"
+01/02/25 18:20:14 argv[2] == "dagman.dag.lock"
+01/02/25 18:20:14 argv[3] == "-AutoRescue"
+01/02/25 18:20:14 argv[4] == "1"
+01/02/25 18:20:14 argv[5] == "-DoRescueFrom"
+01/02/25 18:20:14 argv[6] == "0"
+01/02/25 18:20:14 argv[7] == "-Dag"
+01/02/25 18:20:14 argv[8] == "dagman.dag"
+01/02/25 18:20:14 argv[9] == "-Suppress_notification"
+01/02/25 18:20:14 argv[10] == "-CsdVersion"
+01/02/25 18:20:14 argv[11] == "$CondorVersion: 8.6.8 Apr 06 2018 BuildID: Debian-8.6.8~dfsg.1-2 Debian-8.6.8~dfsg.1-2 $"
+01/02/25 18:20:14 argv[12] == "-Force"
+01/02/25 18:20:14 argv[13] == "-Dagman"
+01/02/25 18:20:14 argv[14] == "/usr/bin/condor_dagman"
+01/02/25 18:20:14 Workflow batch-name: <dagman.dag+10416488>
+01/02/25 18:20:14 Workflow accounting_group: <>
+01/02/25 18:20:14 Workflow accounting_group_user: <>
+01/02/25 18:20:14 Warning: failed to get attribute DAGNodeName
+01/02/25 18:20:14 DAGMAN_LOG_ON_NFS_IS_ERROR setting: False
+01/02/25 18:20:14 Default node log file is: </data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log>
+01/02/25 18:20:14 DAG Lockfile will be written to dagman.dag.lock
+01/02/25 18:20:14 DAG Input file is dagman.dag
+01/02/25 18:20:14 Parsing 1 dagfiles
+01/02/25 18:20:14 Parsing dagman.dag ...
+01/02/25 18:20:14 Dag contains 31 total jobs
+01/02/25 18:20:14 Sleeping for 3 seconds to ensure ProcessId uniqueness
+01/02/25 18:20:17 Bootstrapping...
+01/02/25 18:20:17 Number of pre-completed nodes: 0
+01/02/25 18:20:17 MultiLogFiles: truncating log file /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 18:20:17 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:20:17 Of 31 nodes total:
+01/02/25 18:20:17  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:20:17   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:20:17     0       0        0       0       1         30        0
+01/02/25 18:20:17 0 job proc(s) currently held
+01/02/25 18:20:17 Registering condor_event_timer...
+01/02/25 18:20:18 Submitting HTCondor Node step1_0 job(s)...
+01/02/25 18:20:18 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 18:20:18 Masking the events recorded in the DAGMAN workflow log
+01/02/25 18:20:18 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/02/25 18:20:18 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step1_0 -a +DAGManJobId' '=' '10416488 -a DAGManJobId' '=' '10416488 -batch-name dagman.dag+10416488 -a submit_event_notes' '=' 'DAG' 'Node:' 'step1_0 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"" step1.sub
+01/02/25 18:20:18 From submit: Submitting job(s).
+01/02/25 18:20:18 From submit: 1 job(s) submitted to cluster 10416489.
+01/02/25 18:20:18 	assigned HTCondor ID (10416489.0.0)
+01/02/25 18:20:18 Just submitted 1 job this cycle...
+01/02/25 18:20:18 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:20:18 Reassigning the id of job step1_0 from (10416489.0.0) to (10416489.0.0)
+01/02/25 18:20:18 Event: ULOG_SUBMIT for HTCondor Node step1_0 (10416489.0.0) {01/02/25 18:20:18}
+01/02/25 18:20:18 Number of idle job procs: 1
+01/02/25 18:20:18 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:20:18 Of 31 nodes total:
+01/02/25 18:20:18  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:20:18   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:20:18     0       0        1       0       0         30        0
+01/02/25 18:20:18 0 job proc(s) currently held
+01/02/25 18:20:33 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:20:33 Event: ULOG_EXECUTE for HTCondor Node step1_0 (10416489.0.0) {01/02/25 18:20:30}
+01/02/25 18:20:33 Number of idle job procs: 0
+01/02/25 18:20:33 Event: ULOG_JOB_TERMINATED for HTCondor Node step1_0 (10416489.0.0) {01/02/25 18:20:33}
+01/02/25 18:20:33 Number of idle job procs: 0
+01/02/25 18:20:33 Node step1_0 job proc (10416489.0.0) completed successfully.
+01/02/25 18:20:33 Node step1_0 job completed
+01/02/25 18:20:33 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:20:33 Of 31 nodes total:
+01/02/25 18:20:33  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:20:33   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:20:33     1       0        0       0       1         29        0
+01/02/25 18:20:33 0 job proc(s) currently held
+01/02/25 18:20:38 Submitting HTCondor Node step2_0 job(s)...
+01/02/25 18:20:38 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 18:20:38 Masking the events recorded in the DAGMAN workflow log
+01/02/25 18:20:38 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/02/25 18:20:38 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step2_0 -a +DAGManJobId' '=' '10416488 -a DAGManJobId' '=' '10416488 -batch-name dagman.dag+10416488 -a submit_event_notes' '=' 'DAG' 'Node:' 'step2_0 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a inputfilename' '=' '1e19_n1e3.hdf5 -a detectordescription' '=' 'station.json -a config' '=' 'config.yaml -a outputfilename' '=' 'output.hdf5 -a outputfilenameNuRadioReco' '=' 'output.nur -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"step1_0" step2.sub
+01/02/25 18:20:38 From submit: Submitting job(s).
+01/02/25 18:20:38 From submit: 1 job(s) submitted to cluster 10416490.
+01/02/25 18:20:38 	assigned HTCondor ID (10416490.0.0)
+01/02/25 18:20:38 Just submitted 1 job this cycle...
+01/02/25 18:20:38 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:20:38 Reassigning the id of job step2_0 from (10416490.0.0) to (10416490.0.0)
+01/02/25 18:20:38 Event: ULOG_SUBMIT for HTCondor Node step2_0 (10416490.0.0) {01/02/25 18:20:38}
+01/02/25 18:20:38 Number of idle job procs: 1
+01/02/25 18:20:38 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:20:38 Of 31 nodes total:
+01/02/25 18:20:38  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:20:38   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:20:38     1       0        1       0       0         29        0
+01/02/25 18:20:38 0 job proc(s) currently held
+01/02/25 18:20:43 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:20:43 Event: ULOG_EXECUTE for HTCondor Node step2_0 (10416490.0.0) {01/02/25 18:20:38}
+01/02/25 18:20:43 Number of idle job procs: 0
+01/02/25 18:20:53 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:20:53 Event: ULOG_JOB_TERMINATED for HTCondor Node step2_0 (10416490.0.0) {01/02/25 18:20:49}
+01/02/25 18:20:53 Number of idle job procs: 0
+01/02/25 18:20:53 Node step2_0 job proc (10416490.0.0) completed successfully.
+01/02/25 18:20:53 Node step2_0 job completed
+01/02/25 18:20:53 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:20:53 Of 31 nodes total:
+01/02/25 18:20:53  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:20:53   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:20:53     2       0        0       0       1         28        0
+01/02/25 18:20:53 0 job proc(s) currently held
+01/02/25 18:20:58 Submitting HTCondor Node step3_0 job(s)...
+01/02/25 18:20:58 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 18:20:58 Masking the events recorded in the DAGMAN workflow log
+01/02/25 18:20:58 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/02/25 18:20:58 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step3_0 -a +DAGManJobId' '=' '10416488 -a DAGManJobId' '=' '10416488 -batch-name dagman.dag+10416488 -a submit_event_notes' '=' 'DAG' 'Node:' 'step3_0 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"step2_0" step3.sub
+01/02/25 18:20:58 From submit: Submitting job(s).
+01/02/25 18:20:58 From submit: 1 job(s) submitted to cluster 10416491.
+01/02/25 18:20:58 	assigned HTCondor ID (10416491.0.0)
+01/02/25 18:20:58 Just submitted 1 job this cycle...
+01/02/25 18:20:58 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:20:58 Reassigning the id of job step3_0 from (10416491.0.0) to (10416491.0.0)
+01/02/25 18:20:58 Event: ULOG_SUBMIT for HTCondor Node step3_0 (10416491.0.0) {01/02/25 18:20:58}
+01/02/25 18:20:58 Number of idle job procs: 1
+01/02/25 18:20:58 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:20:58 Of 31 nodes total:
+01/02/25 18:20:58  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:20:58   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:20:58     2       0        1       0       0         28        0
+01/02/25 18:20:58 0 job proc(s) currently held
+01/02/25 18:21:03 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:21:03 Event: ULOG_EXECUTE for HTCondor Node step3_0 (10416491.0.0) {01/02/25 18:20:58}
+01/02/25 18:21:03 Number of idle job procs: 0
+01/02/25 18:21:03 Event: ULOG_JOB_TERMINATED for HTCondor Node step3_0 (10416491.0.0) {01/02/25 18:21:01}
+01/02/25 18:21:03 Number of idle job procs: 0
+01/02/25 18:21:03 Node step3_0 job proc (10416491.0.0) completed successfully.
+01/02/25 18:21:03 Node step3_0 job completed
+01/02/25 18:21:03 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:21:03 Of 31 nodes total:
+01/02/25 18:21:03  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:21:03   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:21:03     3       0        0       0       1         27        0
+01/02/25 18:21:03 0 job proc(s) currently held
+01/02/25 18:21:08 Submitting HTCondor Node step1_1 job(s)...
+01/02/25 18:21:08 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 18:21:08 Masking the events recorded in the DAGMAN workflow log
+01/02/25 18:21:08 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/02/25 18:21:08 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step1_1 -a +DAGManJobId' '=' '10416488 -a DAGManJobId' '=' '10416488 -batch-name dagman.dag+10416488 -a submit_event_notes' '=' 'DAG' 'Node:' 'step1_1 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"step3_0" step1.sub
+01/02/25 18:21:08 From submit: Submitting job(s).
+01/02/25 18:21:08 From submit: 1 job(s) submitted to cluster 10416492.
+01/02/25 18:21:08 	assigned HTCondor ID (10416492.0.0)
+01/02/25 18:21:08 Just submitted 1 job this cycle...
+01/02/25 18:21:08 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:21:08 Reassigning the id of job step1_1 from (10416492.0.0) to (10416492.0.0)
+01/02/25 18:21:08 Event: ULOG_SUBMIT for HTCondor Node step1_1 (10416492.0.0) {01/02/25 18:21:08}
+01/02/25 18:21:08 Number of idle job procs: 1
+01/02/25 18:21:08 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:21:08 Of 31 nodes total:
+01/02/25 18:21:08  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:21:08   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:21:08     3       0        1       0       0         27        0
+01/02/25 18:21:08 0 job proc(s) currently held
+01/02/25 18:21:13 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:21:13 Event: ULOG_EXECUTE for HTCondor Node step1_1 (10416492.0.0) {01/02/25 18:21:09}
+01/02/25 18:21:13 Number of idle job procs: 0
+01/02/25 18:21:13 Event: ULOG_JOB_TERMINATED for HTCondor Node step1_1 (10416492.0.0) {01/02/25 18:21:10}
+01/02/25 18:21:13 Number of idle job procs: 0
+01/02/25 18:21:13 Node step1_1 job proc (10416492.0.0) completed successfully.
+01/02/25 18:21:13 Node step1_1 job completed
+01/02/25 18:21:13 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:21:13 Of 31 nodes total:
+01/02/25 18:21:13  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:21:13   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:21:13     4       0        0       0       1         26        0
+01/02/25 18:21:13 0 job proc(s) currently held
+01/02/25 18:21:18 Submitting HTCondor Node step2_1 job(s)...
+01/02/25 18:21:18 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 18:21:18 Masking the events recorded in the DAGMAN workflow log
+01/02/25 18:21:18 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/02/25 18:21:18 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step2_1 -a +DAGManJobId' '=' '10416488 -a DAGManJobId' '=' '10416488 -batch-name dagman.dag+10416488 -a submit_event_notes' '=' 'DAG' 'Node:' 'step2_1 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a inputfilename' '=' '1e19_n1e3.hdf5 -a detectordescription' '=' 'station.json -a config' '=' 'config.yaml -a outputfilename' '=' 'output.hdf5 -a outputfilenameNuRadioReco' '=' 'output.nur -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"step1_1" step2.sub
+01/02/25 18:21:18 From submit: Submitting job(s).
+01/02/25 18:21:18 From submit: 1 job(s) submitted to cluster 10416493.
+01/02/25 18:21:18 	assigned HTCondor ID (10416493.0.0)
+01/02/25 18:21:18 Just submitted 1 job this cycle...
+01/02/25 18:21:18 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:21:18 Reassigning the id of job step2_1 from (10416493.0.0) to (10416493.0.0)
+01/02/25 18:21:18 Event: ULOG_SUBMIT for HTCondor Node step2_1 (10416493.0.0) {01/02/25 18:21:18}
+01/02/25 18:21:18 Number of idle job procs: 1
+01/02/25 18:21:18 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:21:18 Of 31 nodes total:
+01/02/25 18:21:18  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:21:18   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:21:18     4       0        1       0       0         26        0
+01/02/25 18:21:18 0 job proc(s) currently held
+01/02/25 18:21:24 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:21:24 Event: ULOG_EXECUTE for HTCondor Node step2_1 (10416493.0.0) {01/02/25 18:21:19}
+01/02/25 18:21:24 Number of idle job procs: 0
+01/02/25 18:21:34 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:21:34 Event: ULOG_JOB_TERMINATED for HTCondor Node step2_1 (10416493.0.0) {01/02/25 18:21:29}
+01/02/25 18:21:34 Number of idle job procs: 0
+01/02/25 18:21:34 Node step2_1 job proc (10416493.0.0) completed successfully.
+01/02/25 18:21:34 Node step2_1 job completed
+01/02/25 18:21:34 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:21:34 Of 31 nodes total:
+01/02/25 18:21:34  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:21:34   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:21:34     5       0        0       0       1         25        0
+01/02/25 18:21:34 0 job proc(s) currently held
+01/02/25 18:21:39 Submitting HTCondor Node step3_1 job(s)...
+01/02/25 18:21:39 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 18:21:39 Masking the events recorded in the DAGMAN workflow log
+01/02/25 18:21:39 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/02/25 18:21:39 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step3_1 -a +DAGManJobId' '=' '10416488 -a DAGManJobId' '=' '10416488 -batch-name dagman.dag+10416488 -a submit_event_notes' '=' 'DAG' 'Node:' 'step3_1 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"step2_1" step3.sub
+01/02/25 18:21:39 From submit: Submitting job(s).
+01/02/25 18:21:39 From submit: 1 job(s) submitted to cluster 10416494.
+01/02/25 18:21:39 	assigned HTCondor ID (10416494.0.0)
+01/02/25 18:21:39 Just submitted 1 job this cycle...
+01/02/25 18:21:39 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:21:39 Reassigning the id of job step3_1 from (10416494.0.0) to (10416494.0.0)
+01/02/25 18:21:39 Event: ULOG_SUBMIT for HTCondor Node step3_1 (10416494.0.0) {01/02/25 18:21:39}
+01/02/25 18:21:39 Number of idle job procs: 1
+01/02/25 18:21:39 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:21:39 Of 31 nodes total:
+01/02/25 18:21:39  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:21:39   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:21:39     5       0        1       0       0         25        0
+01/02/25 18:21:39 0 job proc(s) currently held
+01/02/25 18:21:44 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:21:44 Event: ULOG_EXECUTE for HTCondor Node step3_1 (10416494.0.0) {01/02/25 18:21:39}
+01/02/25 18:21:44 Number of idle job procs: 0
+01/02/25 18:21:44 Event: ULOG_JOB_TERMINATED for HTCondor Node step3_1 (10416494.0.0) {01/02/25 18:21:41}
+01/02/25 18:21:44 Number of idle job procs: 0
+01/02/25 18:21:44 Node step3_1 job proc (10416494.0.0) completed successfully.
+01/02/25 18:21:44 Node step3_1 job completed
+01/02/25 18:21:44 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:21:44 Of 31 nodes total:
+01/02/25 18:21:44  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:21:44   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:21:44     6       0        0       0       1         24        0
+01/02/25 18:21:44 0 job proc(s) currently held
+01/02/25 18:21:49 Submitting HTCondor Node step1_2 job(s)...
+01/02/25 18:21:49 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 18:21:49 Masking the events recorded in the DAGMAN workflow log
+01/02/25 18:21:49 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/02/25 18:21:49 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step1_2 -a +DAGManJobId' '=' '10416488 -a DAGManJobId' '=' '10416488 -batch-name dagman.dag+10416488 -a submit_event_notes' '=' 'DAG' 'Node:' 'step1_2 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"step3_1" step1.sub
+01/02/25 18:21:49 From submit: Submitting job(s).
+01/02/25 18:21:49 From submit: 1 job(s) submitted to cluster 10416495.
+01/02/25 18:21:49 	assigned HTCondor ID (10416495.0.0)
+01/02/25 18:21:49 Just submitted 1 job this cycle...
+01/02/25 18:21:49 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:21:49 Reassigning the id of job step1_2 from (10416495.0.0) to (10416495.0.0)
+01/02/25 18:21:49 Event: ULOG_SUBMIT for HTCondor Node step1_2 (10416495.0.0) {01/02/25 18:21:49}
+01/02/25 18:21:49 Number of idle job procs: 1
+01/02/25 18:21:49 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:21:49 Of 31 nodes total:
+01/02/25 18:21:49  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:21:49   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:21:49     6       0        1       0       0         24        0
+01/02/25 18:21:49 0 job proc(s) currently held
+01/02/25 18:21:54 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:21:54 Event: ULOG_EXECUTE for HTCondor Node step1_2 (10416495.0.0) {01/02/25 18:21:49}
+01/02/25 18:21:54 Number of idle job procs: 0
+01/02/25 18:21:54 Event: ULOG_JOB_TERMINATED for HTCondor Node step1_2 (10416495.0.0) {01/02/25 18:21:50}
+01/02/25 18:21:54 Number of idle job procs: 0
+01/02/25 18:21:54 Node step1_2 job proc (10416495.0.0) completed successfully.
+01/02/25 18:21:54 Node step1_2 job completed
+01/02/25 18:21:54 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:21:54 Of 31 nodes total:
+01/02/25 18:21:54  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:21:54   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:21:54     7       0        0       0       1         23        0
+01/02/25 18:21:54 0 job proc(s) currently held
+01/02/25 18:21:59 Submitting HTCondor Node step2_2 job(s)...
+01/02/25 18:21:59 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 18:21:59 Masking the events recorded in the DAGMAN workflow log
+01/02/25 18:21:59 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/02/25 18:21:59 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step2_2 -a +DAGManJobId' '=' '10416488 -a DAGManJobId' '=' '10416488 -batch-name dagman.dag+10416488 -a submit_event_notes' '=' 'DAG' 'Node:' 'step2_2 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a inputfilename' '=' '1e19_n1e3.hdf5 -a detectordescription' '=' 'station.json -a config' '=' 'config.yaml -a outputfilename' '=' 'output.hdf5 -a outputfilenameNuRadioReco' '=' 'output.nur -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"step1_2" step2.sub
+01/02/25 18:21:59 From submit: Submitting job(s).
+01/02/25 18:21:59 From submit: 1 job(s) submitted to cluster 10416496.
+01/02/25 18:21:59 	assigned HTCondor ID (10416496.0.0)
+01/02/25 18:21:59 Just submitted 1 job this cycle...
+01/02/25 18:21:59 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:21:59 Reassigning the id of job step2_2 from (10416496.0.0) to (10416496.0.0)
+01/02/25 18:21:59 Event: ULOG_SUBMIT for HTCondor Node step2_2 (10416496.0.0) {01/02/25 18:21:59}
+01/02/25 18:21:59 Number of idle job procs: 1
+01/02/25 18:21:59 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:21:59 Of 31 nodes total:
+01/02/25 18:21:59  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:21:59   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:21:59     7       0        1       0       0         23        0
+01/02/25 18:21:59 0 job proc(s) currently held
+01/02/25 18:22:04 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:22:04 Event: ULOG_EXECUTE for HTCondor Node step2_2 (10416496.0.0) {01/02/25 18:21:59}
+01/02/25 18:22:04 Number of idle job procs: 0
+01/02/25 18:22:19 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:22:19 Event: ULOG_JOB_TERMINATED for HTCondor Node step2_2 (10416496.0.0) {01/02/25 18:22:14}
+01/02/25 18:22:19 Number of idle job procs: 0
+01/02/25 18:22:19 Node step2_2 job proc (10416496.0.0) completed successfully.
+01/02/25 18:22:19 Node step2_2 job completed
+01/02/25 18:22:19 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:22:19 Of 31 nodes total:
+01/02/25 18:22:19  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:22:19   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:22:19     8       0        0       0       1         22        0
+01/02/25 18:22:19 0 job proc(s) currently held
+01/02/25 18:22:24 Submitting HTCondor Node step3_2 job(s)...
+01/02/25 18:22:24 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 18:22:24 Masking the events recorded in the DAGMAN workflow log
+01/02/25 18:22:24 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/02/25 18:22:24 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step3_2 -a +DAGManJobId' '=' '10416488 -a DAGManJobId' '=' '10416488 -batch-name dagman.dag+10416488 -a submit_event_notes' '=' 'DAG' 'Node:' 'step3_2 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"step2_2" step3.sub
+01/02/25 18:22:24 From submit: Submitting job(s).
+01/02/25 18:22:24 From submit: 1 job(s) submitted to cluster 10416497.
+01/02/25 18:22:24 	assigned HTCondor ID (10416497.0.0)
+01/02/25 18:22:24 Just submitted 1 job this cycle...
+01/02/25 18:22:24 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:22:24 Reassigning the id of job step3_2 from (10416497.0.0) to (10416497.0.0)
+01/02/25 18:22:24 Event: ULOG_SUBMIT for HTCondor Node step3_2 (10416497.0.0) {01/02/25 18:22:24}
+01/02/25 18:22:24 Number of idle job procs: 1
+01/02/25 18:22:24 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:22:24 Of 31 nodes total:
+01/02/25 18:22:24  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:22:24   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:22:24     8       0        1       0       0         22        0
+01/02/25 18:22:24 0 job proc(s) currently held
+01/02/25 18:22:29 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:22:29 Event: ULOG_EXECUTE for HTCondor Node step3_2 (10416497.0.0) {01/02/25 18:22:24}
+01/02/25 18:22:29 Number of idle job procs: 0
+01/02/25 18:22:29 Event: ULOG_JOB_TERMINATED for HTCondor Node step3_2 (10416497.0.0) {01/02/25 18:22:26}
+01/02/25 18:22:29 Number of idle job procs: 0
+01/02/25 18:22:29 Node step3_2 job proc (10416497.0.0) completed successfully.
+01/02/25 18:22:29 Node step3_2 job completed
+01/02/25 18:22:29 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:22:29 Of 31 nodes total:
+01/02/25 18:22:29  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:22:29   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:22:29     9       0        0       0       1         21        0
+01/02/25 18:22:29 0 job proc(s) currently held
+01/02/25 18:22:34 Submitting HTCondor Node step1_3 job(s)...
+01/02/25 18:22:34 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 18:22:34 Masking the events recorded in the DAGMAN workflow log
+01/02/25 18:22:34 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/02/25 18:22:34 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step1_3 -a +DAGManJobId' '=' '10416488 -a DAGManJobId' '=' '10416488 -batch-name dagman.dag+10416488 -a submit_event_notes' '=' 'DAG' 'Node:' 'step1_3 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"step3_2" step1.sub
+01/02/25 18:22:34 From submit: Submitting job(s).
+01/02/25 18:22:34 From submit: 1 job(s) submitted to cluster 10416498.
+01/02/25 18:22:34 	assigned HTCondor ID (10416498.0.0)
+01/02/25 18:22:34 Just submitted 1 job this cycle...
+01/02/25 18:22:34 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:22:34 Reassigning the id of job step1_3 from (10416498.0.0) to (10416498.0.0)
+01/02/25 18:22:34 Event: ULOG_SUBMIT for HTCondor Node step1_3 (10416498.0.0) {01/02/25 18:22:34}
+01/02/25 18:22:34 Number of idle job procs: 1
+01/02/25 18:22:34 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:22:34 Of 31 nodes total:
+01/02/25 18:22:34  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:22:34   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:22:34     9       0        1       0       0         21        0
+01/02/25 18:22:34 0 job proc(s) currently held
+01/02/25 18:22:39 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:22:39 Event: ULOG_EXECUTE for HTCondor Node step1_3 (10416498.0.0) {01/02/25 18:22:34}
+01/02/25 18:22:39 Number of idle job procs: 0
+01/02/25 18:22:39 Event: ULOG_JOB_TERMINATED for HTCondor Node step1_3 (10416498.0.0) {01/02/25 18:22:36}
+01/02/25 18:22:39 Number of idle job procs: 0
+01/02/25 18:22:39 Node step1_3 job proc (10416498.0.0) completed successfully.
+01/02/25 18:22:39 Node step1_3 job completed
+01/02/25 18:22:39 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:22:39 Of 31 nodes total:
+01/02/25 18:22:39  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:22:39   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:22:39    10       0        0       0       1         20        0
+01/02/25 18:22:39 0 job proc(s) currently held
+01/02/25 18:22:44 Submitting HTCondor Node step2_3 job(s)...
+01/02/25 18:22:44 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 18:22:44 Masking the events recorded in the DAGMAN workflow log
+01/02/25 18:22:44 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/02/25 18:22:44 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step2_3 -a +DAGManJobId' '=' '10416488 -a DAGManJobId' '=' '10416488 -batch-name dagman.dag+10416488 -a submit_event_notes' '=' 'DAG' 'Node:' 'step2_3 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a inputfilename' '=' '1e19_n1e3.hdf5 -a detectordescription' '=' 'station.json -a config' '=' 'config.yaml -a outputfilename' '=' 'output.hdf5 -a outputfilenameNuRadioReco' '=' 'output.nur -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"step1_3" step2.sub
+01/02/25 18:22:44 From submit: Submitting job(s).
+01/02/25 18:22:44 From submit: 1 job(s) submitted to cluster 10416499.
+01/02/25 18:22:44 	assigned HTCondor ID (10416499.0.0)
+01/02/25 18:22:44 Just submitted 1 job this cycle...
+01/02/25 18:22:44 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:22:44 Reassigning the id of job step2_3 from (10416499.0.0) to (10416499.0.0)
+01/02/25 18:22:44 Event: ULOG_SUBMIT for HTCondor Node step2_3 (10416499.0.0) {01/02/25 18:22:44}
+01/02/25 18:22:44 Number of idle job procs: 1
+01/02/25 18:22:44 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:22:44 Of 31 nodes total:
+01/02/25 18:22:44  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:22:44   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:22:44    10       0        1       0       0         20        0
+01/02/25 18:22:44 0 job proc(s) currently held
+01/02/25 18:22:49 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:22:49 Event: ULOG_EXECUTE for HTCondor Node step2_3 (10416499.0.0) {01/02/25 18:22:44}
+01/02/25 18:22:49 Number of idle job procs: 0
+01/02/25 18:22:59 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:22:59 Event: ULOG_JOB_TERMINATED for HTCondor Node step2_3 (10416499.0.0) {01/02/25 18:22:57}
+01/02/25 18:22:59 Number of idle job procs: 0
+01/02/25 18:22:59 Node step2_3 job proc (10416499.0.0) completed successfully.
+01/02/25 18:22:59 Node step2_3 job completed
+01/02/25 18:22:59 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:22:59 Of 31 nodes total:
+01/02/25 18:22:59  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:22:59   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:22:59    11       0        0       0       1         19        0
+01/02/25 18:22:59 0 job proc(s) currently held
+01/02/25 18:23:04 Submitting HTCondor Node step3_3 job(s)...
+01/02/25 18:23:04 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 18:23:04 Masking the events recorded in the DAGMAN workflow log
+01/02/25 18:23:04 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/02/25 18:23:04 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step3_3 -a +DAGManJobId' '=' '10416488 -a DAGManJobId' '=' '10416488 -batch-name dagman.dag+10416488 -a submit_event_notes' '=' 'DAG' 'Node:' 'step3_3 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"step2_3" step3.sub
+01/02/25 18:23:04 From submit: Submitting job(s).
+01/02/25 18:23:04 From submit: 1 job(s) submitted to cluster 10416500.
+01/02/25 18:23:04 	assigned HTCondor ID (10416500.0.0)
+01/02/25 18:23:04 Just submitted 1 job this cycle...
+01/02/25 18:23:04 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:23:04 Reassigning the id of job step3_3 from (10416500.0.0) to (10416500.0.0)
+01/02/25 18:23:04 Event: ULOG_SUBMIT for HTCondor Node step3_3 (10416500.0.0) {01/02/25 18:23:04}
+01/02/25 18:23:04 Number of idle job procs: 1
+01/02/25 18:23:04 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:23:04 Of 31 nodes total:
+01/02/25 18:23:04  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:23:04   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:23:04    11       0        1       0       0         19        0
+01/02/25 18:23:04 0 job proc(s) currently held
+01/02/25 18:23:09 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:23:09 Event: ULOG_EXECUTE for HTCondor Node step3_3 (10416500.0.0) {01/02/25 18:23:04}
+01/02/25 18:23:09 Number of idle job procs: 0
+01/02/25 18:23:09 Event: ULOG_JOB_TERMINATED for HTCondor Node step3_3 (10416500.0.0) {01/02/25 18:23:06}
+01/02/25 18:23:09 Number of idle job procs: 0
+01/02/25 18:23:09 Node step3_3 job proc (10416500.0.0) completed successfully.
+01/02/25 18:23:09 Node step3_3 job completed
+01/02/25 18:23:09 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:23:09 Of 31 nodes total:
+01/02/25 18:23:09  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:23:09   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:23:09    12       0        0       0       1         18        0
+01/02/25 18:23:09 0 job proc(s) currently held
+01/02/25 18:23:14 Submitting HTCondor Node step1_4 job(s)...
+01/02/25 18:23:14 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 18:23:14 Masking the events recorded in the DAGMAN workflow log
+01/02/25 18:23:14 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/02/25 18:23:14 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step1_4 -a +DAGManJobId' '=' '10416488 -a DAGManJobId' '=' '10416488 -batch-name dagman.dag+10416488 -a submit_event_notes' '=' 'DAG' 'Node:' 'step1_4 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"step3_3" step1.sub
+01/02/25 18:23:14 From submit: Submitting job(s).
+01/02/25 18:23:14 From submit: 1 job(s) submitted to cluster 10416501.
+01/02/25 18:23:14 	assigned HTCondor ID (10416501.0.0)
+01/02/25 18:23:14 Just submitted 1 job this cycle...
+01/02/25 18:23:14 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:23:14 Reassigning the id of job step1_4 from (10416501.0.0) to (10416501.0.0)
+01/02/25 18:23:14 Event: ULOG_SUBMIT for HTCondor Node step1_4 (10416501.0.0) {01/02/25 18:23:14}
+01/02/25 18:23:14 Number of idle job procs: 1
+01/02/25 18:23:14 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:23:14 Of 31 nodes total:
+01/02/25 18:23:14  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:23:14   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:23:14    12       0        1       0       0         18        0
+01/02/25 18:23:14 0 job proc(s) currently held
+01/02/25 18:23:19 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:23:19 Event: ULOG_EXECUTE for HTCondor Node step1_4 (10416501.0.0) {01/02/25 18:23:14}
+01/02/25 18:23:19 Number of idle job procs: 0
+01/02/25 18:23:19 Event: ULOG_JOB_TERMINATED for HTCondor Node step1_4 (10416501.0.0) {01/02/25 18:23:16}
+01/02/25 18:23:19 Number of idle job procs: 0
+01/02/25 18:23:19 Node step1_4 job proc (10416501.0.0) completed successfully.
+01/02/25 18:23:19 Node step1_4 job completed
+01/02/25 18:23:19 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:23:19 Of 31 nodes total:
+01/02/25 18:23:19  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:23:19   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:23:19    13       0        0       0       1         17        0
+01/02/25 18:23:19 0 job proc(s) currently held
+01/02/25 18:23:24 Submitting HTCondor Node step2_4 job(s)...
+01/02/25 18:23:24 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 18:23:24 Masking the events recorded in the DAGMAN workflow log
+01/02/25 18:23:24 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/02/25 18:23:24 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step2_4 -a +DAGManJobId' '=' '10416488 -a DAGManJobId' '=' '10416488 -batch-name dagman.dag+10416488 -a submit_event_notes' '=' 'DAG' 'Node:' 'step2_4 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a inputfilename' '=' '1e19_n1e3.hdf5 -a detectordescription' '=' 'station.json -a config' '=' 'config.yaml -a outputfilename' '=' 'output.hdf5 -a outputfilenameNuRadioReco' '=' 'output.nur -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"step1_4" step2.sub
+01/02/25 18:23:24 From submit: Submitting job(s).
+01/02/25 18:23:24 From submit: 1 job(s) submitted to cluster 10416502.
+01/02/25 18:23:24 	assigned HTCondor ID (10416502.0.0)
+01/02/25 18:23:24 Just submitted 1 job this cycle...
+01/02/25 18:23:24 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:23:24 Reassigning the id of job step2_4 from (10416502.0.0) to (10416502.0.0)
+01/02/25 18:23:24 Event: ULOG_SUBMIT for HTCondor Node step2_4 (10416502.0.0) {01/02/25 18:23:24}
+01/02/25 18:23:24 Number of idle job procs: 1
+01/02/25 18:23:24 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:23:24 Of 31 nodes total:
+01/02/25 18:23:24  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:23:24   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:23:24    13       0        1       0       0         17        0
+01/02/25 18:23:24 0 job proc(s) currently held
+01/02/25 18:23:29 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:23:29 Event: ULOG_EXECUTE for HTCondor Node step2_4 (10416502.0.0) {01/02/25 18:23:24}
+01/02/25 18:23:29 Number of idle job procs: 0
+01/02/25 18:23:34 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:23:34 Event: ULOG_JOB_TERMINATED for HTCondor Node step2_4 (10416502.0.0) {01/02/25 18:23:34}
+01/02/25 18:23:34 Number of idle job procs: 0
+01/02/25 18:23:34 Node step2_4 job proc (10416502.0.0) completed successfully.
+01/02/25 18:23:34 Node step2_4 job completed
+01/02/25 18:23:34 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:23:34 Of 31 nodes total:
+01/02/25 18:23:34  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:23:34   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:23:34    14       0        0       0       1         16        0
+01/02/25 18:23:34 0 job proc(s) currently held
+01/02/25 18:23:39 Submitting HTCondor Node step3_4 job(s)...
+01/02/25 18:23:39 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 18:23:39 Masking the events recorded in the DAGMAN workflow log
+01/02/25 18:23:39 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/02/25 18:23:39 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step3_4 -a +DAGManJobId' '=' '10416488 -a DAGManJobId' '=' '10416488 -batch-name dagman.dag+10416488 -a submit_event_notes' '=' 'DAG' 'Node:' 'step3_4 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"step2_4" step3.sub
+01/02/25 18:23:39 From submit: Submitting job(s).
+01/02/25 18:23:39 From submit: 1 job(s) submitted to cluster 10416503.
+01/02/25 18:23:39 	assigned HTCondor ID (10416503.0.0)
+01/02/25 18:23:39 Just submitted 1 job this cycle...
+01/02/25 18:23:39 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:23:39 Reassigning the id of job step3_4 from (10416503.0.0) to (10416503.0.0)
+01/02/25 18:23:39 Event: ULOG_SUBMIT for HTCondor Node step3_4 (10416503.0.0) {01/02/25 18:23:39}
+01/02/25 18:23:39 Number of idle job procs: 1
+01/02/25 18:23:39 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:23:39 Of 31 nodes total:
+01/02/25 18:23:39  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:23:39   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:23:39    14       0        1       0       0         16        0
+01/02/25 18:23:39 0 job proc(s) currently held
+01/02/25 18:23:44 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:23:44 Event: ULOG_EXECUTE for HTCondor Node step3_4 (10416503.0.0) {01/02/25 18:23:39}
+01/02/25 18:23:44 Number of idle job procs: 0
+01/02/25 18:23:44 Event: ULOG_JOB_TERMINATED for HTCondor Node step3_4 (10416503.0.0) {01/02/25 18:23:42}
+01/02/25 18:23:44 Number of idle job procs: 0
+01/02/25 18:23:44 Node step3_4 job proc (10416503.0.0) completed successfully.
+01/02/25 18:23:44 Node step3_4 job completed
+01/02/25 18:23:44 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:23:44 Of 31 nodes total:
+01/02/25 18:23:44  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:23:44   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:23:44    15       0        0       0       1         15        0
+01/02/25 18:23:44 0 job proc(s) currently held
+01/02/25 18:23:49 Submitting HTCondor Node step1_5 job(s)...
+01/02/25 18:23:49 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 18:23:49 Masking the events recorded in the DAGMAN workflow log
+01/02/25 18:23:49 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/02/25 18:23:49 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step1_5 -a +DAGManJobId' '=' '10416488 -a DAGManJobId' '=' '10416488 -batch-name dagman.dag+10416488 -a submit_event_notes' '=' 'DAG' 'Node:' 'step1_5 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"step3_4" step1.sub
+01/02/25 18:23:49 From submit: Submitting job(s).
+01/02/25 18:23:49 From submit: 1 job(s) submitted to cluster 10416504.
+01/02/25 18:23:49 	assigned HTCondor ID (10416504.0.0)
+01/02/25 18:23:49 Just submitted 1 job this cycle...
+01/02/25 18:23:49 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:23:49 Reassigning the id of job step1_5 from (10416504.0.0) to (10416504.0.0)
+01/02/25 18:23:49 Event: ULOG_SUBMIT for HTCondor Node step1_5 (10416504.0.0) {01/02/25 18:23:49}
+01/02/25 18:23:49 Number of idle job procs: 1
+01/02/25 18:23:49 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:23:49 Of 31 nodes total:
+01/02/25 18:23:49  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:23:49   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:23:49    15       0        1       0       0         15        0
+01/02/25 18:23:49 0 job proc(s) currently held
+01/02/25 18:23:54 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:23:54 Event: ULOG_EXECUTE for HTCondor Node step1_5 (10416504.0.0) {01/02/25 18:23:49}
+01/02/25 18:23:54 Number of idle job procs: 0
+01/02/25 18:23:54 Event: ULOG_JOB_TERMINATED for HTCondor Node step1_5 (10416504.0.0) {01/02/25 18:23:52}
+01/02/25 18:23:54 Number of idle job procs: 0
+01/02/25 18:23:54 Node step1_5 job proc (10416504.0.0) completed successfully.
+01/02/25 18:23:54 Node step1_5 job completed
+01/02/25 18:23:54 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:23:54 Of 31 nodes total:
+01/02/25 18:23:54  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:23:54   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:23:54    16       0        0       0       1         14        0
+01/02/25 18:23:54 0 job proc(s) currently held
+01/02/25 18:23:59 Submitting HTCondor Node step2_5 job(s)...
+01/02/25 18:23:59 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 18:23:59 Masking the events recorded in the DAGMAN workflow log
+01/02/25 18:23:59 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/02/25 18:23:59 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step2_5 -a +DAGManJobId' '=' '10416488 -a DAGManJobId' '=' '10416488 -batch-name dagman.dag+10416488 -a submit_event_notes' '=' 'DAG' 'Node:' 'step2_5 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a inputfilename' '=' '1e19_n1e3.hdf5 -a detectordescription' '=' 'station.json -a config' '=' 'config.yaml -a outputfilename' '=' 'output.hdf5 -a outputfilenameNuRadioReco' '=' 'output.nur -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"step1_5" step2.sub
+01/02/25 18:23:59 From submit: Submitting job(s).
+01/02/25 18:23:59 From submit: 1 job(s) submitted to cluster 10416505.
+01/02/25 18:23:59 	assigned HTCondor ID (10416505.0.0)
+01/02/25 18:23:59 Just submitted 1 job this cycle...
+01/02/25 18:23:59 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:23:59 Reassigning the id of job step2_5 from (10416505.0.0) to (10416505.0.0)
+01/02/25 18:23:59 Event: ULOG_SUBMIT for HTCondor Node step2_5 (10416505.0.0) {01/02/25 18:23:59}
+01/02/25 18:23:59 Number of idle job procs: 1
+01/02/25 18:23:59 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:23:59 Of 31 nodes total:
+01/02/25 18:23:59  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:23:59   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:23:59    16       0        1       0       0         14        0
+01/02/25 18:23:59 0 job proc(s) currently held
+01/02/25 18:24:04 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:24:04 Event: ULOG_EXECUTE for HTCondor Node step2_5 (10416505.0.0) {01/02/25 18:23:59}
+01/02/25 18:24:04 Number of idle job procs: 0
+01/02/25 18:24:14 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:24:14 Event: ULOG_JOB_TERMINATED for HTCondor Node step2_5 (10416505.0.0) {01/02/25 18:24:14}
+01/02/25 18:24:14 Number of idle job procs: 0
+01/02/25 18:24:14 Node step2_5 job proc (10416505.0.0) completed successfully.
+01/02/25 18:24:14 Node step2_5 job completed
+01/02/25 18:24:14 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:24:14 Of 31 nodes total:
+01/02/25 18:24:14  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:24:14   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:24:14    17       0        0       0       1         13        0
+01/02/25 18:24:14 0 job proc(s) currently held
+01/02/25 18:24:19 Submitting HTCondor Node step3_5 job(s)...
+01/02/25 18:24:19 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 18:24:19 Masking the events recorded in the DAGMAN workflow log
+01/02/25 18:24:19 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/02/25 18:24:19 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step3_5 -a +DAGManJobId' '=' '10416488 -a DAGManJobId' '=' '10416488 -batch-name dagman.dag+10416488 -a submit_event_notes' '=' 'DAG' 'Node:' 'step3_5 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"step2_5" step3.sub
+01/02/25 18:24:19 From submit: Submitting job(s).
+01/02/25 18:24:19 From submit: 1 job(s) submitted to cluster 10416506.
+01/02/25 18:24:19 	assigned HTCondor ID (10416506.0.0)
+01/02/25 18:24:19 Just submitted 1 job this cycle...
+01/02/25 18:24:19 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:24:19 Reassigning the id of job step3_5 from (10416506.0.0) to (10416506.0.0)
+01/02/25 18:24:19 Event: ULOG_SUBMIT for HTCondor Node step3_5 (10416506.0.0) {01/02/25 18:24:19}
+01/02/25 18:24:19 Number of idle job procs: 1
+01/02/25 18:24:19 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:24:19 Of 31 nodes total:
+01/02/25 18:24:19  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:24:19   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:24:19    17       0        1       0       0         13        0
+01/02/25 18:24:19 0 job proc(s) currently held
+01/02/25 18:24:24 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:24:24 Event: ULOG_EXECUTE for HTCondor Node step3_5 (10416506.0.0) {01/02/25 18:24:20}
+01/02/25 18:24:24 Number of idle job procs: 0
+01/02/25 18:24:24 Event: ULOG_JOB_TERMINATED for HTCondor Node step3_5 (10416506.0.0) {01/02/25 18:24:22}
+01/02/25 18:24:24 Number of idle job procs: 0
+01/02/25 18:24:24 Node step3_5 job proc (10416506.0.0) completed successfully.
+01/02/25 18:24:24 Node step3_5 job completed
+01/02/25 18:24:24 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:24:24 Of 31 nodes total:
+01/02/25 18:24:24  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:24:24   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:24:24    18       0        0       0       1         12        0
+01/02/25 18:24:24 0 job proc(s) currently held
+01/02/25 18:24:29 Submitting HTCondor Node step1_6 job(s)...
+01/02/25 18:24:29 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 18:24:29 Masking the events recorded in the DAGMAN workflow log
+01/02/25 18:24:29 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/02/25 18:24:29 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step1_6 -a +DAGManJobId' '=' '10416488 -a DAGManJobId' '=' '10416488 -batch-name dagman.dag+10416488 -a submit_event_notes' '=' 'DAG' 'Node:' 'step1_6 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"step3_5" step1.sub
+01/02/25 18:24:29 From submit: Submitting job(s).
+01/02/25 18:24:29 From submit: 1 job(s) submitted to cluster 10416507.
+01/02/25 18:24:29 	assigned HTCondor ID (10416507.0.0)
+01/02/25 18:24:29 Just submitted 1 job this cycle...
+01/02/25 18:24:29 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:24:29 Reassigning the id of job step1_6 from (10416507.0.0) to (10416507.0.0)
+01/02/25 18:24:29 Event: ULOG_SUBMIT for HTCondor Node step1_6 (10416507.0.0) {01/02/25 18:24:29}
+01/02/25 18:24:29 Number of idle job procs: 1
+01/02/25 18:24:29 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:24:29 Of 31 nodes total:
+01/02/25 18:24:29  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:24:29   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:24:29    18       0        1       0       0         12        0
+01/02/25 18:24:29 0 job proc(s) currently held
+01/02/25 18:24:34 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:24:34 Event: ULOG_EXECUTE for HTCondor Node step1_6 (10416507.0.0) {01/02/25 18:24:30}
+01/02/25 18:24:34 Number of idle job procs: 0
+01/02/25 18:24:34 Event: ULOG_JOB_TERMINATED for HTCondor Node step1_6 (10416507.0.0) {01/02/25 18:24:31}
+01/02/25 18:24:34 Number of idle job procs: 0
+01/02/25 18:24:34 Node step1_6 job proc (10416507.0.0) completed successfully.
+01/02/25 18:24:34 Node step1_6 job completed
+01/02/25 18:24:34 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:24:34 Of 31 nodes total:
+01/02/25 18:24:34  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:24:34   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:24:34    19       0        0       0       1         11        0
+01/02/25 18:24:34 0 job proc(s) currently held
+01/02/25 18:24:39 Submitting HTCondor Node step2_6 job(s)...
+01/02/25 18:24:39 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 18:24:39 Masking the events recorded in the DAGMAN workflow log
+01/02/25 18:24:39 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/02/25 18:24:39 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step2_6 -a +DAGManJobId' '=' '10416488 -a DAGManJobId' '=' '10416488 -batch-name dagman.dag+10416488 -a submit_event_notes' '=' 'DAG' 'Node:' 'step2_6 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a inputfilename' '=' '1e19_n1e3.hdf5 -a detectordescription' '=' 'station.json -a config' '=' 'config.yaml -a outputfilename' '=' 'output.hdf5 -a outputfilenameNuRadioReco' '=' 'output.nur -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"step1_6" step2.sub
+01/02/25 18:24:40 From submit: Submitting job(s).
+01/02/25 18:24:40 From submit: 1 job(s) submitted to cluster 10416508.
+01/02/25 18:24:40 	assigned HTCondor ID (10416508.0.0)
+01/02/25 18:24:40 Just submitted 1 job this cycle...
+01/02/25 18:24:40 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:24:40 Reassigning the id of job step2_6 from (10416508.0.0) to (10416508.0.0)
+01/02/25 18:24:40 Event: ULOG_SUBMIT for HTCondor Node step2_6 (10416508.0.0) {01/02/25 18:24:40}
+01/02/25 18:24:40 Number of idle job procs: 1
+01/02/25 18:24:40 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:24:40 Of 31 nodes total:
+01/02/25 18:24:40  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:24:40   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:24:40    19       0        1       0       0         11        0
+01/02/25 18:24:40 0 job proc(s) currently held
+01/02/25 18:24:45 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:24:45 Event: ULOG_EXECUTE for HTCondor Node step2_6 (10416508.0.0) {01/02/25 18:24:40}
+01/02/25 18:24:45 Number of idle job procs: 0
+01/02/25 18:25:05 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:25:05 Event: ULOG_JOB_TERMINATED for HTCondor Node step2_6 (10416508.0.0) {01/02/25 18:25:04}
+01/02/25 18:25:05 Number of idle job procs: 0
+01/02/25 18:25:05 Node step2_6 job proc (10416508.0.0) completed successfully.
+01/02/25 18:25:05 Node step2_6 job completed
+01/02/25 18:25:05 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:25:05 Of 31 nodes total:
+01/02/25 18:25:05  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:25:05   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:25:05    20       0        0       0       1         10        0
+01/02/25 18:25:05 0 job proc(s) currently held
+01/02/25 18:25:10 Submitting HTCondor Node step3_6 job(s)...
+01/02/25 18:25:10 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 18:25:10 Masking the events recorded in the DAGMAN workflow log
+01/02/25 18:25:10 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/02/25 18:25:10 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step3_6 -a +DAGManJobId' '=' '10416488 -a DAGManJobId' '=' '10416488 -batch-name dagman.dag+10416488 -a submit_event_notes' '=' 'DAG' 'Node:' 'step3_6 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"step2_6" step3.sub
+01/02/25 18:25:10 From submit: Submitting job(s).
+01/02/25 18:25:10 From submit: 1 job(s) submitted to cluster 10416509.
+01/02/25 18:25:10 	assigned HTCondor ID (10416509.0.0)
+01/02/25 18:25:10 Just submitted 1 job this cycle...
+01/02/25 18:25:10 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:25:10 Reassigning the id of job step3_6 from (10416509.0.0) to (10416509.0.0)
+01/02/25 18:25:10 Event: ULOG_SUBMIT for HTCondor Node step3_6 (10416509.0.0) {01/02/25 18:25:10}
+01/02/25 18:25:10 Number of idle job procs: 1
+01/02/25 18:25:10 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:25:10 Of 31 nodes total:
+01/02/25 18:25:10  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:25:10   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:25:10    20       0        1       0       0         10        0
+01/02/25 18:25:10 0 job proc(s) currently held
+01/02/25 18:25:15 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:25:15 Event: ULOG_EXECUTE for HTCondor Node step3_6 (10416509.0.0) {01/02/25 18:25:10}
+01/02/25 18:25:15 Number of idle job procs: 0
+01/02/25 18:25:15 Event: ULOG_JOB_TERMINATED for HTCondor Node step3_6 (10416509.0.0) {01/02/25 18:25:13}
+01/02/25 18:25:15 Number of idle job procs: 0
+01/02/25 18:25:15 Node step3_6 job proc (10416509.0.0) completed successfully.
+01/02/25 18:25:15 Node step3_6 job completed
+01/02/25 18:25:15 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:25:15 Of 31 nodes total:
+01/02/25 18:25:15  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:25:15   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:25:15    21       0        0       0       1          9        0
+01/02/25 18:25:15 0 job proc(s) currently held
+01/02/25 18:25:20 Submitting HTCondor Node step1_7 job(s)...
+01/02/25 18:25:20 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 18:25:20 Masking the events recorded in the DAGMAN workflow log
+01/02/25 18:25:20 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/02/25 18:25:20 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step1_7 -a +DAGManJobId' '=' '10416488 -a DAGManJobId' '=' '10416488 -batch-name dagman.dag+10416488 -a submit_event_notes' '=' 'DAG' 'Node:' 'step1_7 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"step3_6" step1.sub
+01/02/25 18:25:20 From submit: Submitting job(s).
+01/02/25 18:25:20 From submit: 1 job(s) submitted to cluster 10416510.
+01/02/25 18:25:20 	assigned HTCondor ID (10416510.0.0)
+01/02/25 18:25:20 Just submitted 1 job this cycle...
+01/02/25 18:25:20 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:25:20 Reassigning the id of job step1_7 from (10416510.0.0) to (10416510.0.0)
+01/02/25 18:25:20 Event: ULOG_SUBMIT for HTCondor Node step1_7 (10416510.0.0) {01/02/25 18:25:20}
+01/02/25 18:25:20 Number of idle job procs: 1
+01/02/25 18:25:20 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:25:20 Of 31 nodes total:
+01/02/25 18:25:20  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:25:20   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:25:20    21       0        1       0       0          9        0
+01/02/25 18:25:20 0 job proc(s) currently held
+01/02/25 18:25:25 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:25:25 Event: ULOG_EXECUTE for HTCondor Node step1_7 (10416510.0.0) {01/02/25 18:25:20}
+01/02/25 18:25:25 Number of idle job procs: 0
+01/02/25 18:25:25 Event: ULOG_JOB_TERMINATED for HTCondor Node step1_7 (10416510.0.0) {01/02/25 18:25:22}
+01/02/25 18:25:25 Number of idle job procs: 0
+01/02/25 18:25:25 Node step1_7 job proc (10416510.0.0) completed successfully.
+01/02/25 18:25:25 Node step1_7 job completed
+01/02/25 18:25:25 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:25:25 Of 31 nodes total:
+01/02/25 18:25:25  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:25:25   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:25:25    22       0        0       0       1          8        0
+01/02/25 18:25:25 0 job proc(s) currently held
+01/02/25 18:25:30 Submitting HTCondor Node step2_7 job(s)...
+01/02/25 18:25:30 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 18:25:30 Masking the events recorded in the DAGMAN workflow log
+01/02/25 18:25:30 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/02/25 18:25:30 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step2_7 -a +DAGManJobId' '=' '10416488 -a DAGManJobId' '=' '10416488 -batch-name dagman.dag+10416488 -a submit_event_notes' '=' 'DAG' 'Node:' 'step2_7 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a inputfilename' '=' '1e19_n1e3.hdf5 -a detectordescription' '=' 'station.json -a config' '=' 'config.yaml -a outputfilename' '=' 'output.hdf5 -a outputfilenameNuRadioReco' '=' 'output.nur -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"step1_7" step2.sub
+01/02/25 18:25:30 From submit: Submitting job(s).
+01/02/25 18:25:30 From submit: 1 job(s) submitted to cluster 10416511.
+01/02/25 18:25:30 	assigned HTCondor ID (10416511.0.0)
+01/02/25 18:25:30 Just submitted 1 job this cycle...
+01/02/25 18:25:30 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:25:30 Reassigning the id of job step2_7 from (10416511.0.0) to (10416511.0.0)
+01/02/25 18:25:30 Event: ULOG_SUBMIT for HTCondor Node step2_7 (10416511.0.0) {01/02/25 18:25:30}
+01/02/25 18:25:30 Number of idle job procs: 1
+01/02/25 18:25:30 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:25:30 Of 31 nodes total:
+01/02/25 18:25:30  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:25:30   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:25:30    22       0        1       0       0          8        0
+01/02/25 18:25:30 0 job proc(s) currently held
+01/02/25 18:25:35 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:25:35 Event: ULOG_EXECUTE for HTCondor Node step2_7 (10416511.0.0) {01/02/25 18:25:30}
+01/02/25 18:25:35 Number of idle job procs: 0
+01/02/25 18:25:45 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:25:45 Event: ULOG_JOB_TERMINATED for HTCondor Node step2_7 (10416511.0.0) {01/02/25 18:25:44}
+01/02/25 18:25:45 Number of idle job procs: 0
+01/02/25 18:25:45 Node step2_7 job proc (10416511.0.0) completed successfully.
+01/02/25 18:25:45 Node step2_7 job completed
+01/02/25 18:25:45 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:25:45 Of 31 nodes total:
+01/02/25 18:25:45  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:25:45   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:25:45    23       0        0       0       1          7        0
+01/02/25 18:25:45 0 job proc(s) currently held
+01/02/25 18:25:50 Submitting HTCondor Node step3_7 job(s)...
+01/02/25 18:25:50 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 18:25:50 Masking the events recorded in the DAGMAN workflow log
+01/02/25 18:25:50 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/02/25 18:25:50 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step3_7 -a +DAGManJobId' '=' '10416488 -a DAGManJobId' '=' '10416488 -batch-name dagman.dag+10416488 -a submit_event_notes' '=' 'DAG' 'Node:' 'step3_7 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"step2_7" step3.sub
+01/02/25 18:25:50 From submit: Submitting job(s).
+01/02/25 18:25:50 From submit: 1 job(s) submitted to cluster 10416512.
+01/02/25 18:25:50 	assigned HTCondor ID (10416512.0.0)
+01/02/25 18:25:50 Just submitted 1 job this cycle...
+01/02/25 18:25:50 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:25:50 Reassigning the id of job step3_7 from (10416512.0.0) to (10416512.0.0)
+01/02/25 18:25:50 Event: ULOG_SUBMIT for HTCondor Node step3_7 (10416512.0.0) {01/02/25 18:25:50}
+01/02/25 18:25:50 Number of idle job procs: 1
+01/02/25 18:25:50 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:25:50 Of 31 nodes total:
+01/02/25 18:25:50  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:25:50   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:25:50    23       0        1       0       0          7        0
+01/02/25 18:25:50 0 job proc(s) currently held
+01/02/25 18:25:55 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:25:55 Event: ULOG_EXECUTE for HTCondor Node step3_7 (10416512.0.0) {01/02/25 18:25:50}
+01/02/25 18:25:55 Number of idle job procs: 0
+01/02/25 18:25:55 Event: ULOG_JOB_TERMINATED for HTCondor Node step3_7 (10416512.0.0) {01/02/25 18:25:52}
+01/02/25 18:25:55 Number of idle job procs: 0
+01/02/25 18:25:55 Node step3_7 job proc (10416512.0.0) completed successfully.
+01/02/25 18:25:55 Node step3_7 job completed
+01/02/25 18:25:55 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:25:55 Of 31 nodes total:
+01/02/25 18:25:55  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:25:55   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:25:55    24       0        0       0       1          6        0
+01/02/25 18:25:55 0 job proc(s) currently held
+01/02/25 18:26:00 Submitting HTCondor Node step1_8 job(s)...
+01/02/25 18:26:00 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 18:26:00 Masking the events recorded in the DAGMAN workflow log
+01/02/25 18:26:00 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/02/25 18:26:00 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step1_8 -a +DAGManJobId' '=' '10416488 -a DAGManJobId' '=' '10416488 -batch-name dagman.dag+10416488 -a submit_event_notes' '=' 'DAG' 'Node:' 'step1_8 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"step3_7" step1.sub
+01/02/25 18:26:00 From submit: Submitting job(s).
+01/02/25 18:26:00 From submit: 1 job(s) submitted to cluster 10416513.
+01/02/25 18:26:00 	assigned HTCondor ID (10416513.0.0)
+01/02/25 18:26:00 Just submitted 1 job this cycle...
+01/02/25 18:26:00 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:26:00 Reassigning the id of job step1_8 from (10416513.0.0) to (10416513.0.0)
+01/02/25 18:26:00 Event: ULOG_SUBMIT for HTCondor Node step1_8 (10416513.0.0) {01/02/25 18:26:00}
+01/02/25 18:26:00 Number of idle job procs: 1
+01/02/25 18:26:00 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:26:00 Of 31 nodes total:
+01/02/25 18:26:00  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:26:00   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:26:00    24       0        1       0       0          6        0
+01/02/25 18:26:00 0 job proc(s) currently held
+01/02/25 18:26:05 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:26:05 Event: ULOG_EXECUTE for HTCondor Node step1_8 (10416513.0.0) {01/02/25 18:26:00}
+01/02/25 18:26:05 Number of idle job procs: 0
+01/02/25 18:26:05 Event: ULOG_JOB_TERMINATED for HTCondor Node step1_8 (10416513.0.0) {01/02/25 18:26:02}
+01/02/25 18:26:05 Number of idle job procs: 0
+01/02/25 18:26:05 Node step1_8 job proc (10416513.0.0) completed successfully.
+01/02/25 18:26:05 Node step1_8 job completed
+01/02/25 18:26:05 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:26:05 Of 31 nodes total:
+01/02/25 18:26:05  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:26:05   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:26:05    25       0        0       0       1          5        0
+01/02/25 18:26:05 0 job proc(s) currently held
+01/02/25 18:26:10 Submitting HTCondor Node step2_8 job(s)...
+01/02/25 18:26:10 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 18:26:10 Masking the events recorded in the DAGMAN workflow log
+01/02/25 18:26:10 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/02/25 18:26:10 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step2_8 -a +DAGManJobId' '=' '10416488 -a DAGManJobId' '=' '10416488 -batch-name dagman.dag+10416488 -a submit_event_notes' '=' 'DAG' 'Node:' 'step2_8 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a inputfilename' '=' '1e19_n1e3.hdf5 -a detectordescription' '=' 'station.json -a config' '=' 'config.yaml -a outputfilename' '=' 'output.hdf5 -a outputfilenameNuRadioReco' '=' 'output.nur -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"step1_8" step2.sub
+01/02/25 18:26:10 From submit: Submitting job(s).
+01/02/25 18:26:10 From submit: 1 job(s) submitted to cluster 10416514.
+01/02/25 18:26:10 	assigned HTCondor ID (10416514.0.0)
+01/02/25 18:26:10 Just submitted 1 job this cycle...
+01/02/25 18:26:10 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:26:10 Reassigning the id of job step2_8 from (10416514.0.0) to (10416514.0.0)
+01/02/25 18:26:10 Event: ULOG_SUBMIT for HTCondor Node step2_8 (10416514.0.0) {01/02/25 18:26:10}
+01/02/25 18:26:10 Number of idle job procs: 1
+01/02/25 18:26:10 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:26:10 Of 31 nodes total:
+01/02/25 18:26:10  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:26:10   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:26:10    25       0        1       0       0          5        0
+01/02/25 18:26:10 0 job proc(s) currently held
+01/02/25 18:26:15 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:26:15 Event: ULOG_EXECUTE for HTCondor Node step2_8 (10416514.0.0) {01/02/25 18:26:10}
+01/02/25 18:26:15 Number of idle job procs: 0
+01/02/25 18:26:35 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:26:35 Event: ULOG_JOB_TERMINATED for HTCondor Node step2_8 (10416514.0.0) {01/02/25 18:26:32}
+01/02/25 18:26:35 Number of idle job procs: 0
+01/02/25 18:26:35 Node step2_8 job proc (10416514.0.0) completed successfully.
+01/02/25 18:26:35 Node step2_8 job completed
+01/02/25 18:26:35 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:26:35 Of 31 nodes total:
+01/02/25 18:26:35  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:26:35   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:26:35    26       0        0       0       1          4        0
+01/02/25 18:26:35 0 job proc(s) currently held
+01/02/25 18:26:40 Submitting HTCondor Node step3_8 job(s)...
+01/02/25 18:26:40 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 18:26:40 Masking the events recorded in the DAGMAN workflow log
+01/02/25 18:26:40 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/02/25 18:26:40 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step3_8 -a +DAGManJobId' '=' '10416488 -a DAGManJobId' '=' '10416488 -batch-name dagman.dag+10416488 -a submit_event_notes' '=' 'DAG' 'Node:' 'step3_8 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"step2_8" step3.sub
+01/02/25 18:26:40 From submit: Submitting job(s).
+01/02/25 18:26:40 From submit: 1 job(s) submitted to cluster 10416515.
+01/02/25 18:26:40 	assigned HTCondor ID (10416515.0.0)
+01/02/25 18:26:40 Just submitted 1 job this cycle...
+01/02/25 18:26:40 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:26:40 Reassigning the id of job step3_8 from (10416515.0.0) to (10416515.0.0)
+01/02/25 18:26:40 Event: ULOG_SUBMIT for HTCondor Node step3_8 (10416515.0.0) {01/02/25 18:26:40}
+01/02/25 18:26:40 Number of idle job procs: 1
+01/02/25 18:26:40 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:26:40 Of 31 nodes total:
+01/02/25 18:26:40  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:26:40   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:26:40    26       0        1       0       0          4        0
+01/02/25 18:26:40 0 job proc(s) currently held
+01/02/25 18:26:45 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:26:45 Event: ULOG_EXECUTE for HTCondor Node step3_8 (10416515.0.0) {01/02/25 18:26:40}
+01/02/25 18:26:45 Number of idle job procs: 0
+01/02/25 18:26:45 Event: ULOG_JOB_TERMINATED for HTCondor Node step3_8 (10416515.0.0) {01/02/25 18:26:42}
+01/02/25 18:26:45 Number of idle job procs: 0
+01/02/25 18:26:45 Node step3_8 job proc (10416515.0.0) completed successfully.
+01/02/25 18:26:45 Node step3_8 job completed
+01/02/25 18:26:45 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:26:45 Of 31 nodes total:
+01/02/25 18:26:45  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:26:45   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:26:45    27       0        0       0       1          3        0
+01/02/25 18:26:45 0 job proc(s) currently held
+01/02/25 18:26:50 Submitting HTCondor Node step1_9 job(s)...
+01/02/25 18:26:50 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 18:26:50 Masking the events recorded in the DAGMAN workflow log
+01/02/25 18:26:50 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/02/25 18:26:50 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step1_9 -a +DAGManJobId' '=' '10416488 -a DAGManJobId' '=' '10416488 -batch-name dagman.dag+10416488 -a submit_event_notes' '=' 'DAG' 'Node:' 'step1_9 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"step3_8" step1.sub
+01/02/25 18:26:50 From submit: Submitting job(s).
+01/02/25 18:26:50 From submit: 1 job(s) submitted to cluster 10416516.
+01/02/25 18:26:50 	assigned HTCondor ID (10416516.0.0)
+01/02/25 18:26:50 Just submitted 1 job this cycle...
+01/02/25 18:26:50 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:26:50 Reassigning the id of job step1_9 from (10416516.0.0) to (10416516.0.0)
+01/02/25 18:26:50 Event: ULOG_SUBMIT for HTCondor Node step1_9 (10416516.0.0) {01/02/25 18:26:50}
+01/02/25 18:26:50 Number of idle job procs: 1
+01/02/25 18:26:50 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:26:50 Of 31 nodes total:
+01/02/25 18:26:50  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:26:50   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:26:50    27       0        1       0       0          3        0
+01/02/25 18:26:50 0 job proc(s) currently held
+01/02/25 18:26:55 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:26:55 Event: ULOG_EXECUTE for HTCondor Node step1_9 (10416516.0.0) {01/02/25 18:26:50}
+01/02/25 18:26:55 Number of idle job procs: 0
+01/02/25 18:26:55 Event: ULOG_JOB_TERMINATED for HTCondor Node step1_9 (10416516.0.0) {01/02/25 18:26:52}
+01/02/25 18:26:55 Number of idle job procs: 0
+01/02/25 18:26:55 Node step1_9 job proc (10416516.0.0) completed successfully.
+01/02/25 18:26:55 Node step1_9 job completed
+01/02/25 18:26:55 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:26:55 Of 31 nodes total:
+01/02/25 18:26:55  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:26:55   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:26:55    28       0        0       0       1          2        0
+01/02/25 18:26:55 0 job proc(s) currently held
+01/02/25 18:27:00 Submitting HTCondor Node step2_9 job(s)...
+01/02/25 18:27:00 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 18:27:00 Masking the events recorded in the DAGMAN workflow log
+01/02/25 18:27:00 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/02/25 18:27:00 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step2_9 -a +DAGManJobId' '=' '10416488 -a DAGManJobId' '=' '10416488 -batch-name dagman.dag+10416488 -a submit_event_notes' '=' 'DAG' 'Node:' 'step2_9 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a inputfilename' '=' '1e19_n1e3.hdf5 -a detectordescription' '=' 'station.json -a config' '=' 'config.yaml -a outputfilename' '=' 'output.hdf5 -a outputfilenameNuRadioReco' '=' 'output.nur -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"step1_9" step2.sub
+01/02/25 18:27:00 From submit: Submitting job(s).
+01/02/25 18:27:00 From submit: 1 job(s) submitted to cluster 10416517.
+01/02/25 18:27:00 	assigned HTCondor ID (10416517.0.0)
+01/02/25 18:27:00 Just submitted 1 job this cycle...
+01/02/25 18:27:00 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:27:00 Reassigning the id of job step2_9 from (10416517.0.0) to (10416517.0.0)
+01/02/25 18:27:00 Event: ULOG_SUBMIT for HTCondor Node step2_9 (10416517.0.0) {01/02/25 18:27:00}
+01/02/25 18:27:00 Number of idle job procs: 1
+01/02/25 18:27:00 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:27:00 Of 31 nodes total:
+01/02/25 18:27:00  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:27:00   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:27:00    28       0        1       0       0          2        0
+01/02/25 18:27:00 0 job proc(s) currently held
+01/02/25 18:27:05 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:27:05 Event: ULOG_EXECUTE for HTCondor Node step2_9 (10416517.0.0) {01/02/25 18:27:00}
+01/02/25 18:27:05 Number of idle job procs: 0
+01/02/25 18:27:10 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:27:10 Event: ULOG_JOB_TERMINATED for HTCondor Node step2_9 (10416517.0.0) {01/02/25 18:27:08}
+01/02/25 18:27:10 Number of idle job procs: 0
+01/02/25 18:27:10 Node step2_9 job proc (10416517.0.0) completed successfully.
+01/02/25 18:27:10 Node step2_9 job completed
+01/02/25 18:27:10 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:27:10 Of 31 nodes total:
+01/02/25 18:27:10  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:27:10   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:27:10    29       0        0       0       1          1        0
+01/02/25 18:27:10 0 job proc(s) currently held
+01/02/25 18:27:15 Submitting HTCondor Node step3_9 job(s)...
+01/02/25 18:27:15 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 18:27:15 Masking the events recorded in the DAGMAN workflow log
+01/02/25 18:27:15 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/02/25 18:27:15 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step3_9 -a +DAGManJobId' '=' '10416488 -a DAGManJobId' '=' '10416488 -batch-name dagman.dag+10416488 -a submit_event_notes' '=' 'DAG' 'Node:' 'step3_9 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"step2_9" step3.sub
+01/02/25 18:27:15 From submit: Submitting job(s).
+01/02/25 18:27:15 From submit: 1 job(s) submitted to cluster 10416518.
+01/02/25 18:27:15 	assigned HTCondor ID (10416518.0.0)
+01/02/25 18:27:15 Just submitted 1 job this cycle...
+01/02/25 18:27:15 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:27:15 Reassigning the id of job step3_9 from (10416518.0.0) to (10416518.0.0)
+01/02/25 18:27:15 Event: ULOG_SUBMIT for HTCondor Node step3_9 (10416518.0.0) {01/02/25 18:27:15}
+01/02/25 18:27:15 Number of idle job procs: 1
+01/02/25 18:27:15 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:27:15 Of 31 nodes total:
+01/02/25 18:27:15  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:27:15   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:27:15    29       0        1       0       0          1        0
+01/02/25 18:27:15 0 job proc(s) currently held
+01/02/25 18:27:20 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:27:20 Event: ULOG_EXECUTE for HTCondor Node step3_9 (10416518.0.0) {01/02/25 18:27:15}
+01/02/25 18:27:20 Number of idle job procs: 0
+01/02/25 18:27:20 Event: ULOG_JOB_TERMINATED for HTCondor Node step3_9 (10416518.0.0) {01/02/25 18:27:18}
+01/02/25 18:27:20 Number of idle job procs: 0
+01/02/25 18:27:20 Node step3_9 job proc (10416518.0.0) completed successfully.
+01/02/25 18:27:20 Node step3_9 job completed
+01/02/25 18:27:20 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:27:20 Of 31 nodes total:
+01/02/25 18:27:20  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:27:20   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:27:20    30       0        0       0       1          0        0
+01/02/25 18:27:20 0 job proc(s) currently held
+01/02/25 18:27:25 Submitting HTCondor Node step4 job(s)...
+01/02/25 18:27:25 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 18:27:25 Masking the events recorded in the DAGMAN workflow log
+01/02/25 18:27:25 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/02/25 18:27:25 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step4 -a +DAGManJobId' '=' '10416488 -a DAGManJobId' '=' '10416488 -batch-name dagman.dag+10416488 -a submit_event_notes' '=' 'DAG' 'Node:' 'step4 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"step3_9" step4.sub
+01/02/25 18:27:25 From submit: Submitting job(s).
+01/02/25 18:27:25 From submit: 1 job(s) submitted to cluster 10416519.
+01/02/25 18:27:25 	assigned HTCondor ID (10416519.0.0)
+01/02/25 18:27:25 Just submitted 1 job this cycle...
+01/02/25 18:27:25 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:27:25 Reassigning the id of job step4 from (10416519.0.0) to (10416519.0.0)
+01/02/25 18:27:25 Event: ULOG_SUBMIT for HTCondor Node step4 (10416519.0.0) {01/02/25 18:27:25}
+01/02/25 18:27:25 Number of idle job procs: 1
+01/02/25 18:27:25 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:27:25 Of 31 nodes total:
+01/02/25 18:27:25  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:27:25   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:27:25    30       0        1       0       0          0        0
+01/02/25 18:27:25 0 job proc(s) currently held
+01/02/25 18:27:30 Currently monitoring 1 HTCondor log file(s)
+01/02/25 18:27:30 Event: ULOG_EXECUTE for HTCondor Node step4 (10416519.0.0) {01/02/25 18:27:25}
+01/02/25 18:27:30 Number of idle job procs: 0
+01/02/25 18:27:30 Event: ULOG_JOB_TERMINATED for HTCondor Node step4 (10416519.0.0) {01/02/25 18:27:28}
+01/02/25 18:27:30 Number of idle job procs: 0
+01/02/25 18:27:30 Node step4 job proc (10416519.0.0) completed successfully.
+01/02/25 18:27:30 Node step4 job completed
+01/02/25 18:27:30 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:27:30 Of 31 nodes total:
+01/02/25 18:27:30  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:27:30   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:27:30    31       0        0       0       0          0        0
+01/02/25 18:27:30 0 job proc(s) currently held
+01/02/25 18:27:30 All jobs Completed!
+01/02/25 18:27:30 Note: 0 total job deferrals because of -MaxJobs limit (0)
+01/02/25 18:27:30 Note: 0 total job deferrals because of -MaxIdle limit (1000)
+01/02/25 18:27:30 Note: 0 total job deferrals because of node category throttles
+01/02/25 18:27:30 Note: 0 total PRE script deferrals because of -MaxPre limit (20) or DEFER
+01/02/25 18:27:30 Note: 0 total POST script deferrals because of -MaxPost limit (20) or DEFER
+01/02/25 18:27:30 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 18:27:30 Of 31 nodes total:
+01/02/25 18:27:30  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 18:27:30   ===     ===      ===     ===     ===        ===      ===
+01/02/25 18:27:30    31       0        0       0       0          0        0
+01/02/25 18:27:30 0 job proc(s) currently held
+01/02/25 18:27:30 Wrote metrics file dagman.dag.metrics.
+01/02/25 18:27:30 Metrics not sent because of PEGASUS_METRICS or CONDOR_DEVELOPERS setting.
+01/02/25 18:27:30 **** condor_scheduniv_exec.10416488.0 (condor_DAGMAN) pid 30114 EXITING WITH STATUS 0
+01/02/25 23:59:21 ******************************************************
+01/02/25 23:59:21 ** condor_scheduniv_exec.10416520.0 (CONDOR_DAGMAN) STARTING UP
+01/02/25 23:59:21 ** /usr/bin/condor_dagman
+01/02/25 23:59:21 ** SubsystemInfo: name=DAGMAN type=DAGMAN(10) class=DAEMON(1)
+01/02/25 23:59:21 ** Configuration: subsystem:DAGMAN local:<NONE> class:DAEMON
+01/02/25 23:59:21 ** $CondorVersion: 8.6.8 Apr 06 2018 BuildID: Debian-8.6.8~dfsg.1-2 Debian-8.6.8~dfsg.1-2 $
+01/02/25 23:59:21 ** $CondorPlatform: X86_64-Ubuntu_ $
+01/02/25 23:59:21 ** PID = 22736
+01/02/25 23:59:21 ** Log last touched 1/2 18:27:30
+01/02/25 23:59:21 ******************************************************
+01/02/25 23:59:21 Using config source: /etc/condor/condor_config
+01/02/25 23:59:21 Using local config sources: 
+01/02/25 23:59:21    /etc/condor/condor_config.local
+01/02/25 23:59:21 config Macros = 69, Sorted = 69, StringBytes = 2034, TablesBytes = 2532
+01/02/25 23:59:21 CLASSAD_CACHING is ENABLED
+01/02/25 23:59:21 Daemon Log is logging: D_ALWAYS D_ERROR
+01/02/25 23:59:21 DaemonCore: No command port requested.
+01/02/25 23:59:21 DAGMAN_USE_STRICT setting: 1
+01/02/25 23:59:21 DAGMAN_VERBOSITY setting: 3
+01/02/25 23:59:21 DAGMAN_DEBUG_CACHE_SIZE setting: 5242880
+01/02/25 23:59:21 DAGMAN_DEBUG_CACHE_ENABLE setting: False
+01/02/25 23:59:21 DAGMAN_SUBMIT_DELAY setting: 0
+01/02/25 23:59:21 DAGMAN_MAX_SUBMIT_ATTEMPTS setting: 6
+01/02/25 23:59:21 DAGMAN_STARTUP_CYCLE_DETECT setting: False
+01/02/25 23:59:21 DAGMAN_MAX_SUBMITS_PER_INTERVAL setting: 5
+01/02/25 23:59:21 DAGMAN_USER_LOG_SCAN_INTERVAL setting: 5
+01/02/25 23:59:21 DAGMAN_DEFAULT_PRIORITY setting: 0
+01/02/25 23:59:21 DAGMAN_SUPPRESS_NOTIFICATION setting: True
+01/02/25 23:59:21 allow_events (DAGMAN_ALLOW_EVENTS) setting: 114
+01/02/25 23:59:21 DAGMAN_RETRY_SUBMIT_FIRST setting: True
+01/02/25 23:59:21 DAGMAN_RETRY_NODE_FIRST setting: False
+01/02/25 23:59:21 DAGMAN_MAX_JOBS_IDLE setting: 1000
+01/02/25 23:59:21 DAGMAN_MAX_JOBS_SUBMITTED setting: 0
+01/02/25 23:59:21 DAGMAN_MAX_PRE_SCRIPTS setting: 20
+01/02/25 23:59:21 DAGMAN_MAX_POST_SCRIPTS setting: 20
+01/02/25 23:59:21 DAGMAN_MUNGE_NODE_NAMES setting: True
+01/02/25 23:59:21 DAGMAN_PROHIBIT_MULTI_JOBS setting: False
+01/02/25 23:59:21 DAGMAN_SUBMIT_DEPTH_FIRST setting: False
+01/02/25 23:59:21 DAGMAN_ALWAYS_RUN_POST setting: False
+01/02/25 23:59:21 DAGMAN_ABORT_DUPLICATES setting: True
+01/02/25 23:59:21 DAGMAN_ABORT_ON_SCARY_SUBMIT setting: True
+01/02/25 23:59:21 DAGMAN_PENDING_REPORT_INTERVAL setting: 600
+01/02/25 23:59:21 DAGMAN_AUTO_RESCUE setting: True
+01/02/25 23:59:21 DAGMAN_MAX_RESCUE_NUM setting: 100
+01/02/25 23:59:21 DAGMAN_WRITE_PARTIAL_RESCUE setting: True
+01/02/25 23:59:21 DAGMAN_DEFAULT_NODE_LOG setting: @(DAG_DIR)/@(DAG_FILE).nodes.log
+01/02/25 23:59:21 DAGMAN_GENERATE_SUBDAG_SUBMITS setting: True
+01/02/25 23:59:21 DAGMAN_MAX_JOB_HOLDS setting: 100
+01/02/25 23:59:21 DAGMAN_HOLD_CLAIM_TIME setting: 20
+01/02/25 23:59:21 ALL_DEBUG setting: 
+01/02/25 23:59:21 DAGMAN_DEBUG setting: 
+01/02/25 23:59:21 DAGMAN_SUPPRESS_JOB_LOGS setting: False
+01/02/25 23:59:21 DAGMAN_REMOVE_NODE_JOBS setting: True
+01/02/25 23:59:21 argv[0] == "condor_scheduniv_exec.10416520.0"
+01/02/25 23:59:21 argv[1] == "-Lockfile"
+01/02/25 23:59:21 argv[2] == "dagman.dag.lock"
+01/02/25 23:59:21 argv[3] == "-AutoRescue"
+01/02/25 23:59:21 argv[4] == "1"
+01/02/25 23:59:21 argv[5] == "-DoRescueFrom"
+01/02/25 23:59:21 argv[6] == "0"
+01/02/25 23:59:21 argv[7] == "-Dag"
+01/02/25 23:59:21 argv[8] == "dagman.dag"
+01/02/25 23:59:21 argv[9] == "-Suppress_notification"
+01/02/25 23:59:21 argv[10] == "-CsdVersion"
+01/02/25 23:59:21 argv[11] == "$CondorVersion: 8.6.8 Apr 06 2018 BuildID: Debian-8.6.8~dfsg.1-2 Debian-8.6.8~dfsg.1-2 $"
+01/02/25 23:59:21 argv[12] == "-Force"
+01/02/25 23:59:21 argv[13] == "-Dagman"
+01/02/25 23:59:21 argv[14] == "/usr/bin/condor_dagman"
+01/02/25 23:59:21 Workflow batch-name: <dagman.dag+10416520>
+01/02/25 23:59:21 Workflow accounting_group: <>
+01/02/25 23:59:21 Workflow accounting_group_user: <>
+01/02/25 23:59:21 Warning: failed to get attribute DAGNodeName
+01/02/25 23:59:21 DAGMAN_LOG_ON_NFS_IS_ERROR setting: False
+01/02/25 23:59:21 Default node log file is: </data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log>
+01/02/25 23:59:21 DAG Lockfile will be written to dagman.dag.lock
+01/02/25 23:59:21 DAG Input file is dagman.dag
+01/02/25 23:59:21 Parsing 1 dagfiles
+01/02/25 23:59:21 Parsing dagman.dag ...
+01/02/25 23:59:21 Dag contains 4 total jobs
+01/02/25 23:59:21 Sleeping for 3 seconds to ensure ProcessId uniqueness
+01/02/25 23:59:24 Bootstrapping...
+01/02/25 23:59:24 Number of pre-completed nodes: 0
+01/02/25 23:59:24 MultiLogFiles: truncating log file /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 23:59:24 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 23:59:24 Of 4 nodes total:
+01/02/25 23:59:24  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 23:59:24   ===     ===      ===     ===     ===        ===      ===
+01/02/25 23:59:24     0       0        0       0       1          3        0
+01/02/25 23:59:24 0 job proc(s) currently held
+01/02/25 23:59:24 Registering condor_event_timer...
+01/02/25 23:59:25 Submitting HTCondor Node step1_0 job(s)...
+01/02/25 23:59:25 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 23:59:25 Masking the events recorded in the DAGMAN workflow log
+01/02/25 23:59:25 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/02/25 23:59:25 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step1_0 -a +DAGManJobId' '=' '10416520 -a DAGManJobId' '=' '10416520 -batch-name dagman.dag+10416520 -a submit_event_notes' '=' 'DAG' 'Node:' 'step1_0 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"" step1.sub
+01/02/25 23:59:25 From submit: Submitting job(s).
+01/02/25 23:59:25 From submit: 1 job(s) submitted to cluster 10416521.
+01/02/25 23:59:25 	assigned HTCondor ID (10416521.0.0)
+01/02/25 23:59:25 Just submitted 1 job this cycle...
+01/02/25 23:59:25 Currently monitoring 1 HTCondor log file(s)
+01/02/25 23:59:25 Reassigning the id of job step1_0 from (10416521.0.0) to (10416521.0.0)
+01/02/25 23:59:25 Event: ULOG_SUBMIT for HTCondor Node step1_0 (10416521.0.0) {01/02/25 23:59:25}
+01/02/25 23:59:25 Number of idle job procs: 1
+01/02/25 23:59:25 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 23:59:25 Of 4 nodes total:
+01/02/25 23:59:25  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 23:59:25   ===     ===      ===     ===     ===        ===      ===
+01/02/25 23:59:25     0       0        1       0       0          3        0
+01/02/25 23:59:25 0 job proc(s) currently held
+01/02/25 23:59:40 Currently monitoring 1 HTCondor log file(s)
+01/02/25 23:59:40 Event: ULOG_EXECUTE for HTCondor Node step1_0 (10416521.0.0) {01/02/25 23:59:37}
+01/02/25 23:59:40 Number of idle job procs: 0
+01/02/25 23:59:40 Event: ULOG_JOB_TERMINATED for HTCondor Node step1_0 (10416521.0.0) {01/02/25 23:59:39}
+01/02/25 23:59:40 Number of idle job procs: 0
+01/02/25 23:59:40 Node step1_0 job proc (10416521.0.0) completed successfully.
+01/02/25 23:59:40 Node step1_0 job completed
+01/02/25 23:59:40 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 23:59:40 Of 4 nodes total:
+01/02/25 23:59:40  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 23:59:40   ===     ===      ===     ===     ===        ===      ===
+01/02/25 23:59:40     1       0        0       0       1          2        0
+01/02/25 23:59:40 0 job proc(s) currently held
+01/02/25 23:59:45 Submitting HTCondor Node step2_0 job(s)...
+01/02/25 23:59:45 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/02/25 23:59:45 Masking the events recorded in the DAGMAN workflow log
+01/02/25 23:59:45 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/02/25 23:59:45 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step2_0 -a +DAGManJobId' '=' '10416520 -a DAGManJobId' '=' '10416520 -batch-name dagman.dag+10416520 -a submit_event_notes' '=' 'DAG' 'Node:' 'step2_0 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a inputfilename' '=' '1e19_n1e3.hdf5 -a detectordescription' '=' 'station.json -a config' '=' 'config.yaml -a outputfilename' '=' 'output.hdf5 -a outputfilenameNuRadioReco' '=' 'output.nur -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"step1_0" step2.sub
+01/02/25 23:59:45 From submit: Submitting job(s).
+01/02/25 23:59:45 From submit: 1 job(s) submitted to cluster 10416522.
+01/02/25 23:59:45 	assigned HTCondor ID (10416522.0.0)
+01/02/25 23:59:45 Just submitted 1 job this cycle...
+01/02/25 23:59:45 Currently monitoring 1 HTCondor log file(s)
+01/02/25 23:59:45 Reassigning the id of job step2_0 from (10416522.0.0) to (10416522.0.0)
+01/02/25 23:59:45 Event: ULOG_SUBMIT for HTCondor Node step2_0 (10416522.0.0) {01/02/25 23:59:45}
+01/02/25 23:59:45 Number of idle job procs: 1
+01/02/25 23:59:45 DAG status: 0 (DAG_STATUS_OK)
+01/02/25 23:59:45 Of 4 nodes total:
+01/02/25 23:59:45  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/02/25 23:59:45   ===     ===      ===     ===     ===        ===      ===
+01/02/25 23:59:45     1       0        1       0       0          2        0
+01/02/25 23:59:45 0 job proc(s) currently held
+01/02/25 23:59:50 Currently monitoring 1 HTCondor log file(s)
+01/02/25 23:59:50 Event: ULOG_EXECUTE for HTCondor Node step2_0 (10416522.0.0) {01/02/25 23:59:45}
+01/02/25 23:59:50 Number of idle job procs: 0
+01/03/25 00:00:00 Currently monitoring 1 HTCondor log file(s)
+01/03/25 00:00:00 Event: ULOG_JOB_TERMINATED for HTCondor Node step2_0 (10416522.0.0) {01/02/25 23:59:57}
+01/03/25 00:00:00 Number of idle job procs: 0
+01/03/25 00:00:00 Node step2_0 job proc (10416522.0.0) completed successfully.
+01/03/25 00:00:00 Node step2_0 job completed
+01/03/25 00:00:00 DAG status: 0 (DAG_STATUS_OK)
+01/03/25 00:00:00 Of 4 nodes total:
+01/03/25 00:00:00  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/03/25 00:00:00   ===     ===      ===     ===     ===        ===      ===
+01/03/25 00:00:00     2       0        0       0       1          1        0
+01/03/25 00:00:00 0 job proc(s) currently held
+01/03/25 00:00:05 Submitting HTCondor Node step3_0 job(s)...
+01/03/25 00:00:05 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/03/25 00:00:05 Masking the events recorded in the DAGMAN workflow log
+01/03/25 00:00:05 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/03/25 00:00:05 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step3_0 -a +DAGManJobId' '=' '10416520 -a DAGManJobId' '=' '10416520 -batch-name dagman.dag+10416520 -a submit_event_notes' '=' 'DAG' 'Node:' 'step3_0 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"step2_0" step3.sub
+01/03/25 00:00:05 From submit: Submitting job(s).
+01/03/25 00:00:05 From submit: 1 job(s) submitted to cluster 10416523.
+01/03/25 00:00:05 	assigned HTCondor ID (10416523.0.0)
+01/03/25 00:00:05 Just submitted 1 job this cycle...
+01/03/25 00:00:05 Currently monitoring 1 HTCondor log file(s)
+01/03/25 00:00:05 Reassigning the id of job step3_0 from (10416523.0.0) to (10416523.0.0)
+01/03/25 00:00:05 Event: ULOG_SUBMIT for HTCondor Node step3_0 (10416523.0.0) {01/03/25 00:00:05}
+01/03/25 00:00:05 Number of idle job procs: 1
+01/03/25 00:00:05 DAG status: 0 (DAG_STATUS_OK)
+01/03/25 00:00:05 Of 4 nodes total:
+01/03/25 00:00:05  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/03/25 00:00:05   ===     ===      ===     ===     ===        ===      ===
+01/03/25 00:00:05     2       0        1       0       0          1        0
+01/03/25 00:00:05 0 job proc(s) currently held
+01/03/25 00:00:10 Currently monitoring 1 HTCondor log file(s)
+01/03/25 00:00:10 Event: ULOG_EXECUTE for HTCondor Node step3_0 (10416523.0.0) {01/03/25 00:00:05}
+01/03/25 00:00:10 Number of idle job procs: 0
+01/03/25 00:00:10 Event: ULOG_JOB_TERMINATED for HTCondor Node step3_0 (10416523.0.0) {01/03/25 00:00:07}
+01/03/25 00:00:10 Number of idle job procs: 0
+01/03/25 00:00:10 Node step3_0 job proc (10416523.0.0) completed successfully.
+01/03/25 00:00:10 Node step3_0 job completed
+01/03/25 00:00:10 DAG status: 0 (DAG_STATUS_OK)
+01/03/25 00:00:10 Of 4 nodes total:
+01/03/25 00:00:10  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/03/25 00:00:10   ===     ===      ===     ===     ===        ===      ===
+01/03/25 00:00:10     3       0        0       0       1          0        0
+01/03/25 00:00:10 0 job proc(s) currently held
+01/03/25 00:00:15 Submitting HTCondor Node step4 job(s)...
+01/03/25 00:00:15 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/03/25 00:00:15 Masking the events recorded in the DAGMAN workflow log
+01/03/25 00:00:15 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/03/25 00:00:15 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step4 -a +DAGManJobId' '=' '10416520 -a DAGManJobId' '=' '10416520 -batch-name dagman.dag+10416520 -a submit_event_notes' '=' 'DAG' 'Node:' 'step4 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"step3_0" step4.sub
+01/03/25 00:00:15 From submit: Submitting job(s).
+01/03/25 00:00:15 From submit: 1 job(s) submitted to cluster 10416524.
+01/03/25 00:00:15 	assigned HTCondor ID (10416524.0.0)
+01/03/25 00:00:15 Just submitted 1 job this cycle...
+01/03/25 00:00:15 Currently monitoring 1 HTCondor log file(s)
+01/03/25 00:00:15 Reassigning the id of job step4 from (10416524.0.0) to (10416524.0.0)
+01/03/25 00:00:15 Event: ULOG_SUBMIT for HTCondor Node step4 (10416524.0.0) {01/03/25 00:00:15}
+01/03/25 00:00:15 Number of idle job procs: 1
+01/03/25 00:00:15 DAG status: 0 (DAG_STATUS_OK)
+01/03/25 00:00:15 Of 4 nodes total:
+01/03/25 00:00:15  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/03/25 00:00:15   ===     ===      ===     ===     ===        ===      ===
+01/03/25 00:00:15     3       0        1       0       0          0        0
+01/03/25 00:00:15 0 job proc(s) currently held
+01/03/25 00:00:20 Currently monitoring 1 HTCondor log file(s)
+01/03/25 00:00:20 Event: ULOG_EXECUTE for HTCondor Node step4 (10416524.0.0) {01/03/25 00:00:15}
+01/03/25 00:00:20 Number of idle job procs: 0
+01/03/25 00:00:20 Event: ULOG_JOB_TERMINATED for HTCondor Node step4 (10416524.0.0) {01/03/25 00:00:17}
+01/03/25 00:00:20 Number of idle job procs: 0
+01/03/25 00:00:20 Node step4 job proc (10416524.0.0) completed successfully.
+01/03/25 00:00:20 Node step4 job completed
+01/03/25 00:00:20 DAG status: 0 (DAG_STATUS_OK)
+01/03/25 00:00:20 Of 4 nodes total:
+01/03/25 00:00:20  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/03/25 00:00:20   ===     ===      ===     ===     ===        ===      ===
+01/03/25 00:00:20     4       0        0       0       0          0        0
+01/03/25 00:00:20 0 job proc(s) currently held
+01/03/25 00:00:20 All jobs Completed!
+01/03/25 00:00:20 Note: 0 total job deferrals because of -MaxJobs limit (0)
+01/03/25 00:00:20 Note: 0 total job deferrals because of -MaxIdle limit (1000)
+01/03/25 00:00:20 Note: 0 total job deferrals because of node category throttles
+01/03/25 00:00:20 Note: 0 total PRE script deferrals because of -MaxPre limit (20) or DEFER
+01/03/25 00:00:20 Note: 0 total POST script deferrals because of -MaxPost limit (20) or DEFER
+01/03/25 00:00:20 DAG status: 0 (DAG_STATUS_OK)
+01/03/25 00:00:20 Of 4 nodes total:
+01/03/25 00:00:20  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/03/25 00:00:20   ===     ===      ===     ===     ===        ===      ===
+01/03/25 00:00:20     4       0        0       0       0          0        0
+01/03/25 00:00:20 0 job proc(s) currently held
+01/03/25 00:00:20 Wrote metrics file dagman.dag.metrics.
+01/03/25 00:00:20 Metrics not sent because of PEGASUS_METRICS or CONDOR_DEVELOPERS setting.
+01/03/25 00:00:20 **** condor_scheduniv_exec.10416520.0 (condor_DAGMAN) pid 22736 EXITING WITH STATUS 0
+01/03/25 00:05:52 ******************************************************
+01/03/25 00:05:52 ** condor_scheduniv_exec.10416525.0 (CONDOR_DAGMAN) STARTING UP
+01/03/25 00:05:52 ** /usr/bin/condor_dagman
+01/03/25 00:05:52 ** SubsystemInfo: name=DAGMAN type=DAGMAN(10) class=DAEMON(1)
+01/03/25 00:05:52 ** Configuration: subsystem:DAGMAN local:<NONE> class:DAEMON
+01/03/25 00:05:52 ** $CondorVersion: 8.6.8 Apr 06 2018 BuildID: Debian-8.6.8~dfsg.1-2 Debian-8.6.8~dfsg.1-2 $
+01/03/25 00:05:52 ** $CondorPlatform: X86_64-Ubuntu_ $
+01/03/25 00:05:52 ** PID = 3873
+01/03/25 00:05:52 ** Log last touched 1/3 00:00:20
+01/03/25 00:05:52 ******************************************************
+01/03/25 00:05:52 Using config source: /etc/condor/condor_config
+01/03/25 00:05:52 Using local config sources: 
+01/03/25 00:05:52    /etc/condor/condor_config.local
+01/03/25 00:05:52 config Macros = 69, Sorted = 69, StringBytes = 2032, TablesBytes = 2532
+01/03/25 00:05:52 CLASSAD_CACHING is ENABLED
+01/03/25 00:05:52 Daemon Log is logging: D_ALWAYS D_ERROR
+01/03/25 00:05:52 DaemonCore: No command port requested.
+01/03/25 00:05:52 DAGMAN_USE_STRICT setting: 1
+01/03/25 00:05:52 DAGMAN_VERBOSITY setting: 3
+01/03/25 00:05:52 DAGMAN_DEBUG_CACHE_SIZE setting: 5242880
+01/03/25 00:05:52 DAGMAN_DEBUG_CACHE_ENABLE setting: False
+01/03/25 00:05:52 DAGMAN_SUBMIT_DELAY setting: 0
+01/03/25 00:05:52 DAGMAN_MAX_SUBMIT_ATTEMPTS setting: 6
+01/03/25 00:05:52 DAGMAN_STARTUP_CYCLE_DETECT setting: False
+01/03/25 00:05:52 DAGMAN_MAX_SUBMITS_PER_INTERVAL setting: 5
+01/03/25 00:05:52 DAGMAN_USER_LOG_SCAN_INTERVAL setting: 5
+01/03/25 00:05:52 DAGMAN_DEFAULT_PRIORITY setting: 0
+01/03/25 00:05:52 DAGMAN_SUPPRESS_NOTIFICATION setting: True
+01/03/25 00:05:52 allow_events (DAGMAN_ALLOW_EVENTS) setting: 114
+01/03/25 00:05:52 DAGMAN_RETRY_SUBMIT_FIRST setting: True
+01/03/25 00:05:52 DAGMAN_RETRY_NODE_FIRST setting: False
+01/03/25 00:05:52 DAGMAN_MAX_JOBS_IDLE setting: 1000
+01/03/25 00:05:52 DAGMAN_MAX_JOBS_SUBMITTED setting: 0
+01/03/25 00:05:52 DAGMAN_MAX_PRE_SCRIPTS setting: 20
+01/03/25 00:05:52 DAGMAN_MAX_POST_SCRIPTS setting: 20
+01/03/25 00:05:52 DAGMAN_MUNGE_NODE_NAMES setting: True
+01/03/25 00:05:52 DAGMAN_PROHIBIT_MULTI_JOBS setting: False
+01/03/25 00:05:52 DAGMAN_SUBMIT_DEPTH_FIRST setting: False
+01/03/25 00:05:52 DAGMAN_ALWAYS_RUN_POST setting: False
+01/03/25 00:05:52 DAGMAN_ABORT_DUPLICATES setting: True
+01/03/25 00:05:52 DAGMAN_ABORT_ON_SCARY_SUBMIT setting: True
+01/03/25 00:05:52 DAGMAN_PENDING_REPORT_INTERVAL setting: 600
+01/03/25 00:05:52 DAGMAN_AUTO_RESCUE setting: True
+01/03/25 00:05:52 DAGMAN_MAX_RESCUE_NUM setting: 100
+01/03/25 00:05:52 DAGMAN_WRITE_PARTIAL_RESCUE setting: True
+01/03/25 00:05:52 DAGMAN_DEFAULT_NODE_LOG setting: @(DAG_DIR)/@(DAG_FILE).nodes.log
+01/03/25 00:05:52 DAGMAN_GENERATE_SUBDAG_SUBMITS setting: True
+01/03/25 00:05:52 DAGMAN_MAX_JOB_HOLDS setting: 100
+01/03/25 00:05:52 DAGMAN_HOLD_CLAIM_TIME setting: 20
+01/03/25 00:05:52 ALL_DEBUG setting: 
+01/03/25 00:05:52 DAGMAN_DEBUG setting: 
+01/03/25 00:05:52 DAGMAN_SUPPRESS_JOB_LOGS setting: False
+01/03/25 00:05:52 DAGMAN_REMOVE_NODE_JOBS setting: True
+01/03/25 00:05:52 argv[0] == "condor_scheduniv_exec.10416525.0"
+01/03/25 00:05:52 argv[1] == "-Lockfile"
+01/03/25 00:05:52 argv[2] == "dagman.dag.lock"
+01/03/25 00:05:52 argv[3] == "-AutoRescue"
+01/03/25 00:05:52 argv[4] == "1"
+01/03/25 00:05:52 argv[5] == "-DoRescueFrom"
+01/03/25 00:05:52 argv[6] == "0"
+01/03/25 00:05:52 argv[7] == "-Dag"
+01/03/25 00:05:52 argv[8] == "dagman.dag"
+01/03/25 00:05:52 argv[9] == "-Suppress_notification"
+01/03/25 00:05:52 argv[10] == "-CsdVersion"
+01/03/25 00:05:52 argv[11] == "$CondorVersion: 8.6.8 Apr 06 2018 BuildID: Debian-8.6.8~dfsg.1-2 Debian-8.6.8~dfsg.1-2 $"
+01/03/25 00:05:52 argv[12] == "-Force"
+01/03/25 00:05:52 argv[13] == "-Dagman"
+01/03/25 00:05:52 argv[14] == "/usr/bin/condor_dagman"
+01/03/25 00:05:52 Workflow batch-name: <dagman.dag+10416525>
+01/03/25 00:05:52 Workflow accounting_group: <>
+01/03/25 00:05:52 Workflow accounting_group_user: <>
+01/03/25 00:05:52 Warning: failed to get attribute DAGNodeName
+01/03/25 00:05:52 DAGMAN_LOG_ON_NFS_IS_ERROR setting: False
+01/03/25 00:05:52 Default node log file is: </data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log>
+01/03/25 00:05:52 DAG Lockfile will be written to dagman.dag.lock
+01/03/25 00:05:52 DAG Input file is dagman.dag
+01/03/25 00:05:52 Parsing 1 dagfiles
+01/03/25 00:05:52 Parsing dagman.dag ...
+01/03/25 00:05:52 Dag contains 4 total jobs
+01/03/25 00:05:52 Sleeping for 3 seconds to ensure ProcessId uniqueness
+01/03/25 00:05:55 Bootstrapping...
+01/03/25 00:05:55 Number of pre-completed nodes: 0
+01/03/25 00:05:55 MultiLogFiles: truncating log file /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/03/25 00:05:55 DAG status: 0 (DAG_STATUS_OK)
+01/03/25 00:05:55 Of 4 nodes total:
+01/03/25 00:05:55  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/03/25 00:05:55   ===     ===      ===     ===     ===        ===      ===
+01/03/25 00:05:55     0       0        0       0       1          3        0
+01/03/25 00:05:55 0 job proc(s) currently held
+01/03/25 00:05:55 Registering condor_event_timer...
+01/03/25 00:05:56 Submitting HTCondor Node step1_0 job(s)...
+01/03/25 00:05:56 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/03/25 00:05:56 Masking the events recorded in the DAGMAN workflow log
+01/03/25 00:05:56 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/03/25 00:05:56 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step1_0 -a +DAGManJobId' '=' '10416525 -a DAGManJobId' '=' '10416525 -batch-name dagman.dag+10416525 -a submit_event_notes' '=' 'DAG' 'Node:' 'step1_0 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"" step1.sub
+01/03/25 00:05:56 From submit: Submitting job(s).
+01/03/25 00:05:56 From submit: 1 job(s) submitted to cluster 10416526.
+01/03/25 00:05:56 	assigned HTCondor ID (10416526.0.0)
+01/03/25 00:05:56 Just submitted 1 job this cycle...
+01/03/25 00:05:56 Currently monitoring 1 HTCondor log file(s)
+01/03/25 00:05:56 Reassigning the id of job step1_0 from (10416526.0.0) to (10416526.0.0)
+01/03/25 00:05:56 Event: ULOG_SUBMIT for HTCondor Node step1_0 (10416526.0.0) {01/03/25 00:05:56}
+01/03/25 00:05:56 Number of idle job procs: 1
+01/03/25 00:05:56 DAG status: 0 (DAG_STATUS_OK)
+01/03/25 00:05:56 Of 4 nodes total:
+01/03/25 00:05:56  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/03/25 00:05:56   ===     ===      ===     ===     ===        ===      ===
+01/03/25 00:05:56     0       0        1       0       0          3        0
+01/03/25 00:05:56 0 job proc(s) currently held
+01/03/25 00:06:16 Currently monitoring 1 HTCondor log file(s)
+01/03/25 00:06:16 Event: ULOG_EXECUTE for HTCondor Node step1_0 (10416526.0.0) {01/03/25 00:06:12}
+01/03/25 00:06:16 Number of idle job procs: 0
+01/03/25 00:06:16 Event: ULOG_IMAGE_SIZE for HTCondor Node step1_0 (10416526.0.0) {01/03/25 00:06:14}
+01/03/25 00:06:16 Event: ULOG_JOB_TERMINATED for HTCondor Node step1_0 (10416526.0.0) {01/03/25 00:06:14}
+01/03/25 00:06:16 Number of idle job procs: 0
+01/03/25 00:06:16 Node step1_0 job proc (10416526.0.0) completed successfully.
+01/03/25 00:06:16 Node step1_0 job completed
+01/03/25 00:06:16 DAG status: 0 (DAG_STATUS_OK)
+01/03/25 00:06:16 Of 4 nodes total:
+01/03/25 00:06:16  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/03/25 00:06:16   ===     ===      ===     ===     ===        ===      ===
+01/03/25 00:06:16     1       0        0       0       1          2        0
+01/03/25 00:06:16 0 job proc(s) currently held
+01/03/25 00:06:21 Submitting HTCondor Node step2_0 job(s)...
+01/03/25 00:06:21 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/03/25 00:06:21 Masking the events recorded in the DAGMAN workflow log
+01/03/25 00:06:21 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/03/25 00:06:21 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step2_0 -a +DAGManJobId' '=' '10416525 -a DAGManJobId' '=' '10416525 -batch-name dagman.dag+10416525 -a submit_event_notes' '=' 'DAG' 'Node:' 'step2_0 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a inputfilename' '=' '1e19_n1e3.hdf5 -a detectordescription' '=' 'station.json -a config' '=' 'config.yaml -a outputfilename' '=' 'output.hdf5 -a outputfilenameNuRadioReco' '=' 'output.nur -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"step1_0" step2.sub
+01/03/25 00:06:21 From submit: Submitting job(s).
+01/03/25 00:06:21 From submit: 1 job(s) submitted to cluster 10416527.
+01/03/25 00:06:21 	assigned HTCondor ID (10416527.0.0)
+01/03/25 00:06:21 Just submitted 1 job this cycle...
+01/03/25 00:06:21 Currently monitoring 1 HTCondor log file(s)
+01/03/25 00:06:21 Reassigning the id of job step2_0 from (10416527.0.0) to (10416527.0.0)
+01/03/25 00:06:21 Event: ULOG_SUBMIT for HTCondor Node step2_0 (10416527.0.0) {01/03/25 00:06:21}
+01/03/25 00:06:21 Number of idle job procs: 1
+01/03/25 00:06:21 DAG status: 0 (DAG_STATUS_OK)
+01/03/25 00:06:21 Of 4 nodes total:
+01/03/25 00:06:21  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/03/25 00:06:21   ===     ===      ===     ===     ===        ===      ===
+01/03/25 00:06:21     1       0        1       0       0          2        0
+01/03/25 00:06:21 0 job proc(s) currently held
+01/03/25 00:06:26 Currently monitoring 1 HTCondor log file(s)
+01/03/25 00:06:26 Event: ULOG_EXECUTE for HTCondor Node step2_0 (10416527.0.0) {01/03/25 00:06:21}
+01/03/25 00:06:26 Number of idle job procs: 0
+01/03/25 00:06:31 Currently monitoring 1 HTCondor log file(s)
+01/03/25 00:06:31 Event: ULOG_IMAGE_SIZE for HTCondor Node step2_0 (10416527.0.0) {01/03/25 00:06:30}
+01/03/25 00:06:41 Currently monitoring 1 HTCondor log file(s)
+01/03/25 00:06:41 Event: ULOG_IMAGE_SIZE for HTCondor Node step2_0 (10416527.0.0) {01/03/25 00:06:41}
+01/03/25 00:06:41 Event: ULOG_JOB_TERMINATED for HTCondor Node step2_0 (10416527.0.0) {01/03/25 00:06:41}
+01/03/25 00:06:41 Number of idle job procs: 0
+01/03/25 00:06:41 Node step2_0 job proc (10416527.0.0) completed successfully.
+01/03/25 00:06:41 Node step2_0 job completed
+01/03/25 00:06:41 DAG status: 0 (DAG_STATUS_OK)
+01/03/25 00:06:41 Of 4 nodes total:
+01/03/25 00:06:41  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/03/25 00:06:41   ===     ===      ===     ===     ===        ===      ===
+01/03/25 00:06:41     2       0        0       0       1          1        0
+01/03/25 00:06:41 0 job proc(s) currently held
+01/03/25 00:06:46 Submitting HTCondor Node step3_0 job(s)...
+01/03/25 00:06:46 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/03/25 00:06:46 Masking the events recorded in the DAGMAN workflow log
+01/03/25 00:06:46 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/03/25 00:06:46 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step3_0 -a +DAGManJobId' '=' '10416525 -a DAGManJobId' '=' '10416525 -batch-name dagman.dag+10416525 -a submit_event_notes' '=' 'DAG' 'Node:' 'step3_0 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a +KeepClaimIdle' '=' '20 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"step2_0" step3.sub
+01/03/25 00:06:46 From submit: Submitting job(s).
+01/03/25 00:06:46 From submit: 1 job(s) submitted to cluster 10416528.
+01/03/25 00:06:46 	assigned HTCondor ID (10416528.0.0)
+01/03/25 00:06:46 Just submitted 1 job this cycle...
+01/03/25 00:06:46 Currently monitoring 1 HTCondor log file(s)
+01/03/25 00:06:46 Reassigning the id of job step3_0 from (10416528.0.0) to (10416528.0.0)
+01/03/25 00:06:46 Event: ULOG_SUBMIT for HTCondor Node step3_0 (10416528.0.0) {01/03/25 00:06:46}
+01/03/25 00:06:46 Number of idle job procs: 1
+01/03/25 00:06:46 DAG status: 0 (DAG_STATUS_OK)
+01/03/25 00:06:46 Of 4 nodes total:
+01/03/25 00:06:46  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/03/25 00:06:46   ===     ===      ===     ===     ===        ===      ===
+01/03/25 00:06:46     2       0        1       0       0          1        0
+01/03/25 00:06:46 0 job proc(s) currently held
+01/03/25 00:06:51 Currently monitoring 1 HTCondor log file(s)
+01/03/25 00:06:51 Event: ULOG_EXECUTE for HTCondor Node step3_0 (10416528.0.0) {01/03/25 00:06:46}
+01/03/25 00:06:51 Number of idle job procs: 0
+01/03/25 00:06:51 Event: ULOG_IMAGE_SIZE for HTCondor Node step3_0 (10416528.0.0) {01/03/25 00:06:48}
+01/03/25 00:06:51 Event: ULOG_JOB_TERMINATED for HTCondor Node step3_0 (10416528.0.0) {01/03/25 00:06:48}
+01/03/25 00:06:51 Number of idle job procs: 0
+01/03/25 00:06:51 Node step3_0 job proc (10416528.0.0) completed successfully.
+01/03/25 00:06:51 Node step3_0 job completed
+01/03/25 00:06:51 DAG status: 0 (DAG_STATUS_OK)
+01/03/25 00:06:51 Of 4 nodes total:
+01/03/25 00:06:51  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/03/25 00:06:51   ===     ===      ===     ===     ===        ===      ===
+01/03/25 00:06:51     3       0        0       0       1          0        0
+01/03/25 00:06:51 0 job proc(s) currently held
+01/03/25 00:06:56 Submitting HTCondor Node step4 job(s)...
+01/03/25 00:06:56 Adding a DAGMan workflow log /data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log
+01/03/25 00:06:56 Masking the events recorded in the DAGMAN workflow log
+01/03/25 00:06:56 Mask for workflow log is 0,1,2,4,5,7,9,10,11,12,13,16,17,24,27
+01/03/25 00:06:56 submitting: /usr/bin/condor_submit -a dag_node_name' '=' 'step4 -a +DAGManJobId' '=' '10416525 -a DAGManJobId' '=' '10416525 -batch-name dagman.dag+10416525 -a submit_event_notes' '=' 'DAG' 'Node:' 'step4 -a dagman_log' '=' '/data/i3home/ssued/RNOGCnn/CNN_steps/jobs/./dagman.dag.nodes.log -a +DAGManNodesMask' '=' '"0,1,2,4,5,7,9,10,11,12,13,16,17,24,27" -a DAG_STATUS' '=' '0 -a FAILED_COUNT' '=' '0 -a notification' '=' 'never -a +DAGParentNodeNames' '=' '"step3_0" step4.sub
+01/03/25 00:06:56 From submit: Submitting job(s).
+01/03/25 00:06:56 From submit: 1 job(s) submitted to cluster 10416529.
+01/03/25 00:06:56 	assigned HTCondor ID (10416529.0.0)
+01/03/25 00:06:56 Just submitted 1 job this cycle...
+01/03/25 00:06:56 Currently monitoring 1 HTCondor log file(s)
+01/03/25 00:06:56 Reassigning the id of job step4 from (10416529.0.0) to (10416529.0.0)
+01/03/25 00:06:56 Event: ULOG_SUBMIT for HTCondor Node step4 (10416529.0.0) {01/03/25 00:06:56}
+01/03/25 00:06:56 Number of idle job procs: 1
+01/03/25 00:06:56 DAG status: 0 (DAG_STATUS_OK)
+01/03/25 00:06:56 Of 4 nodes total:
+01/03/25 00:06:56  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/03/25 00:06:56   ===     ===      ===     ===     ===        ===      ===
+01/03/25 00:06:56     3       0        1       0       0          0        0
+01/03/25 00:06:56 0 job proc(s) currently held
+01/03/25 00:07:01 Currently monitoring 1 HTCondor log file(s)
+01/03/25 00:07:01 Event: ULOG_EXECUTE for HTCondor Node step4 (10416529.0.0) {01/03/25 00:06:56}
+01/03/25 00:07:01 Number of idle job procs: 0
+01/03/25 00:07:01 Event: ULOG_IMAGE_SIZE for HTCondor Node step4 (10416529.0.0) {01/03/25 00:06:58}
+01/03/25 00:07:01 Event: ULOG_JOB_TERMINATED for HTCondor Node step4 (10416529.0.0) {01/03/25 00:06:58}
+01/03/25 00:07:01 Number of idle job procs: 0
+01/03/25 00:07:01 Node step4 job proc (10416529.0.0) completed successfully.
+01/03/25 00:07:01 Node step4 job completed
+01/03/25 00:07:01 DAG status: 0 (DAG_STATUS_OK)
+01/03/25 00:07:01 Of 4 nodes total:
+01/03/25 00:07:01  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/03/25 00:07:01   ===     ===      ===     ===     ===        ===      ===
+01/03/25 00:07:01     4       0        0       0       0          0        0
+01/03/25 00:07:01 0 job proc(s) currently held
+01/03/25 00:07:01 All jobs Completed!
+01/03/25 00:07:01 Note: 0 total job deferrals because of -MaxJobs limit (0)
+01/03/25 00:07:01 Note: 0 total job deferrals because of -MaxIdle limit (1000)
+01/03/25 00:07:01 Note: 0 total job deferrals because of node category throttles
+01/03/25 00:07:01 Note: 0 total PRE script deferrals because of -MaxPre limit (20) or DEFER
+01/03/25 00:07:01 Note: 0 total POST script deferrals because of -MaxPost limit (20) or DEFER
+01/03/25 00:07:01 DAG status: 0 (DAG_STATUS_OK)
+01/03/25 00:07:01 Of 4 nodes total:
+01/03/25 00:07:01  Done     Pre   Queued    Post   Ready   Un-Ready   Failed
+01/03/25 00:07:01   ===     ===      ===     ===     ===        ===      ===
+01/03/25 00:07:01     4       0        0       0       0          0        0
+01/03/25 00:07:01 0 job proc(s) currently held
+01/03/25 00:07:01 Wrote metrics file dagman.dag.metrics.
+01/03/25 00:07:01 Metrics not sent because of PEGASUS_METRICS or CONDOR_DEVELOPERS setting.
+01/03/25 00:07:01 **** condor_scheduniv_exec.10416525.0 (condor_DAGMAN) pid 3873 EXITING WITH STATUS 0
