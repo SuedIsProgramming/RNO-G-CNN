@@ -22,7 +22,7 @@ volume = {
 generate_eventlist_cylinder('1e19_n1e3.hdf5', 1e2, 1e19 * units.eV, 1e19 * units.eV, volume)
 
 # Debugging memory usage
-import resource
-usage=resource.getrusage(resource.RUSAGE_SELF)
-memory_in_mb = usage[2]/1024.
-print(f" Step 1: Mem usage {memory_in_mb} MB")
+# import resource
+# usage=resource.getrusage(resource.RUSAGE_SELF)
+# memory_in_mb = usage[2]/1024.
+# print(f" Step 1: Mem usage {memory_in_mb} MB")

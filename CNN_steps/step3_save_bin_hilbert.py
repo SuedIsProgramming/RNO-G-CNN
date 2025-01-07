@@ -52,7 +52,7 @@ for iEvent, event in enumerate(events): # For each event
 utils.save_events(events_in=event_dict,directory='/data/i3home/ssued/RNOGCnn/CNN_steps/eventdata') # Save the events
 
 # Debugging memory usage
-import resource
-usage=resource.getrusage(resource.RUSAGE_SELF)
-memory_in_mb = usage[2]/1024.
-print(f"Step 3 Mem usage {memory_in_mb} MB")
+# import resource
+# usage=resource.getrusage(resource.RUSAGE_SELF)
+# memory_in_mb = usage[2]/1024.
+# print(f"Step 3 Mem usage {memory_in_mb} MB")

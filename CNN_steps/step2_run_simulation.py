@@ -70,7 +70,7 @@ if __name__ == "__main__":
     sim.run()
 
 # Debugging memory usage
-import resource
-usage=resource.getrusage(resource.RUSAGE_SELF)
-memory_in_mb = usage[2]/1024.
-print(f"Step 2 Mem usage {memory_in_mb} MB")
+# import resource
+# usage=resource.getrusage(resource.RUSAGE_SELF)
+# memory_in_mb = usage[2]/1024.
+# print(f"Step 2 Mem usage {memory_in_mb} MB")

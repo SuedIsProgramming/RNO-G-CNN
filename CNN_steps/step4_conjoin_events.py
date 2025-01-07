@@ -27,7 +27,7 @@ for file_name in os.listdir(os.getcwd()): # Looks at all files in the directory
 print('Done conjoining events.')
 
 # Debugging memory usage
-import resource
-usage=resource.getrusage(resource.RUSAGE_SELF)
-memory_in_mb = usage[2]/1024.
-print(f"Step 4 Mem usage {memory_in_mb} MB")
+# import resource
+# usage=resource.getrusage(resource.RUSAGE_SELF)
+# memory_in_mb = usage[2]/1024.
+# print(f"Step 4 Mem usage {memory_in_mb} MB")
