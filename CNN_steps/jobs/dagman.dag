@@ -1,36 +1,36 @@
-JOB step1_0 step1.sub 
-JOB step2_0 step2.sub 
-VARS step2_0 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
-JOB step3_0 step3.sub 
+JOB stepOne_0 step1.sub 
+JOB stepTwo_0 step2.sub 
+VARS stepTwo_0 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
+JOB stepThree_0 step3.sub 
 
-PARENT step1_0 CHILD step2_0
-PARENT step2_0 CHILD step3_0
+PARENT stepOne_0 CHILD stepTwo_0
+PARENT stepTwo_0 CHILD stepThree_0
 
-JOB step1_1 step1.sub 
-JOB step2_1 step2.sub 
-VARS step2_1 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
-JOB step3_1 step3.sub 
+JOB stepOne_1 step1.sub 
+JOB stepTwo_1 step2.sub 
+VARS stepTwo_1 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
+JOB stepThree_1 step3.sub 
 
-PARENT step3_0 CHILD step1_1 
-PARENT step1_1 CHILD step2_1 
-PARENT step2_1 CHILD step3_1 
+PARENT stepOne_1 CHILD stepTwo_1 
+PARENT stepTwo_1 CHILD stepThree_1 
 
-JOB step1_2 step1.sub 
-JOB step2_2 step2.sub 
-VARS step2_2 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
-JOB step3_2 step3.sub 
+JOB stepOne_2 step1.sub 
+JOB stepTwo_2 step2.sub 
+VARS stepTwo_2 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
+JOB stepThree_2 step3.sub 
 
-PARENT step3_1 CHILD step1_2 
-PARENT step1_2 CHILD step2_2 
-PARENT step2_2 CHILD step3_2 
+PARENT stepOne_2 CHILD stepTwo_2 
+PARENT stepTwo_2 CHILD stepThree_2 
 
-JOB step1_3 step1.sub 
-JOB step2_3 step2.sub 
-VARS step2_3 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
-JOB step3_3 step3.sub 
-JOB step4 step4.sub 
+JOB stepOne_3 step1.sub 
+JOB stepTwo_3 step2.sub 
+VARS stepTwo_3 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
+JOB stepThree_3 step3.sub 
+JOB stepFour step4.sub 
 
-PARENT step3_2 CHILD step1_3 
-PARENT step1_3 CHILD step2_3
-PARENT step2_3 CHILD step3_3
-PARENT step3_3 CHILD step4
+PARENT stepOne_3 CHILD stepTwo_3
+PARENT stepTwo_3 CHILD stepThree_3
+
+PARENT stepThree_1 CHILD stepFour
+PARENT stepThree_2 CHILD stepFour
+PARENT stepThree_3 CHILD stepFour
