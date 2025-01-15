@@ -1,8 +1,9 @@
 executable = /data/i3home/ssued/RNOGCnn/CNN_steps/step1_generate_event_list.py
+arguments = $(sim_num)
 
 #log = job.log
 #output = job.$(Cluster).out
-#error = job.$(Cluster).err
+error = job.$(Cluster).err
 request_cpus = 1
 request_memory = 400MB
 

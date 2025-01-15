@@ -3,7 +3,7 @@ arguments = $(inputfilename) $(detectordescription) $(config) $(outputfilename) 
 
 #log = job.log
 #output = job.$(Cluster).out
-#error = job.$(Cluster).err
+error = job.$(Cluster).err
 request_cpus = 1
 request_memory = 400MB
 

@@ -24,6 +24,15 @@ for file_name in os.listdir(os.getcwd()): # Looks at all files in the directory
         except Exception as e:
             print(f"An error occurred while processing {file_name}: {e}")
 
+for file_name in os.listdir('/data/i3home/ssued/RNOGCnn/CNN_steps/symdata'): # Get rid of hdf5 files that are no longer needed.
+    if file_name.startswith('1e19_n1e3_') and file_name.endswith('.hdf5'):
+        try:
+            os.remove(f'/data/i3home/ssued/RNOGCnn/CNN_steps/symdata/{file_name}')
+        except EOFError:
+            print(f"Error: {file_name} is empty or corrupted.")
+        except Exception as e:
+            print(f"An error occurred while processing {file_name}: {e}")
+
 print('Done conjoining events.')
 
 # Debugging memory usage

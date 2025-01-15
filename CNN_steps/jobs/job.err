@@ -1,8 +1,0 @@
-WARNING: AstropyDeprecationWarning: Importing ErfaWarning from astropy.utils.exceptions was deprecated in version 6.1 and will stop working in a future version. Instead, please use
-from erfa import ErfaWarning
-
- [astropy.utils.exceptions]
-WARNING:astropy:AstropyDeprecationWarning: Importing ErfaWarning from astropy.utils.exceptions was deprecated in version 6.1 and will stop working in a future version. Instead, please use
-from erfa import ErfaWarning
-
-

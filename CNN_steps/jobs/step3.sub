@@ -2,7 +2,7 @@ executable = /data/i3home/ssued/RNOGCnn/CNN_steps/step3_save_bin_hilbert.py
 
 #log = job.log
 #output = job.$(Cluster).out
-#error = job.$(Cluster).err
+error = job.$(Cluster).err
 request_cpus = 1
 request_memory = 400MB
 
