@@ -2,7 +2,7 @@ executable = /data/i3home/ssued/RNOGCnn/CNN_steps/step2_run_simulation.py
 arguments = $(inputfilename) $(detectordescription) $(config) $(outputfilename) $(outputfilenameNuRadioReco)
 
 #log = job.log
-#output = job.$(Cluster).out
+output = job.$(Cluster).out
 error = job.$(Cluster).err
 request_cpus = 1
 request_memory = 400MB

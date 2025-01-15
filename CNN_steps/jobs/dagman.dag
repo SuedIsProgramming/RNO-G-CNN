@@ -1,7 +1,7 @@
 JOB stepOne_0 step1.sub 
 VARS stepOne_0 sim_num="0" 
 JOB stepTwo_0 step2.sub 
-VARS stepTwo_0 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
+VARS stepTwo_0 inputfilename="1e19_n1e3_0.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
 JOB stepThree_0 step3.sub 
 
 PARENT stepOne_0 CHILD stepTwo_0
@@ -10,7 +10,7 @@ PARENT stepTwo_0 CHILD stepThree_0
 JOB stepOne_1 step1.sub 
 VARS stepOne_1 sim_num="1" 
 JOB stepTwo_1 step2.sub 
-VARS stepTwo_1 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
+VARS stepTwo_1 inputfilename="1e19_n1e3_1.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
 JOB stepThree_1 step3.sub 
 
 PARENT stepOne_1 CHILD stepTwo_1 
@@ -19,7 +19,7 @@ PARENT stepTwo_1 CHILD stepThree_1
 JOB stepOne_2 step1.sub 
 VARS stepOne_2 sim_num="2" 
 JOB stepTwo_2 step2.sub 
-VARS stepTwo_2 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
+VARS stepTwo_2 inputfilename="1e19_n1e3_2.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
 JOB stepThree_2 step3.sub 
 
 PARENT stepOne_2 CHILD stepTwo_2 
@@ -28,7 +28,7 @@ PARENT stepTwo_2 CHILD stepThree_2
 JOB stepOne_3 step1.sub 
 VARS stepOne_3 sim_num="3" 
 JOB stepTwo_3 step2.sub 
-VARS stepTwo_3 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
+VARS stepTwo_3 inputfilename="1e19_n1e3_3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
 JOB stepThree_3 step3.sub 
 
 PARENT stepOne_3 CHILD stepTwo_3 
@@ -37,7 +37,7 @@ PARENT stepTwo_3 CHILD stepThree_3
 JOB stepOne_4 step1.sub 
 VARS stepOne_4 sim_num="4" 
 JOB stepTwo_4 step2.sub 
-VARS stepTwo_4 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
+VARS stepTwo_4 inputfilename="1e19_n1e3_4.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
 JOB stepThree_4 step3.sub 
 
 PARENT stepOne_4 CHILD stepTwo_4 
@@ -46,7 +46,7 @@ PARENT stepTwo_4 CHILD stepThree_4
 JOB stepOne_5 step1.sub 
 VARS stepOne_5 sim_num="5" 
 JOB stepTwo_5 step2.sub 
-VARS stepTwo_5 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
+VARS stepTwo_5 inputfilename="1e19_n1e3_5.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
 JOB stepThree_5 step3.sub 
 
 PARENT stepOne_5 CHILD stepTwo_5 
@@ -55,7 +55,7 @@ PARENT stepTwo_5 CHILD stepThree_5
 JOB stepOne_6 step1.sub 
 VARS stepOne_6 sim_num="6" 
 JOB stepTwo_6 step2.sub 
-VARS stepTwo_6 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
+VARS stepTwo_6 inputfilename="1e19_n1e3_6.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
 JOB stepThree_6 step3.sub 
 
 PARENT stepOne_6 CHILD stepTwo_6 
@@ -64,7 +64,7 @@ PARENT stepTwo_6 CHILD stepThree_6
 JOB stepOne_7 step1.sub 
 VARS stepOne_7 sim_num="7" 
 JOB stepTwo_7 step2.sub 
-VARS stepTwo_7 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
+VARS stepTwo_7 inputfilename="1e19_n1e3_7.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
 JOB stepThree_7 step3.sub 
 
 PARENT stepOne_7 CHILD stepTwo_7 
@@ -73,7 +73,7 @@ PARENT stepTwo_7 CHILD stepThree_7
 JOB stepOne_8 step1.sub 
 VARS stepOne_8 sim_num="8" 
 JOB stepTwo_8 step2.sub 
-VARS stepTwo_8 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
+VARS stepTwo_8 inputfilename="1e19_n1e3_8.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
 JOB stepThree_8 step3.sub 
 
 PARENT stepOne_8 CHILD stepTwo_8 
@@ -82,7 +82,7 @@ PARENT stepTwo_8 CHILD stepThree_8
 JOB stepOne_9 step1.sub 
 VARS stepOne_9 sim_num="9" 
 JOB stepTwo_9 step2.sub 
-VARS stepTwo_9 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
+VARS stepTwo_9 inputfilename="1e19_n1e3_9.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
 JOB stepThree_9 step3.sub 
 
 PARENT stepOne_9 CHILD stepTwo_9 
@@ -91,7 +91,7 @@ PARENT stepTwo_9 CHILD stepThree_9
 JOB stepOne_10 step1.sub 
 VARS stepOne_10 sim_num="10" 
 JOB stepTwo_10 step2.sub 
-VARS stepTwo_10 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
+VARS stepTwo_10 inputfilename="1e19_n1e3_10.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
 JOB stepThree_10 step3.sub 
 
 PARENT stepOne_10 CHILD stepTwo_10 
@@ -100,7 +100,7 @@ PARENT stepTwo_10 CHILD stepThree_10
 JOB stepOne_11 step1.sub 
 VARS stepOne_11 sim_num="11" 
 JOB stepTwo_11 step2.sub 
-VARS stepTwo_11 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
+VARS stepTwo_11 inputfilename="1e19_n1e3_11.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
 JOB stepThree_11 step3.sub 
 
 PARENT stepOne_11 CHILD stepTwo_11 
@@ -109,7 +109,7 @@ PARENT stepTwo_11 CHILD stepThree_11
 JOB stepOne_12 step1.sub 
 VARS stepOne_12 sim_num="12" 
 JOB stepTwo_12 step2.sub 
-VARS stepTwo_12 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
+VARS stepTwo_12 inputfilename="1e19_n1e3_12.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
 JOB stepThree_12 step3.sub 
 
 PARENT stepOne_12 CHILD stepTwo_12 
@@ -118,7 +118,7 @@ PARENT stepTwo_12 CHILD stepThree_12
 JOB stepOne_13 step1.sub 
 VARS stepOne_13 sim_num="13" 
 JOB stepTwo_13 step2.sub 
-VARS stepTwo_13 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
+VARS stepTwo_13 inputfilename="1e19_n1e3_13.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
 JOB stepThree_13 step3.sub 
 
 PARENT stepOne_13 CHILD stepTwo_13 
@@ -127,7 +127,7 @@ PARENT stepTwo_13 CHILD stepThree_13
 JOB stepOne_14 step1.sub 
 VARS stepOne_14 sim_num="14" 
 JOB stepTwo_14 step2.sub 
-VARS stepTwo_14 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
+VARS stepTwo_14 inputfilename="1e19_n1e3_14.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
 JOB stepThree_14 step3.sub 
 
 PARENT stepOne_14 CHILD stepTwo_14 
@@ -136,444 +136,12 @@ PARENT stepTwo_14 CHILD stepThree_14
 JOB stepOne_15 step1.sub 
 VARS stepOne_15 sim_num="15" 
 JOB stepTwo_15 step2.sub 
-VARS stepTwo_15 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
+VARS stepTwo_15 inputfilename="1e19_n1e3_15.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
 JOB stepThree_15 step3.sub 
-
-PARENT stepOne_15 CHILD stepTwo_15 
-PARENT stepTwo_15 CHILD stepThree_15 
-
-JOB stepOne_16 step1.sub 
-VARS stepOne_16 sim_num="16" 
-JOB stepTwo_16 step2.sub 
-VARS stepTwo_16 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
-JOB stepThree_16 step3.sub 
-
-PARENT stepOne_16 CHILD stepTwo_16 
-PARENT stepTwo_16 CHILD stepThree_16 
-
-JOB stepOne_17 step1.sub 
-VARS stepOne_17 sim_num="17" 
-JOB stepTwo_17 step2.sub 
-VARS stepTwo_17 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
-JOB stepThree_17 step3.sub 
-
-PARENT stepOne_17 CHILD stepTwo_17 
-PARENT stepTwo_17 CHILD stepThree_17 
-
-JOB stepOne_18 step1.sub 
-VARS stepOne_18 sim_num="18" 
-JOB stepTwo_18 step2.sub 
-VARS stepTwo_18 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
-JOB stepThree_18 step3.sub 
-
-PARENT stepOne_18 CHILD stepTwo_18 
-PARENT stepTwo_18 CHILD stepThree_18 
-
-JOB stepOne_19 step1.sub 
-VARS stepOne_19 sim_num="19" 
-JOB stepTwo_19 step2.sub 
-VARS stepTwo_19 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
-JOB stepThree_19 step3.sub 
-
-PARENT stepOne_19 CHILD stepTwo_19 
-PARENT stepTwo_19 CHILD stepThree_19 
-
-JOB stepOne_20 step1.sub 
-VARS stepOne_20 sim_num="20" 
-JOB stepTwo_20 step2.sub 
-VARS stepTwo_20 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
-JOB stepThree_20 step3.sub 
-
-PARENT stepOne_20 CHILD stepTwo_20 
-PARENT stepTwo_20 CHILD stepThree_20 
-
-JOB stepOne_21 step1.sub 
-VARS stepOne_21 sim_num="21" 
-JOB stepTwo_21 step2.sub 
-VARS stepTwo_21 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
-JOB stepThree_21 step3.sub 
-
-PARENT stepOne_21 CHILD stepTwo_21 
-PARENT stepTwo_21 CHILD stepThree_21 
-
-JOB stepOne_22 step1.sub 
-VARS stepOne_22 sim_num="22" 
-JOB stepTwo_22 step2.sub 
-VARS stepTwo_22 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
-JOB stepThree_22 step3.sub 
-
-PARENT stepOne_22 CHILD stepTwo_22 
-PARENT stepTwo_22 CHILD stepThree_22 
-
-JOB stepOne_23 step1.sub 
-VARS stepOne_23 sim_num="23" 
-JOB stepTwo_23 step2.sub 
-VARS stepTwo_23 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
-JOB stepThree_23 step3.sub 
-
-PARENT stepOne_23 CHILD stepTwo_23 
-PARENT stepTwo_23 CHILD stepThree_23 
-
-JOB stepOne_24 step1.sub 
-VARS stepOne_24 sim_num="24" 
-JOB stepTwo_24 step2.sub 
-VARS stepTwo_24 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
-JOB stepThree_24 step3.sub 
-
-PARENT stepOne_24 CHILD stepTwo_24 
-PARENT stepTwo_24 CHILD stepThree_24 
-
-JOB stepOne_25 step1.sub 
-VARS stepOne_25 sim_num="25" 
-JOB stepTwo_25 step2.sub 
-VARS stepTwo_25 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
-JOB stepThree_25 step3.sub 
-
-PARENT stepOne_25 CHILD stepTwo_25 
-PARENT stepTwo_25 CHILD stepThree_25 
-
-JOB stepOne_26 step1.sub 
-VARS stepOne_26 sim_num="26" 
-JOB stepTwo_26 step2.sub 
-VARS stepTwo_26 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
-JOB stepThree_26 step3.sub 
-
-PARENT stepOne_26 CHILD stepTwo_26 
-PARENT stepTwo_26 CHILD stepThree_26 
-
-JOB stepOne_27 step1.sub 
-VARS stepOne_27 sim_num="27" 
-JOB stepTwo_27 step2.sub 
-VARS stepTwo_27 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
-JOB stepThree_27 step3.sub 
-
-PARENT stepOne_27 CHILD stepTwo_27 
-PARENT stepTwo_27 CHILD stepThree_27 
-
-JOB stepOne_28 step1.sub 
-VARS stepOne_28 sim_num="28" 
-JOB stepTwo_28 step2.sub 
-VARS stepTwo_28 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
-JOB stepThree_28 step3.sub 
-
-PARENT stepOne_28 CHILD stepTwo_28 
-PARENT stepTwo_28 CHILD stepThree_28 
-
-JOB stepOne_29 step1.sub 
-VARS stepOne_29 sim_num="29" 
-JOB stepTwo_29 step2.sub 
-VARS stepTwo_29 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
-JOB stepThree_29 step3.sub 
-
-PARENT stepOne_29 CHILD stepTwo_29 
-PARENT stepTwo_29 CHILD stepThree_29 
-
-JOB stepOne_30 step1.sub 
-VARS stepOne_30 sim_num="30" 
-JOB stepTwo_30 step2.sub 
-VARS stepTwo_30 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
-JOB stepThree_30 step3.sub 
-
-PARENT stepOne_30 CHILD stepTwo_30 
-PARENT stepTwo_30 CHILD stepThree_30 
-
-JOB stepOne_31 step1.sub 
-VARS stepOne_31 sim_num="31" 
-JOB stepTwo_31 step2.sub 
-VARS stepTwo_31 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
-JOB stepThree_31 step3.sub 
-
-PARENT stepOne_31 CHILD stepTwo_31 
-PARENT stepTwo_31 CHILD stepThree_31 
-
-JOB stepOne_32 step1.sub 
-VARS stepOne_32 sim_num="32" 
-JOB stepTwo_32 step2.sub 
-VARS stepTwo_32 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
-JOB stepThree_32 step3.sub 
-
-PARENT stepOne_32 CHILD stepTwo_32 
-PARENT stepTwo_32 CHILD stepThree_32 
-
-JOB stepOne_33 step1.sub 
-VARS stepOne_33 sim_num="33" 
-JOB stepTwo_33 step2.sub 
-VARS stepTwo_33 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
-JOB stepThree_33 step3.sub 
-
-PARENT stepOne_33 CHILD stepTwo_33 
-PARENT stepTwo_33 CHILD stepThree_33 
-
-JOB stepOne_34 step1.sub 
-VARS stepOne_34 sim_num="34" 
-JOB stepTwo_34 step2.sub 
-VARS stepTwo_34 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
-JOB stepThree_34 step3.sub 
-
-PARENT stepOne_34 CHILD stepTwo_34 
-PARENT stepTwo_34 CHILD stepThree_34 
-
-JOB stepOne_35 step1.sub 
-VARS stepOne_35 sim_num="35" 
-JOB stepTwo_35 step2.sub 
-VARS stepTwo_35 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
-JOB stepThree_35 step3.sub 
-
-PARENT stepOne_35 CHILD stepTwo_35 
-PARENT stepTwo_35 CHILD stepThree_35 
-
-JOB stepOne_36 step1.sub 
-VARS stepOne_36 sim_num="36" 
-JOB stepTwo_36 step2.sub 
-VARS stepTwo_36 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
-JOB stepThree_36 step3.sub 
-
-PARENT stepOne_36 CHILD stepTwo_36 
-PARENT stepTwo_36 CHILD stepThree_36 
-
-JOB stepOne_37 step1.sub 
-VARS stepOne_37 sim_num="37" 
-JOB stepTwo_37 step2.sub 
-VARS stepTwo_37 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
-JOB stepThree_37 step3.sub 
-
-PARENT stepOne_37 CHILD stepTwo_37 
-PARENT stepTwo_37 CHILD stepThree_37 
-
-JOB stepOne_38 step1.sub 
-VARS stepOne_38 sim_num="38" 
-JOB stepTwo_38 step2.sub 
-VARS stepTwo_38 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
-JOB stepThree_38 step3.sub 
-
-PARENT stepOne_38 CHILD stepTwo_38 
-PARENT stepTwo_38 CHILD stepThree_38 
-
-JOB stepOne_39 step1.sub 
-VARS stepOne_39 sim_num="39" 
-JOB stepTwo_39 step2.sub 
-VARS stepTwo_39 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
-JOB stepThree_39 step3.sub 
-
-PARENT stepOne_39 CHILD stepTwo_39 
-PARENT stepTwo_39 CHILD stepThree_39 
-
-JOB stepOne_40 step1.sub 
-VARS stepOne_40 sim_num="40" 
-JOB stepTwo_40 step2.sub 
-VARS stepTwo_40 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
-JOB stepThree_40 step3.sub 
-
-PARENT stepOne_40 CHILD stepTwo_40 
-PARENT stepTwo_40 CHILD stepThree_40 
-
-JOB stepOne_41 step1.sub 
-VARS stepOne_41 sim_num="41" 
-JOB stepTwo_41 step2.sub 
-VARS stepTwo_41 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
-JOB stepThree_41 step3.sub 
-
-PARENT stepOne_41 CHILD stepTwo_41 
-PARENT stepTwo_41 CHILD stepThree_41 
-
-JOB stepOne_42 step1.sub 
-VARS stepOne_42 sim_num="42" 
-JOB stepTwo_42 step2.sub 
-VARS stepTwo_42 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
-JOB stepThree_42 step3.sub 
-
-PARENT stepOne_42 CHILD stepTwo_42 
-PARENT stepTwo_42 CHILD stepThree_42 
-
-JOB stepOne_43 step1.sub 
-VARS stepOne_43 sim_num="43" 
-JOB stepTwo_43 step2.sub 
-VARS stepTwo_43 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
-JOB stepThree_43 step3.sub 
-
-PARENT stepOne_43 CHILD stepTwo_43 
-PARENT stepTwo_43 CHILD stepThree_43 
-
-JOB stepOne_44 step1.sub 
-VARS stepOne_44 sim_num="44" 
-JOB stepTwo_44 step2.sub 
-VARS stepTwo_44 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
-JOB stepThree_44 step3.sub 
-
-PARENT stepOne_44 CHILD stepTwo_44 
-PARENT stepTwo_44 CHILD stepThree_44 
-
-JOB stepOne_45 step1.sub 
-VARS stepOne_45 sim_num="45" 
-JOB stepTwo_45 step2.sub 
-VARS stepTwo_45 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
-JOB stepThree_45 step3.sub 
-
-PARENT stepOne_45 CHILD stepTwo_45 
-PARENT stepTwo_45 CHILD stepThree_45 
-
-JOB stepOne_46 step1.sub 
-VARS stepOne_46 sim_num="46" 
-JOB stepTwo_46 step2.sub 
-VARS stepTwo_46 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
-JOB stepThree_46 step3.sub 
-
-PARENT stepOne_46 CHILD stepTwo_46 
-PARENT stepTwo_46 CHILD stepThree_46 
-
-JOB stepOne_47 step1.sub 
-VARS stepOne_47 sim_num="47" 
-JOB stepTwo_47 step2.sub 
-VARS stepTwo_47 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
-JOB stepThree_47 step3.sub 
-
-PARENT stepOne_47 CHILD stepTwo_47 
-PARENT stepTwo_47 CHILD stepThree_47 
-
-JOB stepOne_48 step1.sub 
-VARS stepOne_48 sim_num="48" 
-JOB stepTwo_48 step2.sub 
-VARS stepTwo_48 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
-JOB stepThree_48 step3.sub 
-
-PARENT stepOne_48 CHILD stepTwo_48 
-PARENT stepTwo_48 CHILD stepThree_48 
-
-JOB stepOne_49 step1.sub 
-VARS stepOne_49 sim_num="49" 
-JOB stepTwo_49 step2.sub 
-VARS stepTwo_49 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
-JOB stepThree_49 step3.sub 
-
-PARENT stepOne_49 CHILD stepTwo_49 
-PARENT stepTwo_49 CHILD stepThree_49 
-
-JOB stepOne_50 step1.sub 
-VARS stepOne_50 sim_num="50" 
-JOB stepTwo_50 step2.sub 
-VARS stepTwo_50 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
-JOB stepThree_50 step3.sub 
-
-PARENT stepOne_50 CHILD stepTwo_50 
-PARENT stepTwo_50 CHILD stepThree_50 
-
-JOB stepOne_51 step1.sub 
-VARS stepOne_51 sim_num="51" 
-JOB stepTwo_51 step2.sub 
-VARS stepTwo_51 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
-JOB stepThree_51 step3.sub 
-
-PARENT stepOne_51 CHILD stepTwo_51 
-PARENT stepTwo_51 CHILD stepThree_51 
-
-JOB stepOne_52 step1.sub 
-VARS stepOne_52 sim_num="52" 
-JOB stepTwo_52 step2.sub 
-VARS stepTwo_52 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
-JOB stepThree_52 step3.sub 
-
-PARENT stepOne_52 CHILD stepTwo_52 
-PARENT stepTwo_52 CHILD stepThree_52 
-
-JOB stepOne_53 step1.sub 
-VARS stepOne_53 sim_num="53" 
-JOB stepTwo_53 step2.sub 
-VARS stepTwo_53 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
-JOB stepThree_53 step3.sub 
-
-PARENT stepOne_53 CHILD stepTwo_53 
-PARENT stepTwo_53 CHILD stepThree_53 
-
-JOB stepOne_54 step1.sub 
-VARS stepOne_54 sim_num="54" 
-JOB stepTwo_54 step2.sub 
-VARS stepTwo_54 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
-JOB stepThree_54 step3.sub 
-
-PARENT stepOne_54 CHILD stepTwo_54 
-PARENT stepTwo_54 CHILD stepThree_54 
-
-JOB stepOne_55 step1.sub 
-VARS stepOne_55 sim_num="55" 
-JOB stepTwo_55 step2.sub 
-VARS stepTwo_55 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
-JOB stepThree_55 step3.sub 
-
-PARENT stepOne_55 CHILD stepTwo_55 
-PARENT stepTwo_55 CHILD stepThree_55 
-
-JOB stepOne_56 step1.sub 
-VARS stepOne_56 sim_num="56" 
-JOB stepTwo_56 step2.sub 
-VARS stepTwo_56 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
-JOB stepThree_56 step3.sub 
-
-PARENT stepOne_56 CHILD stepTwo_56 
-PARENT stepTwo_56 CHILD stepThree_56 
-
-JOB stepOne_57 step1.sub 
-VARS stepOne_57 sim_num="57" 
-JOB stepTwo_57 step2.sub 
-VARS stepTwo_57 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
-JOB stepThree_57 step3.sub 
-
-PARENT stepOne_57 CHILD stepTwo_57 
-PARENT stepTwo_57 CHILD stepThree_57 
-
-JOB stepOne_58 step1.sub 
-VARS stepOne_58 sim_num="58" 
-JOB stepTwo_58 step2.sub 
-VARS stepTwo_58 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
-JOB stepThree_58 step3.sub 
-
-PARENT stepOne_58 CHILD stepTwo_58 
-PARENT stepTwo_58 CHILD stepThree_58 
-
-JOB stepOne_59 step1.sub 
-VARS stepOne_59 sim_num="59" 
-JOB stepTwo_59 step2.sub 
-VARS stepTwo_59 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
-JOB stepThree_59 step3.sub 
-
-PARENT stepOne_59 CHILD stepTwo_59 
-PARENT stepTwo_59 CHILD stepThree_59 
-
-JOB stepOne_60 step1.sub 
-VARS stepOne_60 sim_num="60" 
-JOB stepTwo_60 step2.sub 
-VARS stepTwo_60 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
-JOB stepThree_60 step3.sub 
-
-PARENT stepOne_60 CHILD stepTwo_60 
-PARENT stepTwo_60 CHILD stepThree_60 
-
-JOB stepOne_61 step1.sub 
-VARS stepOne_61 sim_num="61" 
-JOB stepTwo_61 step2.sub 
-VARS stepTwo_61 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
-JOB stepThree_61 step3.sub 
-
-PARENT stepOne_61 CHILD stepTwo_61 
-PARENT stepTwo_61 CHILD stepThree_61 
-
-JOB stepOne_62 step1.sub 
-VARS stepOne_62 sim_num="62" 
-JOB stepTwo_62 step2.sub 
-VARS stepTwo_62 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
-JOB stepThree_62 step3.sub 
-
-PARENT stepOne_62 CHILD stepTwo_62 
-PARENT stepTwo_62 CHILD stepThree_62 
-
-JOB stepOne_63 step1.sub 
-VARS stepOne_63 sim_num="63" 
-JOB stepTwo_63 step2.sub 
-VARS stepTwo_63 inputfilename="1e19_n1e3.hdf5" detectordescription="station.json" config="config.yaml" outputfilename="output.hdf5" outputfilenameNuRadioReco="output.nur" 
-JOB stepThree_63 step3.sub 
 JOB stepFour step4.sub 
 
-PARENT stepOne_63 CHILD stepTwo_63
-PARENT stepTwo_63 CHILD stepThree_63
+PARENT stepOne_15 CHILD stepTwo_15
+PARENT stepTwo_15 CHILD stepThree_15
 
 PARENT stepThree_1 CHILD stepFour
 PARENT stepThree_2 CHILD stepFour
@@ -590,51 +158,3 @@ PARENT stepThree_12 CHILD stepFour
 PARENT stepThree_13 CHILD stepFour
 PARENT stepThree_14 CHILD stepFour
 PARENT stepThree_15 CHILD stepFour
-PARENT stepThree_16 CHILD stepFour
-PARENT stepThree_17 CHILD stepFour
-PARENT stepThree_18 CHILD stepFour
-PARENT stepThree_19 CHILD stepFour
-PARENT stepThree_20 CHILD stepFour
-PARENT stepThree_21 CHILD stepFour
-PARENT stepThree_22 CHILD stepFour
-PARENT stepThree_23 CHILD stepFour
-PARENT stepThree_24 CHILD stepFour
-PARENT stepThree_25 CHILD stepFour
-PARENT stepThree_26 CHILD stepFour
-PARENT stepThree_27 CHILD stepFour
-PARENT stepThree_28 CHILD stepFour
-PARENT stepThree_29 CHILD stepFour
-PARENT stepThree_30 CHILD stepFour
-PARENT stepThree_31 CHILD stepFour
-PARENT stepThree_32 CHILD stepFour
-PARENT stepThree_33 CHILD stepFour
-PARENT stepThree_34 CHILD stepFour
-PARENT stepThree_35 CHILD stepFour
-PARENT stepThree_36 CHILD stepFour
-PARENT stepThree_37 CHILD stepFour
-PARENT stepThree_38 CHILD stepFour
-PARENT stepThree_39 CHILD stepFour
-PARENT stepThree_40 CHILD stepFour
-PARENT stepThree_41 CHILD stepFour
-PARENT stepThree_42 CHILD stepFour
-PARENT stepThree_43 CHILD stepFour
-PARENT stepThree_44 CHILD stepFour
-PARENT stepThree_45 CHILD stepFour
-PARENT stepThree_46 CHILD stepFour
-PARENT stepThree_47 CHILD stepFour
-PARENT stepThree_48 CHILD stepFour
-PARENT stepThree_49 CHILD stepFour
-PARENT stepThree_50 CHILD stepFour
-PARENT stepThree_51 CHILD stepFour
-PARENT stepThree_52 CHILD stepFour
-PARENT stepThree_53 CHILD stepFour
-PARENT stepThree_54 CHILD stepFour
-PARENT stepThree_55 CHILD stepFour
-PARENT stepThree_56 CHILD stepFour
-PARENT stepThree_57 CHILD stepFour
-PARENT stepThree_58 CHILD stepFour
-PARENT stepThree_59 CHILD stepFour
-PARENT stepThree_60 CHILD stepFour
-PARENT stepThree_61 CHILD stepFour
-PARENT stepThree_62 CHILD stepFour
-PARENT stepThree_63 CHILD stepFour
