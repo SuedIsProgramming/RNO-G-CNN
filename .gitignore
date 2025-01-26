@@ -8,6 +8,7 @@
 data/
 old/
 jobs_test/
+job_info
 dagman.dag
 dagman.dag.*
 job.*
