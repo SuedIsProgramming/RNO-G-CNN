@@ -1,4 +1,4 @@
-#!/data/i3home/ssued/bin/python
+#!/data/i3home/ssued/venv_ubu22.04/bin/python3
 
 from __future__ import absolute_import, division, print_function
 import argparse
@@ -9,12 +9,17 @@ import NuRadioReco.modules.channelBandPassFilter
 from NuRadioReco.utilities import units
 from NuRadioMC.simulation import simulation
 
+# Obtain directory of this script
 import os
-os.chdir('/data/i3home/ssued/RNOGCnn/CNN_steps/symdata') # Changes working directory so that all steps occur in the "data" file.
+from pathlib import Path
+scriptd = os.path.dirname(os.path.abspath(__file__))
+scriptd_path = Path(scriptd)
+
+os.chdir(scriptd_path / 'symdata') # Change to symdata directory
 
 # Setup logging
-from NuRadioReco.utilities.logging import setup_logger
-logger = setup_logger(name="")
+from NuRadioReco.utilities.logging import _setup_logger
+logger = _setup_logger(name="")
 
 # initialize detector sim modules
 simpleThreshold = NuRadioReco.modules.trigger.simpleThreshold.triggerSimulator()
@@ -58,16 +63,36 @@ parser.add_argument('outputfilename', type=str,
                     help='hdf5 output filename')
 parser.add_argument('outputfilenameNuRadioReco', type=str, nargs='?', default=None,
                     help='outputfilename of NuRadioReco detector sim file')
+parser.add_argument('sim_num', type=str,
+                    help='Number of simulation')
 args = parser.parse_args()
 
+
 if __name__ == "__main__":
-    sim = mySimulation(inputfilename=args.inputfilename,
-                                outputfilename=args.outputfilename,
-                                detectorfile=args.detectordescription,
-                                outputfilenameNuRadioReco=args.outputfilenameNuRadioReco,
-                                config_file=args.config,
-                                file_overwrite=True)
-    sim.run()
+    max_retries = 5
+    retry_delay = 1  # initial delay in seconds
+
+    for attempt in range(max_retries):
+        try:
+            sim = mySimulation(inputfilename=args.inputfilename,
+                               outputfilename=args.outputfilename,
+                               detectorfile=args.detectordescription,
+                               outputfilenameNuRadioReco=args.outputfilenameNuRadioReco,
+                               config_file=args.config,
+                               file_overwrite=True)
+            sim.run()
+            break  # exit the loop if the simulation runs successfully
+        except BlockingIOError as e:
+            logger.error(f"BlockingIOError occurred: {e}")
+            if attempt < max_retries - 1:
+                logger.info(f"Retrying in {retry_delay} seconds... (Attempt {attempt + 2}/{max_retries})")
+                import time
+                time.sleep(retry_delay)
+                retry_delay *= 2  # exponential backoff
+            else:
+                logger.error("Max retries reached. Exiting.")
+                raise
+
 
 # Debugging memory usage
 # import resource

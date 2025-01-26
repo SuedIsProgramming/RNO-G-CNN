@@ -1,9 +1,9 @@
-executable = /data/i3home/ssued/RNOGCnn/CNN_steps/step2_run_simulation.py
-arguments = $(inputfilename) $(detectordescription) $(config) $(outputfilename) $(outputfilenameNuRadioReco)
+executable = /data/condor_shared/users/ssued/RNOGCnn/CNN_steps/step2_run_simulation.py
+arguments = $(inputfilename) $(detectordescription) $(config) $(outputfilename) $(outputfilenameNuRadioReco) $(sim_num) 
 
 #log = job.log
-output = job.$(Cluster).out
-error = job.$(Cluster).err
+#output = job_info/stepTwo_$(sim_num).$(Cluster).out
+#error = job_info/stepTwo_$(sim_num).$(Cluster).err
 request_cpus = 1
 request_memory = 400MB
 

@@ -1,4 +1,4 @@
-#!/data/i3home/ssued/bin/python
+#!/data/i3home/ssued/venv_ubu22.04/bin/python3
 
 from __future__ import absolute_import, division, print_function
 from NuRadioReco.utilities import units
@@ -14,12 +14,17 @@ args = parser.parse_args()
 
 sim_num = args.sim_num
 
+# Obtain directory of this script
 import os
-os.chdir('/data/i3home/ssued/RNOGCnn/CNN_steps/symdata') # Changes working directory so that all steps occur in the "data" file.
+from pathlib import Path
+scriptd = os.path.dirname(os.path.abspath(__file__))
+scriptd_path = Path(scriptd)
+
+os.chdir(scriptd_path / 'symdata') # Change to symdata directory
 
 # Setup logging
-from NuRadioReco.utilities.logging import setup_logger
-logger = setup_logger(name="")
+from NuRadioReco.utilities.logging import _setup_logger
+logger = _setup_logger(name="")
 
 # define simulation volume (artificially close by to make them trigger)
 volume = {

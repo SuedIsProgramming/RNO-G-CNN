@@ -1,8 +1,8 @@
-executable = /data/i3home/ssued/RNOGCnn/CNN_steps/step4_conjoin_events.py
+executable = /data/condor_shared/users/ssued/RNOGCnn/CNN_steps/step4_conjoin_events.py
 
 #log = job.log
-#output = job.$(Cluster).out
-#error = job.$(Cluster).err
+#output = job_info/stepFour_$(sim_num).$(Cluster).out
+#error = job_info/stepFour_$(sim_num).$(Cluster).err
 request_cpus = 1
 request_memory = 400MB
 

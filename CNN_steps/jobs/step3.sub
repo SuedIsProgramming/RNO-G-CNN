@@ -1,8 +1,9 @@
-executable = /data/i3home/ssued/RNOGCnn/CNN_steps/step3_save_bin_hilbert.py
+executable = /data/condor_shared/users/ssued/RNOGCnn/CNN_steps/step3_save_bin_hilbert.py
+arguments = $(sim_num)
 
 #log = job.log
-output = job.$(Cluster).out
-error = job.$(Cluster).err
+#output = job_info/stepThree_$(sim_num).$(Cluster).out
+#error = job_info/stepThree_$(sim_num).$(Cluster).err
 request_cpus = 1
 request_memory = 400MB
 

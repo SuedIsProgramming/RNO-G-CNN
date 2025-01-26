@@ -1,22 +1,34 @@
-#!/data/i3home/ssued/bin/python
+#!/data/i3home/ssued/venv_ubu22.04/bin/python3
 
 import NuRadioReco.modules.io.eventReader
 from scipy.signal import hilbert # pylint: disable=W0622
 import NuRadioReco.framework.parameters as parameters
 import numpy as np
+import argparse
 import pickle
 import os
 import sys
-sys.path.append('/data/i3home/ssued/RNOGCnn') # Necessary to import utils from RNOGCnn directory
+sys.path.append('/data/condor_shared/users/ssued/RNOGCnn') # Necessary to import utils from RNOGCnn directory
 import utils
 
-os.chdir('/data/i3home/ssued/RNOGCnn/CNN_steps/eventdata') # Changes working directory so that all steps occur in the "data" file.
+# Obtain directory of this script
+from pathlib import Path
+scriptd = os.path.dirname(os.path.abspath(__file__))
+scriptd_path = Path(scriptd)
+
+os.chdir(scriptd_path / 'eventdata') # Change to eventdata directory
 
 param = NuRadioReco.framework.parameters.channelParameters # Parameter enumerator
 
 event_reader = NuRadioReco.modules.io.eventReader.eventReader()
 
-out_file = '/data/i3home/ssued/RNOGCnn/CNN_steps/symdata/output.nur' # Added absolute path, may have to change later
+parser = argparse.ArgumentParser(description='Save data from output')
+parser.add_argument('sim_num', type=str,
+                    help='Number of simulation')
+
+args = parser.parse_args()
+
+out_file = f'/data/condor_shared/users/ssued/RNOGCnn/CNN_steps/symdata/output_{args.sim_num}.nur' # Added absolute path, may have to change later
 event_reader.begin(out_file)
 events = event_reader.run()
 
@@ -49,7 +61,7 @@ for iEvent, event in enumerate(events): # For each event
         SNR_mean = SNR_mean / station.get_number_of_channels() # Divide by number of channels
         event_dict[iEvent] = {'mean_SNR' : SNR_mean, 'bin_time' : bin_time, 'data' : v_matrix} # Populate event dictionary
 
-utils.save_events(events_in=event_dict,directory='/data/i3home/ssued/RNOGCnn/CNN_steps/eventdata') # Save the events
+utils.save_events(events_in=event_dict,directory='/data/condor_shared/users/ssued/RNOGCnn/CNN_steps/eventdata') # Save the events
 
 # Debugging memory usage
 # import resource

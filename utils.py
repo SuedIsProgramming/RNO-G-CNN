@@ -1,15 +1,15 @@
-import NuRadioReco.framework.parameters as parameters
+from pathlib import Path
 import matplotlib.pyplot as plt
 import numpy as np
 import pickle
 import os
 
-def find(name, path='/data/i3home/ssued/RNOGCnn'):
+def find(name, path='/data/condor_shared/users/ssued/RNOGCnn'):
     for root, dirs, files in os.walk(path):
         if name in files:
             return os.path.join(root, name)
 
-def conjoin_events(input_path, file_path='/data/i3home/ssued/RNOGCnn/function_testing/data/eventbatch.pkl'):
+def conjoin_events(input_path, file_path='/data/condor_shared/users/ssued/RNOGCnn/function_testing/data/eventbatch.pkl'):
     """
     Save events in a dictionary. If a dictionary already exists, it will append the events to the end of the dictionary.
     Otherwise, it will create the pickled dictionary in the file_path. Once the file has been merged, it will be deleted.
@@ -55,7 +55,7 @@ def conjoin_events(input_path, file_path='/data/i3home/ssued/RNOGCnn/function_te
     os.remove(input_path) # Delete the file after merging
     #print(f"Deleted input file: {input_path}")
 
-def save_events(directory='/data/i3home/ssued/RNOGCnn/function_testing/data/', events_in = None):
+def save_events(directory='/data/condor_shared/users/ssued/RNOGCnn/function_testing/data/', events_in = None):
     """
     Save a file in the directory with a numerical suffix based on existing files.
     If no files exist, it saves as 'eventbatch_0.pkl'. Otherwise, it finds the highest numerical suffix,
@@ -146,3 +146,8 @@ def bin_v(channel, nbins, hilbert = False, method='max', plot=False):
         plt.savefig('Original vs Binned Hilbert Envelope.png')
 
     return binned_time, binned, bin_dt
+
+def get_script_path():
+    abspath = os.path.abspath(__file__)
+    script_dir = os.path.dirname(abspath)
+    return Path(script_dir)
