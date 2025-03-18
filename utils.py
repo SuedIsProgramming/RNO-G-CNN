@@ -9,6 +9,10 @@ def find(name, path='/data/condor_shared/users/ssued/RNOGCnn'):
         if name in files:
             return os.path.join(root, name)
 
+    # Function to shift keys by a given number
+    def shift_keys(d, shift_amount):
+        return {k + shift_amount: v for k, v in d.items()}
+
 def conjoin_events(input_path, file_path='/data/condor_shared/users/ssued/RNOGCnn/function_testing/data/eventbatch.pkl'):
     """
     Save events in a dictionary. If a dictionary already exists, it will append the events to the end of the dictionary.
@@ -151,3 +155,32 @@ def get_script_path():
     abspath = os.path.abspath(__file__)
     script_dir = os.path.dirname(abspath)
     return Path(script_dir)
+
+def obtain_evb(eventbatch : str, eventdata_folder : str = '/data/condor_shared/users/ssued/RNOGCnn/CNN_steps/eventdata'):
+    """
+    Quality of life function. Simply return event batch dictionary.
+
+    Parameters:
+    eventbatch (dict): Event dictionary to inspect.
+    eventdata_folder (str): Folder where the eventbatch is stored.
+    """
+    import pickle
+    if not eventbatch.endswith('.pkl'):
+        eventbatch = f'{eventbatch}.pkl'
+    with open(f'{eventdata_folder}/{eventbatch}', 'rb') as file:
+        return pickle.load(file)
+    
+def plot_image(event):
+    matrix = event['data']
+    bintime_ns = event['bin_time']
+
+    plt.figure(figsize=(10, 6))
+    # Creating the heatmap
+    plt.imshow(matrix, cmap='viridis', interpolation='nearest',aspect=5)
+    plt.colorbar()  # adding color bar to show the scale
+    plt.title("Heatmap of voltage on 4 channels")
+    plt.xlabel(f"Bin Value:{bintime_ns: .3g} ns    ;    Mean SNR:{event['mean_SNR']: .3g}")
+    y_ticks = [0, 1, 2, 3]  # Custom y-tick positions
+    y_labels = ['Channel 1', 'Channel 2', 'Channel 3', 'Channel 4']  # Custom y-tick labels
+    plt.yticks(y_ticks, y_labels)
+    plt.show()
