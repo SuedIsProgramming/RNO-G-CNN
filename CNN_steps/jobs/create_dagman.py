@@ -10,7 +10,7 @@ abspath = os.path.abspath(__file__)
 dname = os.path.dirname(abspath)
 os.chdir(dname)
 
-sim_num = 256 # Number of simulations to run 
+sim_num = 2048*4 # Number of simulations to run 
 
 # now we have to write the dag file itself
 dag_filename = f"dagman.dag"

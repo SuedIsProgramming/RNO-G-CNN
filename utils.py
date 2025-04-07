@@ -1,8 +1,144 @@
-from pathlib import Path
+from typing import Tuple, Dict, List
+from torch.utils.data import Dataset
 import matplotlib.pyplot as plt
+from pathlib import Path
 import numpy as np
 import pickle
 import os
+
+
+from torch.utils.data import Dataset
+from typing import Tuple, Dict, List
+from torch.nn.functional import normalize
+import numpy as np
+import torch
+
+# Custom dataset class to work with dictionaries
+
+class EventtoData(Dataset):
+    """
+    Custom Dataset class for handling event data.
+
+    Attributes:
+    -----------
+    events : np.ndarray
+        Array containing event data.
+    n_channels : int
+        Number of channels in the event data.
+    n_bins : int
+        Number of bins in the event data.
+    bin_time : float
+        Time duration of each bin.
+    transform : callable, optional
+        Optional transform to be applied on a sample (currently deprecated).
+
+    Methods:
+    --------
+    __len__() -> int:
+        Returns the number of events.
+    __getitem__(index: int) -> Tuple[np.ndarray, float]:
+        Returns a tuple (data, mean_SNR) for the given index.
+    show_event(index: int):
+        Displays the event data as an image using a utility function.
+    mean_snr_of(index: int) -> float:
+        Returns the mean SNR of the event at the given index.
+
+    Notes:
+    ------
+    - The class now supports initialization with either an events dictionary or a file containing events.
+    - The event data is converted from a dictionary to a numpy array for easier handling.
+    - The `__getitem__` method ensures that the data includes a color dimension and converts data types to float32.
+    """
+    def __init__(self, events=None, events_f=None, normalize=None):
+        if not events_f and not events:
+            raise ValueError("Must include either events file or events to construct EventData object.")
+        if events_f:
+            with open(events_f, 'rb') as file:
+                events_dict = pickle.load(file)
+        else:
+            events_dict = events
+
+        # Must convert from dictionary to arrays
+        self.events = np.array([events[key] for key in events.keys()])
+        first_key = next(iter(events_dict))
+        self.n_channels = events_dict[first_key]['data'].shape[0]
+        self.n_bins = events_dict[first_key]['data'].shape[1]
+        self.bin_time = events_dict[first_key]['bin_time'].item()
+
+    def show_event(self, index : int):
+        plot_image(self.events[index])
+
+    def mean_snr_of(self, index : int):
+        return self.events[index]['mean_SNR'].item()
+
+    def __len__(self) -> int:
+        return len(self.events)
+
+    # Must overwrite __getitem__():
+    def __getitem__(self, index : int) -> Tuple:
+        item_data_uncolored = self.events[index]['data']
+        item_data = torch.tensor(np.array([item_data_uncolored]).astype('float32')) # Must add a color dimension
+        item_snr = torch.tensor(np.array(self.events[index]['mean_SNR']).astype('float32'))
+
+        if normalize:
+            item = (normalize(item_data),item_snr)
+        else:
+            item = (item_data,item_snr)
+
+        return item # Returns (data, mean_SNR)
+
+def make_predictions(model: torch.nn.Module, dataloader: torch.utils.data.DataLoader, device: torch.device = 'cpu', plot: bool = False, verbose: bool = False):
+    """
+    Make predictions using a trained PyTorch model on a given DataLoader.
+
+    Args:
+        model (torch.nn.Module): The trained PyTorch model to use for predictions.
+        dataloader (torch.utils.data.DataLoader): DataLoader containing the data to predict on.
+        device (torch.device, optional): The device to run the model on (default 'cpu').
+        plot (bool, optional): Whether to plot the predicted vs true SNR values (default is False).
+        verbose (bool, optional): Whether to print detailed prediction information, including MSE for each sample (default is False).
+
+    Returns:
+        list: A list of tuples containing predicted and true SNR values for each sample in the DataLoader.
+    """
+
+    predictions = []
+    model.eval()
+    with torch.inference_mode():
+        for data, snr in dataloader:
+            data = data.to(device)
+            pred = model(data)
+            predictions.append((pred.cpu().item(), snr.cpu().item()))
+
+    if verbose:
+        print("First 20 predictions (Predicted SNR, True SNR):")
+        avg_mse = 0
+        for i, (pred, true) in enumerate(predictions):
+            print(f"Sample {i + 1}: Predicted = {pred:.16f}, True = {true:.16f}")
+            mse = (pred-true)**2
+            print(f'MSE: {mse}')
+            avg_mse+=mse
+        print(f'Average MSE: {avg_mse/20}')
+            
+
+
+    if plot:
+        pred_values, true_values = zip(*predictions)
+        samples = np.arange(len(pred_values))
+
+        plt.figure(figsize=(12, 6))
+        plt.plot(samples, pred_values, label='Predicted SNR', marker='o', linestyle='-', color='blue')
+        plt.plot(samples, true_values, label='True SNR', marker='x', linestyle='--', color='red')
+        plt.xlabel('Data Sample', fontsize=14)
+        plt.ylabel('SNR', fontsize=14)
+        plt.title('Predicted vs True SNR', fontsize=16)
+        plt.legend(fontsize=12)
+        plt.grid(True)
+        plt.xticks(fontsize=12)
+        plt.yticks(fontsize=12)
+        plt.show()
+
+    return predictions
 
 def find(name, path='/data/condor_shared/users/ssued/RNOGCnn'):
     for root, dirs, files in os.walk(path):
